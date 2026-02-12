@@ -1,0 +1,86 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_42538_24H_Sepsis_Advisory_Workflow" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="_42538_24H_Sepsis_Advisory_Workflow_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="_42538_24H_Sepsis_Advisory_Workflow" sap:VirtualizedContainerService.HintSize="1540,1619" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap2010:Annotation.AnnotationText="1. Pre Requisites:  You will need the following documents: 1. Advisory Panel, 2. Advisory History, 3. ICU (adult) Flowsheet 4. Bundle Worksheet.&#xD;&#xA;&#xD;&#xA;2. DAY 1: Admit 2 patients&#xD;&#xA;ER: Patients are admitted&#xD;&#xA;&#xD;&#xA;3. Patients 1 &amp; 2: Wait for 1 hour&#xD;&#xA;ER: Advisory displayed per tag &lt;J01.Y19_036&gt; #11&#xD;&#xA;&#xD;&#xA;4. Patients 1&amp;2: Manually chart SOFA on Bundles Worksheet&#xD;&#xA;ER: Data is saved&#xD;&#xA;&#xD;&#xA;5. Patients 1&amp;2: Open Face Sheet:&#xD;&#xA;&#xD;&#xA;6. Patient 1:  Add infection Assessment Form&#xD;&#xA;ER: Infection Assessment is added per tag &lt;J01.Y19_037&gt;&#xD;&#xA;&#xD;&#xA;7. Patient 1:  Fill in presentation date and time from Infection Assessment Form&#xD;&#xA;ER: Advisory per tag &lt;J01.Y19_036&gt; #1&#xD;&#xA;&#xD;&#xA;8. Patient 1: Wait 45 mins: &#xD;&#xA;ER: Advisory per tag Advisory per tag &lt;J01.Y19_036&gt; #9&#xD;&#xA;&#xD;&#xA;9. Patient 1: Chart date and time for  antibiotics compliance on Bundle Worksheet.  Save charted values&#xD;&#xA;ER: Data saved&#xD;&#xA;&#xD;&#xA;10. Patient 1: Wait 4 hours &#xD;&#xA;ER: Advisory per tag &lt;J01.Y19_036&gt;#9&#xD;&#xA;&#xD;&#xA;11. Patient 1: Chart date and time for blood culture compliance on the Bundle Worksheet.  Save charted values&#xD;&#xA;ER: Data saved&#xD;&#xA;&#xD;&#xA;12. Patient 1: Wait 4 hours&#xD;&#xA;ER: Advisory per tag &lt;J01.Y19_036&gt;#9&#xD;&#xA;&#xD;&#xA;13. Patient 1: Wait 24 hours&#xD;&#xA;ER: Advisory per tag &lt;J01.Y19_036&gt;#9&#xD;&#xA;&#xD;&#xA;14. DAY 2: &#xD;&#xA;&#xD;&#xA;15. Patient 2: Manually chart SOFA.  Ensure total SOFA score is 2 points greater than Admission SOFA score.&#xD;&#xA;ER: Advisory per tag &lt;J01.Y19_036&gt; #3&#xD;&#xA;&#xD;&#xA;16. Patient 2: Add Infection Assessment Form&#xD;&#xA;ER: Document added&#xD;&#xA;&#xD;&#xA;17. Patient 2: Chart presentation date and time on the Infection Assessment Form.  Save charted values.&#xD;&#xA;ER: Advisory per tag &lt;J01.Y19_036&gt; #1&#xD;&#xA;&#xD;&#xA;18. Patient 2: Chart date and time for lactate compliance on the Bundle Worksheet.  Save charted values.&#xD;&#xA;&#xD;&#xA;19. Patient 2: Wait 45 mins&#xD;&#xA;ER: Advisory per tag &lt;J01.Y19_036&gt; #9&#xD;&#xA;&#xD;&#xA;20. Patient 2: Chart date and time for Crystalloid compliance&#xD;&#xA;&#xD;&#xA;21. Patient 2: Wait 4 hours&#xD;&#xA;ER: Advisory per tag &lt;J01.Y19_036&gt; #9&#xD;&#xA;&#xD;&#xA;22. Patient 2: Wait 24 hours&#xD;&#xA;ER: No Advisory per tag &lt;J01.Y19_036&gt; #9&#xD;&#xA;&#xD;&#xA;23. Patient 1: Wait for 1800 hours&#xD;&#xA;ER: Advisory per tag &lt;J01.Y19_036&gt; #2&#xD;&#xA;&#xD;&#xA;24. Patient 1: Chart Daily SOFA score and ensure that total SOFA score is 2 points higher than admission SOFA score.  Save charted values&#xD;&#xA;ER: Advisory per tag &lt;J01.Y19_036&gt; #3&#xD;&#xA;&#xD;&#xA;25. Patient 1: Add Infection Assessment Form and chart presentation date and time.  Save charted values.&#xD;&#xA;ER: Infection Assessment is added per tag &lt;J01.Y19_037&gt; and Advisory per tag &lt;J01.Y19_036&gt; #1&#xD;&#xA;&#xD;&#xA;26. Patient 1: Chart vasopressor compliance on the Bundle Worksheet&#xD;&#xA;ER: Advisory per tag &lt;J01.Y19_036&gt; #9" DisplayName="... Given" sap:VirtualizedContainerService.HintSize="450,1363" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="450,121" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="450,112" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+  </Sequence>
+</Activity>
