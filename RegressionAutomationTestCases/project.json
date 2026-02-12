@@ -1,0 +1,1185 @@
+{
+  "name": "RegressionAutomationTestCases",
+  "projectId": "53efc013-1acc-4450-aae4-7a79987c523f",
+  "description": "ICCA regression automation test cases based on Bev's spreadsheet.",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.CodedWorkflows": "[24.10.1]",
+    "UiPath.Database.Activities": "[2.0.0]",
+    "UiPath.NetIQeDirectory.Activities": "[1.5.0]",
+    "UiPath.System.Activities": "25.12.2",
+    "UiPath.Testing.Activities": "[25.10.0]",
+    "UiPath.UIAutomation.Activities": "25.10.25",
+    "UiPathTeam.ServicesManager.Activities": "[2.0.0]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.6.1.0",
+  "projectVersion": "1.0.190651333",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": false,
+    "isAttended": false,
+    "requiresUserInteraction": false,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": [
+        "60_DischargePatient_CCU1.xaml",
+        "69_TransferPatientOut_ICU2-HACU.xaml",
+        "70_AdmitPatient_CCU1.xaml",
+        "80_AddSaveDocument_AdvisoryHistory.xaml",
+        "DischargePatient_CCU1.xaml",
+        "Remove_Clinical_Summary_View.xaml",
+        "Stat_Admit_CCU1.xaml",
+        "TransferICU1_CCU2.xaml",
+        "HL7ConfigEditorAddLabResult.xaml",
+        "HL7ConfigEditorDeleteLabResult.xaml",
+        "HL7InterfaceInfusionOrderAddFillers.xaml",
+        "HL7InterfaceInfusionOrderAddInformerPlus.xaml",
+        "HL7PtDataImport_HRIntervention_LocalRoute10188.xaml",
+        "HL7SendInfusionOrderFillers.xaml",
+        "HL7SendInfusionOrderTracker.xaml",
+        "HL7SysMgmConfig.xaml",
+        "Activation_SystemMgmt.xaml",
+        "Add_Blood_Type.xaml",
+        "Add_Multiple_Patients_With_DOB_Gender.xaml",
+        "Add_Multiple_Patients.xaml",
+        "Add_Multiple_Roles.xaml",
+        "Add_Two_Patients_In_Two_Institution.xaml",
+        "AddAdvisoryHistory.xaml",
+        "AddBundles_Worksheet_V2.xaml",
+        "AddFaceSheet - Imported.xaml",
+        "AddFaceSheet.xaml",
+        "AddFlowSheet.xaml",
+        "AddMARFlowSheetFaceSheetOrderEntry.xaml",
+        "AddMedDripOrderDopamineFentanyl.xaml",
+        "AddMedicationOverview.xaml",
+        "AddMedOrderAmpicilinDigoxin.xaml",
+        "AddMedOrderAmpicillinDigoxinQ1hr.xaml",
+        "AddWorkList.xaml",
+        "Create_Clinical_Summary_View.xaml",
+        "EditFaceSheet.xaml"
+      ]
+    },
+    "fileInfoCollection": [
+      {
+        "templateType": "ExecutionTemplate",
+        "fileName": ".templates\\TestFramework.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f8af4131-58e5-45e5-8cb6-098f9376b29a",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "55493_ADT_CriticalCare.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "efa586e5-4473-4368-8f06-43e385ae9bf8",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44428_UI_Census_Functionality.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "6b2fd7ee-f115-4e86-b4d8-6a68fa8a6621",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "50228_Desktop_Login.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "79f6e843-ef03-47b8-96e7-adca782a0b6e",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "102062_Help_About_Screen.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "36593ef7-dedb-4fbd-a56d-65f738cf0899",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "49632_Flowsheet_Charting_Behaviors.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7e4e4866-71bf-4bd5-9856-bac6ec9d088e",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "50272_Intervention_Charting.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ee960bd0-cd66-47e1-9654-b02fc9ab9af9",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "50339_Chalkboard Editor.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "6ca10a77-0857-4b95-8dfd-972b4397bf7b",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "41481_Advisory_Behavior.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9f727472-c5cf-497a-9bb2-9dbcbc50c4ff",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "49410_Default_Behavior_When_Calc_Editor_is_Opened.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "fde94c01-48eb-4012-a9e8-74a826d8dea8",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "50261_Administration_Record_Navigation_and_Context_Menu.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1cfb3e6d-7ad7-460a-8bda-6ba4165d0fd7",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "49412_Advisory_References_Document_or_OrderSet_NotExist.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "a2ae3064-89a8-41a6-8bb1-800e9de35fe9",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "49413_Advisory_fields_behavior_on_migrated_advisories.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "3cf50973-c67c-425d-b444-b57a9bc1bbe1",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "49414_Advisory_fields_behavior.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "a5bb7514-c1c7-46e2-87e7-8b5beb0c1b5c",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "49415_Behaviors_of_Display_in_Order_Entry_checkbox.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c8f76abf-7862-421c-94af-ecadb9683a31",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44399_Access_Controls.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ce6ae18e-dab3-4b3c-ab90-5bac2288e4f7",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "154483_Activation.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7b6a5f51-6ba7-4d04-80e9-1926381a3b92",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44436_Interventions.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f300617e-3ad2-4e4b-96da-cab3d6bb667b",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "50454_Edit_Body_Location.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1d6fce69-e0fe-4330-8dbc-13f6934e7818",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "49454_Active_Directory_User.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "34d30f20-e4f7-4b28-9cfe-92ec00545c9e",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "46121_Add_And_Edit_Client_Machine.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "4642013f-90f7-4cee-91d5-a2a5ba39d406",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "46189_Deleting_Client_Machine.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "07d5a536-0187-4e04-bac0-00195d1c72da",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17520_Outpatient_Prescription_list_prescriptions.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "db119680-5adf-4e3e-a2c0-5ae5c5e3f69d",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17558_Outpatient_Prescription_show_Columns.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "39257bfe-4174-4444-9a53-a693143ddb40",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17559_User_add_Oupatient_Prescription.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "5e9174f8-034a-4691-a22c-fb1a44b92fdf",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17560_User_edit_Outpatient_Prescription.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "3cc02d51-fca6-4b97-8121-d8d73efbef8a",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17561_User_delete_Oupatient_Prescription.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c8f827a3-e5e9-4a73-8b23-70d9ece38ca7",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17562_Outpatient_Prescription_display_deleted.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2e404e1a-6ad0-41b6-bb79-69c4c35240ae",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17563_User_discard_Outpatient_Prescription.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "20db8ca5-ce2c-43ba-91a4-0c720e80a82a",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17564_Outpatient_Prescription_not_visible.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "662fe98e-64cb-479d-9010-a537ab53ff11",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17589_Outpatient_Prescription_from_Medication_Order_Rules.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ab56db55-e166-48d6-ab79-7bff7b443a41",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17485_User_add_Previous_Medication_based_formulary.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9677fac9-2bbb-47fa-b2ab-b21e5563ce38",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "49402_VA_Calcs_are_removed_from_Standard_Content.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "23329baf-80f8-4ac9-b59a-042cfaddd51b",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17571_Outpatient_Prescription_not_add_document_pack.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "88235da1-8597-424a-885f-8cfbeb2eb789",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17486_User_add_free_form_Previous_Medication.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e7bc2985-b691-418c-93ef-aecd31c20978",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44384_Previous_Medication_Behavior.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "03e80c37-cd57-4054-bd93-faa92b0ae4b4",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17719_Crate_Medication_Order_from_Previous_Medication.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2c4d1218-e44e-4aad-ae4d-ce5c216fb902",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17566_Previous_Medication_not_add_when_in_Document_Packet.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c051411b-e952-4cb6-b66f-fa5cf57337b7",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17498_Previous_Medication_not_enabled.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "eea45fa4-82d0-49e6-afeb-2e1aabe77e4c",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17497_Create_Outpatient_Prescription_from_Previous_Medication.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "86952364-6e97-4870-bade-35dd5ea2243d",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17495_Create_Medication_Order_from_Previous_Medication.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "08bafda7-2d9c-4c2e-b899-ad079135166a",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17494_User_can_discard_unstored_Previous_Medication.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "22768a24-da0e-48af-bb77-429baa309edb",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17491_Can_delete_Previous_medication.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "b4c9ec45-aaf8-4f88-900e-e88cb155ea72",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "102290_ADT_CC.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2b38d857-5731-48c6-8d14-deccff4b3f8d",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "49472_Chalkboard_Regression.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ceb6c5a2-4008-4ae3-8105-20f712abcd59",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "73029_CAPA_CR 64642_ Re-identification.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "548c2804-78e2-4140-bbe9-18a716497a48",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "153372_Case_Review_Business_Rules.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e02013b1-e8ba-4b69-a000-171807fcff91",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "159398_Event_Macros_Consisting_Parent_Children_Interventions.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c6047548-7a0a-44f8-aa75-bc97e727d4db",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44409_Documents.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "d6a04aac-5ec8-44d5-9ce7-5d29e84a0dc8",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "49427_AR_Clients_uses_trade_name.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "72971c69-862d-46e6-8022-2936772ed2bc",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "50287_AR_Charting.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "53af830f-d133-4379-811a-890338b0b6ef",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "50317_AR_Data_Entry_Charting.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "5debd62a-a4d3-4fc5-8dae-abcbb55a4921",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "49466_Notes_And_Forms.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "cf3f59c3-1daa-46e5-bc69-b4618cb019c6",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "51097_Notes_And_Forms.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "4acd7c90-480a-4fb3-b993-3b03e80fa936",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "49456_Unit_of_Measure_Drug_Calculator.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e99dd4c9-1b13-4ed2-b7cb-4a78d4b918bc",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "50973_Setup_Weight_BSA_Infusions.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0faca8d0-1ba8-455e-afca-0ce92f9a856b",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "50978_Weight_Based_Calculations_Application.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "375e7fae-8cd7-4009-b594-2ffe01476107",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "51024_Dose_And_Quantity_Iteraction_Application.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c09e5502-f850-4ca7-a8a0-ae159fe5c421",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "51025_Dose_And_Quantity_Interaction_Config.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0ab6a618-bb01-4365-9005-e55be0a6d805",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "51113_BSA_Based_Calculations.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "aaa16dbb-d987-4dae-8c60-808a5d181c76",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44383_Default behavior_for_charting.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "206c86f5-6b38-4c0c-a3ab-67477ba1ef20",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "45642_Config_Editor_regression_Norm_In-Place_List_behavior.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7e044408-1524-4db6-abca-42f364f3e41c",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "45643_UI_regression_ Norm_In-Place_List_behavior.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "96953835-d722-4b07-a75c-6fbfb52960fc",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "42680_Norm_Section_Layout_Options.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9d023fb3-f383-4625-81bc-90421be86a04",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "257097_Outbound_Medication-New_Context_Menu.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "bc2cb4b9-f4e6-43b6-a98e-cc63cc0f7fbe",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "257118_Outbound_Medication_Intervention-Create_from_Order.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9fa8e2f3-b509-49cf-aee4-e641701bbbc2",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "50392_Chalkboard_Editor - Imported.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "a6c5672c-7ea2-4b89-b46c-e953d7fe0f38",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "52383_Allergies_Intervention - 01.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e1ca883b-d87b-4ae9-a4e7-7756df635fd9",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "257119_Outbound_Medications_Document_Report.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "229240b5-e458-493e-a876-22d66c2023d3",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "55494_ADT_AnesthesiaRecorder.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9ede20b1-31db-4f0d-9141-de4944bb55a4",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "55494_ADTransfer_Charting_Anesthesia_Client.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "a93c8022-f009-4b40-917b-537ef26ce26d",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44401_User_can_archive_and_view_Charting_Data.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1121c084-baec-4562-9788-9923223137cf",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "63309_Case_Completion_Required_by_Policy_Signature_(Four).xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "b8cdd3e9-c720-46e7-a21b-a40ff95f6a1c",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "50294_Find_Patient.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "cf043a6c-c1f4-471c-91c6-3985892d1e22",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "39802_Requires_cosign_for_administrations_configuration.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2c6ec250-f666-43a7-9caa-890b3a58b3d1",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "39809_Generating_the_cosign_administration_visual_reminder.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "cb0fa951-6fc0-494d-bc38-13e804ebefc4",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "39810_Removing_the_cosign_administration_reminder.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "30a27536-e5b2-4eb6-9c44-a951acec7038",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "39812_Frequency_Types.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7de2fe1b-de05-4c91-bfcc-1508073e22e8",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "39816_Cosigning_the_administration.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1a3f7485-6756-4f8f-8b01-1a108d856e77",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "50226_Config_Editor_Auto_Charting.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "30596f54-5348-42d2-a2a2-5f8304716054",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44398_Config_Formulary_Import.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "460de52b-45d2-4587-891f-d13cc3c146c0",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "50282_Desktop_Login.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "cbe3d0b7-237a-4d00-b0a6-acd076ede9f8",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "256851_Edit_Informer_Plus_Orders.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9179e661-928e-486c-85b7-e2f54adf533a",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "256853_Creating_different_types_of_informer_plus_orders.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0a6bfcd3-a77f-4f22-9b22-f32a87c3a7b0",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "256854_Discontinue_Informer_Plus_Orders.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0cf427a1-677d-42df-a66b-1a34b3468c76",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44122_Find_Patient.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "68804ed5-651e-4ddb-b447-20cbd191afe1",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44123_Restricted_Chart_for_Grant_Access.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f17cc517-cf09-4820-a28d-4892ae221013",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44148_Xlink_Toolbar_Buttons.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ae7a66cd-d08a-46bf-bbfa-ab719f97f727",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "38241_Nutrient_Intake_Manager_(NIM).xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "19de56fd-87ba-47ed-a3d1-b1c296236a40",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "38243_Nutrient_Calculator_(NutCalc).xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f6e49f43-b2b7-40a5-b4d6-8fd956966a76",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "41093_NIM_Document_Context_Menus.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0915f059-dfad-4639-8a34-f36a8792853d",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "41095_Nutrient_Goal_Appsetting.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2ca0d9aa-f48e-4637-95c4-cc931ee10650",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "173919_Norm_Section_&_Norm_Charting.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "b187faab-f8cf-486d-9bde-8d386bcbdf17",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44381_Properties_Exclude_application_behavior.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "72265d01-27a7-4a61-becf-68c10fb76a17",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "160973_Live_Activation.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "8d788685-d6aa-4786-8365-f93fcf5be4ba",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "256852_General_Outbound_processing_Informer_Plus_Roles.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "36866e28-457e-49ca-9f3f-77ee25d315a1",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17493_Previous_Medications_Document_displays_deleted_a_strikethrough.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ae6c2701-5608-4cdc-ae6b-411b8a1f9fa1",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17483_Previous_Medication_displays_list_by_terse_form_ascending.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "268cdac9-341c-4a0a-b7c0-be3a8dfaca0f",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "17484_Previous_Medications_show_Last_Take_Date_Time_and_comments_columns.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "5aaf37d1-9a02-4d4e-ba7b-28166a680318",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "38243_Nutrient_Calculator.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1e031e9f-b32c-45be-9070-bb470743e3ef",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "42522_SOFA_score_workflow.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "eef22991-6eb5-4ba0-b5f7-eef0a2d14ba3",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "42538_24H_Sepsis_Advisory_Workflow.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "cb4fad32-a15b-410f-b6a3-e6df2e62f16e",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "42881_Sepsis_Configuration.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7c621d67-3913-48d4-a6ce-e37708f5d20a",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "42882_Dashboard_Sepsis_Icons.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "8cdffd67-5a84-4115-a04a-af0e0fad8ae8",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44340_Provide_the_domain_parameter_the_doman_name_field_is_the_login_dialog_is_populate.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "31f268a8-bae9-420d-84d1-dfa33f5862c6",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44342_Third_party_id_associated_with_the_generic_drug.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "630076ff-cdf3-4ca0-8caa-6b23bcd6ee68",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44343_Main_Dialog_Error_Checking.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "945d92d0-c383-4200-bade-68f8b5e26e7d",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44344_Select_Data_Source_Button.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "266b0adb-70d4-424a-b71e-c8139d1bface",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44345_Load_File.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0b4ff2a4-ba53-4c1b-925b-28d6f70366d5",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44347_Validation_Data_Check.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7b0aac32-2b3d-4c6a-ad01-e1ac88e69533",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44348_Compare_Button.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "5ced5de6-1b34-4344-b952-c2d169fcbdfc",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44349_Install_Button.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "646ba525-b43f-4fb1-8cef-998e64cbee13",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44358_Abnormal_Lab_Flag_Colors_Default_Light_Yellow.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "35eea340-7aa1-4a65-a9e0-4eb3fce8fcdd",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44359_Abnormal_Lab_Flag_Colors_Corrected Values.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "3c2eea89-caaf-4163-8179-63e25bb87dd4",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44360_Abnormal_Lab_Flag_Colors_Light_Orange.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2b4280b8-f50f-4ec1-a4e6-ec74be92ed5e",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "347684_System_displays_the_username_dropdown_with_options_for_About_on_login.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9db3c856-47cc-4c13-b18b-3a23d812b3ce",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "347918_System_displays_patient_banner_with_information_about_the_current_patient.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "60bac335-2046-4896-b221-ce8c49c75a98",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "347920_System_displays_updated_information_patient_banner_top_Clinical_Summary_screen_data_updated_ICCA.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "db8b9316-069e-4cd6-b26e-146dda48542a",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "348645_System_displays_information_about_the_stat_admit_patient_at_the_top_of_the_Clinical_Summary_screen.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "763574f9-c7b4-4102-a620-63593abdbd19",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "354303_System_behaviour_My_View_dropdown_in_Clinical Summary.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "46b20787-9fee-42cc-95aa-bae04551f868",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "354307_System_displays_Header_label_of_the_Clinical_Summary_View.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "88f62bb3-c15f-405d-ac34-7cd028263a6f",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "44346_Validation_Check_GenericHL7Id_Tab_Column_Characteristics.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "CSharp",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

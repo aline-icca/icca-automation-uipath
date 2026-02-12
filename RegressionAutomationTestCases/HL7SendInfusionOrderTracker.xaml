@@ -1,0 +1,412 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="HL7SendInfusionOrderTracker" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="LifetimeId" Type="InArgument(x:String)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.NetIQeDirectory.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPathTeam.ServicesManager.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="HL7SendInfusionOrderTracker" sap:VirtualizedContainerService.HintSize="1501,4156" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="HL7LabMsg" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="1090,148" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">
+                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">HL7LabMsg</CSharpReference>
+              </OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String" xml:space="preserve">MSH|^~\&amp;amp;|HL7ORDERS||OESEND_PM_PROD||20250210172742||RDE^O11|MSG08311624288681-3|P|2.4|1
+PID|||e08c6ff1^^^Philips.CIS.ADT^MR||Test1^CCU1^Patient|
+ORC|NW|P28248616310810|F28248616310810||IP||12^C^D4^20250210172742^^S||20210324142842|^^^^^^^^^^^^^^^^20040328134602.1234+0600&amp;amp;20040328134602.1234+0600|^^^^^^^^^^^^^^^^20040328134602.1234+0600&amp;amp;20040328134602.1234+0600|^Shabot^Michael^Z.^III^^^^^^^^^^^^20040328134602.1234+0600&amp;amp;20040328134602.1234+0600|||20250210172742||||^^^^^^^^^^^^^^^^20040328134602.1234+0600&amp;amp;20040328134602.1234+0600|||^^^^^^^^^^^20040328134602.1234+0600&amp;amp;20040328134602.1234+0600||^^^^^^^^^^^20040328134602.1234+0600&amp;amp;20040328134602.1234+0600
+RXE|12^C^D4^20250210172742^^S|1234-ABCD^Dopamine^NDC|10|30|ug/(kg.min)^microgram/kilogram/minute^ISO+||^Take standing up||||||^^^^^^^^^^^^^^^^20040328134602.1234+0600&amp;amp;20040328134602.1234+0600|^Shabot^^^^^^^^^^^^^^^20040328134602.1234+0600&amp;amp;20040328134602.1234+0600||||||Y|||10|ug/(kg.min)^microgram/kilogram/minute^ISO+|30|mg^milligrams^ISO+|P^pain^LN~F^fever^LN
+RXR|IV^Intravenous^HL70162|LA^left arm^HL70163|IVS^IV Soluset^HL70164|IVPB^IV Piggyback^HL70165|^routing instrs - Infusion Drip Order
+RXC|B|1234-9999^D5W^NDC|1000|ml^milliliters^ISO+
+RXC|A|4567-ABDD^Dopamine^NDC|410|mg^milligrams^ISO+|150|mg/ml^^ISO+</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+    </ui:MultipleAssign>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1090,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">LifetimeId</CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
+    <Sequence DisplayName="HL7 send MSG" sap:VirtualizedContainerService.HintSize="1090,3812" sap2010:WorkflowViewState.IdRef="Sequence_11">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: TCP/IP: Client - HL7TestTool" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1056,3729" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" IsDisplayNameAuto="True" ScopeGuid="68300de2-8988-46cc-af85-2814f98fad95" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1022,3439" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence sap:VirtualizedContainerService.HintSize="988,3377" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NCheckState DisplayName="Check App State 'Client - HL7TestTool'" sap:VirtualizedContainerService.HintSize="954,932" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="68300de2-8988-46cc-af85-2814f98fad95" Version="V4">
+                  <uix:NCheckState.IfExists>
+                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,683" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Connect'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68300de2-8988-46cc-af85-2814f98fad95" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CVScreenId="8d6f027b-78a6-46f1-a19f-66711ace5593" CvElementArea="332, 107, 79, 25" CvTextArea="350, 112, 42, 12" CvTextArgument="Connect" CvType="Button" DesignTimeRectangle="333, 108, 77, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='2064' title='Connect' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='2064' title='Connect' check:text='Connect' /&gt;" Guid="231506e0-2e66-4ecf-a17c-95a9ad4a5cef" InformativeScreenshot="ab3d48931035e0d59656e5b0e1ca0a10.png" ScopeSelectorArgument="&lt;wnd app='hl7testtool.exe' cls='Afx:*' title='TCP/IP: Client - HL7TestTool' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset Position="TopRight" X="-39" Y="12" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Message to Send'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="68300de2-8988-46cc-af85-2814f98fad95" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable CVScreenId="8d6f027b-78a6-46f1-a19f-66711ace5593" CvElementArea="22, 192, 598, 250" CvType="InputBox" DesignTimeRectangle="21, 194, 599, 249" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlid='1003' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1003' /&gt;" Guid="7ba04119-68fb-4b01-8139-c7b354092ae6" InformativeScreenshot="69acb5f48da216ce53fe0eac8ba685d9.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='hl7testtool.exe' cls='Afx:*' title='TCP/IP: Client - HL7TestTool' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="8d6f027b-78a6-46f1-a19f-66711ace5593" CvTextArea="20, 173, 85, 14" CvTextArgument="Message to Send" CvType="Text" DesignTimeRectangle="21, 173, 84, 13" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='2169' title='Message to Send' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='2169' title='Message to Send' check:text='Message to Send' /&gt;" Guid="46374b78-af56-4ba3-893b-b3640b7887d7" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset Position="TopLeft" X="297" Y="124" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.Text>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">HL7LabMsg</CSharpValue>
+                          </InArgument>
+                        </uix:NTypeInto.Text>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Modify Message...'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68300de2-8988-46cc-af85-2814f98fad95" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CVScreenId="f7390c2f-618c-4b3b-a5e5-49798c87e268" CvElementArea="655, 175, 114, 25" CvTextArea="667, 180, 87, 14" CvTextArgument="Modify Message..." CvType="Button" DesignTimeRectangle="655, 176, 113, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='7002' title='&amp;amp;Modify Message...' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='7002' title='&amp;amp;Modify Message...' check:text='&amp;amp;Modify Message...' /&gt;" Guid="3b5add69-b643-4bcb-9b52-b50751aca7dc" InformativeScreenshot="38f5313b741f2dd1a3ec56e3c50be6b1.png" ScopeSelectorArgument="&lt;wnd app='hl7testtool.exe' cls='Afx:*' title='TCP/IP: Client - HL7TestTool' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset Position="TopRight" X="-57" Y="11" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                  </uix:NCheckState.IfExists>
+                  <uix:NCheckState.IfNotExists>
+                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </uix:NCheckState.IfNotExists>
+                  <uix:NCheckState.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="8, 75, 813, 677" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlid='59648' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='59648' check:text='CDS' /&gt;" Guid="85f3a845-46c4-4cc4-ae67-39ccd9ce9980" InformativeScreenshot="7d6b736dc1fa706696b1291f940d4781.png" ScopeSelectorArgument="&lt;wnd app='hl7testtool.exe' cls='Afx:*' title='TCP/IP: Client - HL7TestTool' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="8d6f027b-78a6-46f1-a19f-66711ace5593" CvTextArea="77, 9, 106, 12" CvTextArgument="Client - HL7TestTool" CvType="Text" DesignTimeRectangle="77, 9, 107, 12" ElementType="Text" Guid="be833522-b002-484e-8b27-0fe3c320e792" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NCheckState.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NCheckState>
+                <uix:NCheckState DisplayName="Check App State 'Modify Message'" sap:VirtualizedContainerService.HintSize="954,1372" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="68300de2-8988-46cc-af85-2814f98fad95" Version="V4">
+                  <uix:NCheckState.IfExists>
+                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,1083" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'MSH^~\&amp;amp;HL7ORDERSOES…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68300de2-8988-46cc-af85-2814f98fad95" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CVScreenId="3ed5098b-29d9-4643-b29a-8f13984ba760" CvElementArea="56, 65, 473, 20" CvType="InputBox" DesignTimeRectangle="53, 65, 477, 21" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;wnd ctrlid='1038' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1038' /&gt;" Guid="b4e7cb38-582e-4149-82e7-336955d0aeb4" InformativeScreenshot="d2bd81daaa58acb388e61c27c69bd89c.png" ScopeSelectorArgument="&lt;wnd app='hl7testtool.exe' cls='#32770' title='Modify Message' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="3ed5098b-29d9-4643-b29a-8f13984ba760" CvElementArea="56, 65, 473, 20" CvType="InputBox" DesignTimeRectangle="56, 65, 473, 20" ElementType="InputBox" Guid="1342eb7e-759e-4707-8172-50d6cdf2a656" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset Position="TopLeft" X="239" Y="7" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,211" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V4" />
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Patient ID (Internal ID)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="68300de2-8988-46cc-af85-2814f98fad95" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable CVScreenId="e06e8183-ba45-439c-93fc-fa6183e69472" CvElementArea="257, 166, 273, 23" CvType="InputBox" DesignTimeRectangle="257, 166, 273, 23" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlid='1039' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1039' /&gt;" Guid="142527ff-9a74-4226-9a28-fbe96c5cc4c1" InformativeScreenshot="1f2d3bb91528dadfa8043b6c710a8154.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='hl7testtool.exe' cls='#32770' title='Modify Message' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="e06e8183-ba45-439c-93fc-fa6183e69472" CvTextArea="52, 171, 109, 14" CvTextArgument="Patient ID (Internal ID):" CvType="Text" DesignTimeRectangle="53, 171, 192, 13" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='2049' title='Patient ID (Internal ID):' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='2049' title='Patient ID (Internal ID):' check:text='Patient ID (Internal ID):' /&gt;" Guid="f565ca0f-ac27-42ba-96e7-c5c138f7fab8" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset Position="TopLeft" X="136" Y="12" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.Text>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">LifetimeId.Substring(0,30)+"^^^Philips.CIS.ADT^MR"</CSharpValue>
+                          </InArgument>
+                        </uix:NTypeInto.Text>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Apply'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68300de2-8988-46cc-af85-2814f98fad95" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CVScreenId="e06e8183-ba45-439c-93fc-fa6183e69472" CvElementArea="483, 543, 76, 24" CvTextArea="506, 547, 29, 14" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="484, 543, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1015' title='&amp;amp;Apply' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1015' title='&amp;amp;Apply' check:text='&amp;amp;Apply' /&gt;" Guid="9dafbb7c-2a8f-4491-8791-da10b6149262" InformativeScreenshot="840686d4ab74b21d248fca4d1975472d.png" ScopeSelectorArgument="&lt;wnd app='hl7testtool.exe' cls='#32770' title='Modify Message' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset Position="TopLeft" X="36" Y="12" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68300de2-8988-46cc-af85-2814f98fad95" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CVScreenId="429c2c53-3352-432e-b1c0-25bc265623eb" CvElementArea="202, 543, 76, 23" CvTextArea="232, 547, 17, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="203, 543, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='2136' title='OK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='2136' title='OK' check:text='OK' /&gt;" Guid="7e6eaaf0-a696-4cc1-8466-a86692daf420" InformativeScreenshot="a2907fe239d28c2a3e4eb897e09a8f4e.png" ScopeSelectorArgument="&lt;wnd app='hl7testtool.exe' cls='#32770' title='Modify Message' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset Position="TopLeft" X="37" Y="11" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                  </uix:NCheckState.IfExists>
+                  <uix:NCheckState.IfNotExists>
+                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </uix:NCheckState.IfNotExists>
+                  <uix:NCheckState.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 577, 587" DesignTimeScaleFactor="1" Guid="d032c954-3674-4bf3-9432-fc0ad1d3fec2" InformativeScreenshot="67aa98507bd1dee06ae35b192be84f1d.png" ScopeSelectorArgument="&lt;wnd app='hl7testtool.exe' cls='#32770' title='Modify Message' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="3ed5098b-29d9-4643-b29a-8f13984ba760" CvTextArea="36, 9, 89, 15" CvTextArgument="Modify Message" CvType="Text" DesignTimeRectangle="36, 9, 89, 15" ElementType="Text" Guid="145a2623-5625-432c-b956-20ab3c1343f6" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.FuzzySelectorArgument>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </uix:TargetAnchorable.FuzzySelectorArgument>
+                    </uix:TargetAnchorable>
+                  </uix:NCheckState.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NCheckState>
+                <uix:NCheckState DisplayName="Check App State 'Client - HL7TestTool'" sap:VirtualizedContainerService.HintSize="954,871" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="68300de2-8988-46cc-af85-2814f98fad95" Version="V4">
+                  <uix:NCheckState.IfExists>
+                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,622" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Update Time'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68300de2-8988-46cc-af85-2814f98fad95" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CVScreenId="f0ef478d-685e-4dfc-ad46-514b56c85856" CvElementArea="654, 107, 115, 24" CvTextArea="680, 112, 63, 13" CvTextArgument="Update Time" CvType="Button" DesignTimeRectangle="655, 108, 113, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='7000' title='&amp;amp;Update Time' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='7000' title='&amp;amp;Update Time' check:text='&amp;amp;Update Time' /&gt;" Guid="fa4a1d2c-63c7-47bc-9bc3-d1b5dab76c35" InformativeScreenshot="a3b9e9f0c1e69f0316d56f0d8825a0bf.png" ScopeSelectorArgument="&lt;wnd app='hl7testtool.exe' cls='Afx:*' title='TCP/IP: Client - HL7TestTool' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset Position="TopLeft" X="53" Y="9" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Increment Msg ID'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68300de2-8988-46cc-af85-2814f98fad95" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CVScreenId="f0ef478d-685e-4dfc-ad46-514b56c85856" CvElementArea="654, 141, 115, 25" CvTextArea="668, 146, 85, 12" CvTextArgument="Increment Msg ID" CvType="Button" DesignTimeRectangle="655, 142, 113, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='7001' title='Increment Msg ID' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='7001' title='Increment Msg ID' check:text='Increment Msg ID' /&gt;" Guid="0e71557f-54f6-4306-805c-3e80b19af690" InformativeScreenshot="b1472cb151e2763a8c2e62ccd8d80ed9.png" ScopeSelectorArgument="&lt;wnd app='hl7testtool.exe' cls='Afx:*' title='TCP/IP: Client - HL7TestTool' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset Position="TopLeft" X="54" Y="11" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Send'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68300de2-8988-46cc-af85-2814f98fad95" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CVScreenId="58f7f333-c67e-494b-9087-70f3c5a1dcee" CvElementArea="636, 417, 71, 25" CvTextArea="658, 422, 27, 12" CvTextArgument="Send" CvType="Button" DesignTimeRectangle="637, 418, 69, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='2077' title='Send' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='2077' title='Send' check:text='Send' /&gt;" Guid="76a42ff4-88c7-40d1-aa02-5ca7b7620bf2" InformativeScreenshot="5b6055d18815e029df4ef3e814bf118c.png" ScopeSelectorArgument="&lt;wnd app='hl7testtool.exe' cls='Afx:*' title='TCP/IP: Client - HL7TestTool' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset Position="TopRight" X="-32" Y="12" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                  </uix:NCheckState.IfExists>
+                  <uix:NCheckState.IfNotExists>
+                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </uix:NCheckState.IfNotExists>
+                  <uix:NCheckState.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="8, 75, 813, 677" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlid='59648' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='59648' check:text='CDS' /&gt;" Guid="003a325d-b242-45ce-a337-8b915fe3013a" InformativeScreenshot="c4a6f4c63eabfd2984f4eff9d4e910ce.png" ScopeSelectorArgument="&lt;wnd app='hl7testtool.exe' cls='Afx:*' title='TCP/IP: Client - HL7TestTool' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="f0ef478d-685e-4dfc-ad46-514b56c85856" CvTextArea="77, 9, 106, 12" CvTextArgument="Client - HL7TestTool" CvType="Text" DesignTimeRectangle="76, 9, 108, 12" ElementType="Text" Guid="b2656491-68bb-443e-a6e2-ede59411f7cb" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NCheckState.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NCheckState>
+                <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="954,115" sap2010:WorkflowViewState.IdRef="Delay_1" />
+              </Sequence>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="156, 156, 829, 779" FilePath="C:\\HL7TestTool\\hl7testtool.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACjSURBVFhH7ZThCoAwCIT3/i+9ZnDDiVMrxqL8QHanF9yvSt1MFnhfgVLKOcDzGsjI0fhmAY6XX1oAWSs/LSAHSG8RyU4LAM/PQM7LLi/gcbsAH4l1kywtECGWWkgWyAJZIAucBeRf7aknuCZmt66iHwMrA+29RFfDsmnNyx1Hu3kv0dWwZJpjZbSb9xJdDcumMZonuCaueNLwY2oDWeDvBWo9ADkdIaRHNHnTAAAAAElFTkSuQmCC" InformativeScreenshot="0109242572da08b54a827321002c9ab7.png" Selector="&lt;wnd app='hl7testtool.exe' cls='Afx:*' title='TCP/IP: Client - HL7TestTool' /&gt;" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

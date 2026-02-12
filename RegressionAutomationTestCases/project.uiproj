@@ -1,0 +1,6 @@
+{
+  "Name": "RegressionAutomationTestCases",
+  "ProjectType": "Tests",
+  "Description": "ICCA regression automation test cases based on Bev's spreadsheet.",
+  "MainFile": "Main.xaml"
+}
