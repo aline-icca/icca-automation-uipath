@@ -1,0 +1,475 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_17498_Previous_Medication_not_enabled" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1330,4064" sap2010:WorkflowViewState.IdRef="_17498_Previous_Medication_not_enabled_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usa="clr-namespace:UiPathTeam.ServicesManager.Activities;assembly=UiPathTeam.ServicesManager.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Database</x:String>
+      <x:String>UiPath.Database.Activities</x:String>
+      <x:String>UiPathTeam.ServicesManager.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Database</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPathTeam.ServicesManager.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Open the ICCA application.&#xA;Admit a new patient.&#xA;From the tool bar, click Add Docment -&gt; Add New Document to bring up the dialog.&#xA;Examine the displayed document in the list.&#xA;ER: The Previous Medication document is visable but not selectable in the add documents list as describe in &lt;H0.Y40_160&gt;." DisplayName="_17498_Previous_Medication_not_enabled" sap:VirtualizedContainerService.HintSize="1340,3999" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="ICCAPath" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="1278,168" sap2010:WorkflowViewState.IdRef="Sequence_8">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Sequence_7">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ExecuteNonQuery AffectedRecords="{x:Null}" ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" ConnectionString="Data Source=PCAPERFSQL;Initial Catalog=CISConfigDB;Persist Security Info=True;User ID=sa;Password=wecare4u;Encrypt=False" DisplayName="Run command" sap:VirtualizedContainerService.HintSize="388,121" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_1" ProviderName="Microsoft.Data.SqlClient" Sql="update CISPrimaryDB..V_AppSetting set machineValue = 'False' where settingKey = 'enablePreviousMeds'">
+          <ui:ExecuteNonQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteNonQuery.Parameters>
+        </ui:ExecuteNonQuery>
+        <ui:ExecuteNonQuery AffectedRecords="{x:Null}" ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" ConnectionString="Data Source=PCAPERFSQL;Initial Catalog=CISConfigDB;Persist Security Info=True;User ID=sa;Password=wecare4u;Encrypt=False" DisplayName="Run command" sap:VirtualizedContainerService.HintSize="388,121" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_2" ProviderName="Microsoft.Data.SqlClient" Sql="update CISConfigDB..V_AppSetting set machineValue = 'False' where settingKey = 'enablePreviousMeds'">
+          <ui:ExecuteNonQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteNonQuery.Parameters>
+        </ui:ExecuteNonQuery>
+        <usa:RestartService ContinueOnError="{x:Null}" DisplayName="Restart Service" sap:VirtualizedContainerService.HintSize="388,117" sap2010:WorkflowViewState.IdRef="RestartService_1" ServiceName="Philips.CIS.MachineManagement" TimeoutMS="60000" />
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,145" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Login.xaml">
+          <ui:InvokeWorkflowFile.Arguments>
+            <OutArgument x:TypeArguments="x:String" x:Key="out_ICCAPath" />
+            <OutArgument x:TypeArguments="x:String" x:Key="out_ConfigEditorPath" />
+          </ui:InvokeWorkflowFile.Arguments>
+        </ui:InvokeWorkflowFile>
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Admit_ICU1.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,136" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Admit_CCU1.xaml">
+          <ui:InvokeWorkflowFile.Arguments>
+            <InArgument x:TypeArguments="x:String" x:Key="ICCAPath">
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">ICCAPath</CSharpValue>
+            </InArgument>
+            <InOutArgument x:TypeArguments="x:String" x:Key="AdmittedPatientName" />
+            <InOutArgument x:TypeArguments="x:String" x:Key="PatientFirstName" />
+            <InArgument x:TypeArguments="x:String" x:Key="LifetimeId" />
+            <InArgument x:TypeArguments="x:String" x:Key="EncounterId" />
+          </ui:InvokeWorkflowFile.Arguments>
+        </ui:InvokeWorkflowFile>
+      </Sequence>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="1278,3409" sap2010:WorkflowViewState.IdRef="Sequence_16">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="ICCA is running." sap:VirtualizedContainerService.HintSize="1216,3289" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="c0ae7d03-6beb-44d4-ad9f-23bc92a2a782" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Add a previous medication" sap:VirtualizedContainerService.HintSize="1182,2935" sap2010:WorkflowViewState.IdRef="Sequence_15">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NCheckState DisplayName="Check if patient chart is running." sap:VirtualizedContainerService.HintSize="1120,2663" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="c0ae7d03-6beb-44d4-ad9f-23bc92a2a782" Version="V3">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="816,2414" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:Boolean" Name="IsSaveDialogBox" />
+                      <Variable x:TypeArguments="x:Boolean" Name="PatientChartAppears" />
+                      <Variable x:TypeArguments="x:String" Name="isOrdersExpanded" />
+                      <Variable x:TypeArguments="ui:UiElement" Name="AdminRecordExists" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="aastate" DisplayName="Check if Admission documents group is open" sap:VirtualizedContainerService.HintSize="754,239" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_1" ScopeIdentifier="c0ae7d03-6beb-44d4-ad9f-23bc92a2a782" Version="V3">
+                      <uix:NGetAttributeGeneric.Result>
+                        <OutArgument x:TypeArguments="x:String">
+                          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">isOrdersExpanded</CSharpReference>
+                        </OutArgument>
+                      </uix:NGetAttributeGeneric.Result>
+                      <uix:NGetAttributeGeneric.Target>
+                        <uix:TargetAnchorable CvType="Text" DesignTimeRectangle="56, 396, 44, 13" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Orders'" FullSelectorArgument="&lt;ctrl automationid='PrimarySplitView' /&gt;&lt;ctrl name='Philips.CIS.Chart.TabItemControl' role='page tab' /&gt;&lt;ctrl automationid='Admission Documents' /&gt;&lt;ctrl automationid='NodeText' /&gt;" Guid="83edecf4-4622-4e14-8194-0c8b02430052" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMsAAAAXCAYAAAClB7tnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH/SURBVHhe7ZlPUsIwFIe9QD2QeB/qOcS9eADpDXAhzshOLqB2B25wI+66p5155iXNvyZgYEZwmN/imwnJS4bF+/pe2rPzqxEBAH4HsgCQCGQBIBHIAkAikAWARCALAIlAFgASCWTJ8jHdfjVUNw6rknr5vReXQnZd0nzPvQD8NzxZZHLXQo73mRfUm1a0bioaDnZL+mxQ0uK7pEvIAk4AI4uuKIvpQxDESGF2rBKQBZwSVhZZVSq6u4kndpa/0ESsc3VRYolx0VaiZkl9IQTHPMrfisnUlyVYL/R8/LyLZ65oOl7Nuf8JgENiZRktab2lCnBCD1cqwfWY7zJWhLAy9V9FTHtmd70rX3CelPeTcv27mJkxAMfAylIsTWK7AWa9TegnRxYem/VOcss5pw2TMjoyMP03lmccP4/37nFPAuCvsLJwctabWx3VQqk2TSW337LFKpMnC8toWirLh6g0sfP0ftWW2ZYNgGPhXfD56c5PejdAI+8PTksVyCJl8GVzBdpWuTbJYte5ZYMw4LgYWRhVXUJh1EXbJnNUFk5oUQH0Xo6R32uMYCrhYzJGzxOiuS8Aum0aAIfGk4WRiRn5KOlWhFhyy/lWNrVPvd3qvg1jYezZ+i1aRBanBZN0vv0AcGgCWQAAcSALAIlAFgASgSwAJAJZAEgEsgCQxIh+AG2d0u875uoeAAAAAElFTkSuQmCC" InformativeScreenshot="3f5767b0ba12ce8defc3d2e625ba44df.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' cls='HwndWrapper*' title='IntelliSpace Critical Care and Anesthesia - Test Hospital' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvType="Icon" DesignTimeRectangle="23, 223, 24, 24" ElementType="Icon" FriendlyName="'graphic'" FullSelectorArgument="&lt;ctrl automationid='PrimarySplitView' /&gt;&lt;ctrl name='Philips.CIS.Chart.TabItemControl' role='page tab' /&gt;&lt;ctrl role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='PrimarySplitView' /&gt;&lt;ctrl name='Philips.CIS.Chart.TabItemControl' role='page tab' /&gt;&lt;ctrl role='graphic' automationid='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOkSURBVEhLxZbZT9tAEMb5/x/71kptVVFVogWKoBwhHDmcC3JC4hyEHFQqUkkIOXASO2E638BazoFppIo+fEq8np3fzuzsrJceHh7oNfX/gOPxmLq9HrXbnbnqdLo0Go1mHCwqG2j0+xQMRyiRSlMynZlQKn1GOx4vZfW8LMzpYFHZwN79PcWTKTJNU5xOyxcM0duPy1StX804WUQTwJNEUtKmIHq+QAfHPgpForS166HN3X1aWV0nXyBI3iMfnbL9cDicceqmSWA8IUDLskQxfr4oX9I9v5tWLp+nN+8+iA1snU7dZAPhRAFN0xLBWf3qpx0x3iGi4dCkbE6nbX+EVrc9lDo7l3HrL4pqSTnrcYXGTuPidMCToegpgFcyBv26vqY974EszBfQyHPkp2MtTFs7uxTg3/3DY7pttewFztMEMHpyKo77g4EoehKnGheJZT1GXanVZVGPUU7qrt2mle+b9OXrqit0BmhZJvX5iEB4BtDkPRpy9VZqNYkOqXE6UfMPtChpaZ3WNn9Qs3k7YwPNAE1zaBdGJHbCwLpEgIjLlapECKAqLCXM9wYjVL8bUDCZpc29fWrd3bkDARiyY/yHwlEF5BRzxJeViqR5PH6wC0sJ9mtbO+Rh6B7r08oavV/+TK3WJHQG2Df60sagUCRGlWqVYYZEjCOCLMBeFZYtXugl22Z1nXLckfLFEh36A1Qql12AHJFxb9j9U+MDf8lpNAxD3mMyFgV7VViQgqJLKcFGLxToPJuzYdCSKvluFxFFxTFyD6G3ljmqXrcnERdLFwKUSn4qLJEDrsZGI4vO+ayiFysGNAPErxOINHafgAUGhqMxqWRVWIjeCVfjiBLRvQjEeWo0myK/FqLSxQW1Ox1ZQL5YFBuT04dMQAqgpMZRfGcMTKTTLwE71Ly9FQGINGIRAOqFImkc9aA/sAsL8xQEUuMovgy3PFx3c4EdnujxHspR0EIR0bf1Dak2dA4sIMsNG+Nw5ryc58lgm3Tm/PmUQihtGGJfIByBQqkk0QGa4+sqwFEjdWqfnxO+HlKZDCWSUxFOdwyn0MaCHFE2l+cC0MnPl7A/qMlVNg/iFIBJ3j/4cPp0BTa4H1a5Yde5n0L4IgAQRaT2+TnBBvuHVuj06QqcFtpcMBSW/UaK3QQb7F88kZrwsRAQd+PG1jbvzRl/XqRclUxluAiP+FhkJnwsBERB/b5pUKPRpJtGw1W4nm7YFk3D6WMh4L/QKwMt+gOyxqBnzNudKgAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetAttributeGeneric.Target>
+                    </uix:NGetAttributeGeneric>
+                    <If sap:VirtualizedContainerService.HintSize="754,716" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If.Condition>
+                        <InArgument x:TypeArguments="x:Boolean">
+                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">!string.IsNullOrEmpty(isOrdersExpanded) &amp;&amp; !isOrdersExpanded.Contains("expanded")</CSharpValue>
+                        </InArgument>
+                      </If.Condition>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,443" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,175" sap2010:WorkflowViewState.IdRef="LogMessage_1">
+                            <ui:LogMessage.Level>
+                              <InArgument x:TypeArguments="ui:LogLevel">
+                                <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+                              </InArgument>
+                            </ui:LogMessage.Level>
+                            <ui:LogMessage.Message>
+                              <InArgument x:TypeArguments="x:Object">
+                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">"Order not expanded yet."</CSharpValue>
+                              </InArgument>
+                            </ui:LogMessage.Message>
+                          </ui:LogMessage>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Admission Documents'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c0ae7d03-6beb-44d4-ad9f-23bc92a2a782" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable CvTextArgument="Admission Documents" CvType="Text" DesignTimeRectangle="57, 285, 199, 19" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Admission Documents'" FullSelectorArgument="&lt;ctrl automationid='PrimarySplitView' /&gt;&lt;ctrl name='Philips.CIS.Chart.TabItemControl' role='page tab' /&gt;&lt;ctrl automationid='Admission Documents' /&gt;&lt;ctrl automationid='NodeText' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='PrimarySplitView' /&gt;&lt;ctrl name='Philips.CIS.Chart.TabItemControl' role='page tab' /&gt;&lt;ctrl automationid='Admission Documents' /&gt;&lt;ctrl automationid='NodeText' role='text' check:text='Admission Documents' /&gt;" Guid="92e78d7f-c2db-42df-a5c6-e9772bf71b4d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMsAAAAXCAYAAAClB7tnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMWSURBVHhe7ZhBdtQwDIa5QLgQ3IfhHvQAcAA6N4ANs5gdPQGdJWzoCnY9QCfPxNbIlmU50QyUB82f977XN7YcKZJ+x+mz56+vAwBgGYgFACcQCwBOIBYAnEAsADiBWABwArEA4MQUy/DmEL4ex7Dbvm/mNMn25yG83Czbaobt9/Aw3od3V393rYdXX45BX+N4FzYXPCd4GphiiY2yu70LD7c3zZzmd8TyLxNz8G3/sRp7sb+fBOrbRP4n0sbjqPXaacQybD6HT8e4g/Lf+cZYk1giJJin9YaBWHy0YhGJsxqGxDSeDiYh7PZFLMPmQ3j7YzoabekYF69xupdcI48yRZj0m3dubWeN67XkuxydRiHgHNeVHYdFTyzktxz/5vya88lvHXuyE3k/N4+0pszFi99+S88ucxsvXterxZppxJKOYJzoWMCm6eomivbcIDxfflOBRvFtkYqQm6I0DX0nlaIM25v5cbmW/Z7um/3ouETRU9zCXtMXC90r5sjtt5o/TDGU2Hm8Fcu0zp1Hsud4yZ5s871mnl2/WXo55/m1UomlSZJIujWfx6rmKPaRWFTZdLW9aPh073pttrfGm7UqLhGLFZeMg8ckLrEs+Y1NaOzKMvY8Zr1ZRLyzeVSbWoTj9zy7LZZ6DVBiSbuVeCXzxbuQVZSqaOcWWTUNFYn889utN16JxYpLNq2jYTRdsaRYTvdd8mvMk80jiMWo26ViyTZGLdZMFgsltRzB8ngqhGhKtVOmMS7auUU2mibZpPH2v05yvBGLjks2raNhND2xyCPMol+RG54nm0cQS+dZPM8ufWt6tVgjRSxpJ7EaNyabz+iUOC4az9XfLGcUWTU8F6Ty2RuXazkOUfDod675LhFLEooQx7LfOl80H79ZaF2Tx5l4l/NY+8l2jmfXYunlnOfXShaL3DE1VQMkUdHrOX1wxv/Y/AmxiPvGKzdOb1ysLb+FnWwGR8NoYj70ZTdj3+/cfJPH/eVvFlqj/PBpwCMWsTZtRJ2cr53qmwUA0AdiAcAJxAKAE4gFACcQCwBOIBYAXFyHX6Mojx3JLsatAAAAAElFTkSuQmCC" InformativeScreenshot="79ed6fe251a8bd287574d4ecb589a1ba.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' cls='HwndWrapper*' title='IntelliSpace Critical Care and Anesthesia - Test Hospital' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CvType="Icon" DesignTimeRectangle="23, 223, 24, 24" ElementType="Icon" FriendlyName="'graphic'" FullSelectorArgument="&lt;ctrl automationid='PrimarySplitView' /&gt;&lt;ctrl name='Philips.CIS.Chart.TabItemControl' role='page tab' /&gt;&lt;ctrl role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='PrimarySplitView' /&gt;&lt;ctrl name='Philips.CIS.Chart.TabItemControl' role='page tab' /&gt;&lt;ctrl role='graphic' automationid='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOkSURBVEhLxZbZT9tAEMb5/x/71kptVVFVogWKoBwhHDmcC3JC4hyEHFQqUkkIOXASO2E638BazoFppIo+fEq8np3fzuzsrJceHh7oNfX/gOPxmLq9HrXbnbnqdLo0Go1mHCwqG2j0+xQMRyiRSlMynZlQKn1GOx4vZfW8LMzpYFHZwN79PcWTKTJNU5xOyxcM0duPy1StX804WUQTwJNEUtKmIHq+QAfHPgpForS166HN3X1aWV0nXyBI3iMfnbL9cDicceqmSWA8IUDLskQxfr4oX9I9v5tWLp+nN+8+iA1snU7dZAPhRAFN0xLBWf3qpx0x3iGi4dCkbE6nbX+EVrc9lDo7l3HrL4pqSTnrcYXGTuPidMCToegpgFcyBv26vqY974EszBfQyHPkp2MtTFs7uxTg3/3DY7pttewFztMEMHpyKo77g4EoehKnGheJZT1GXanVZVGPUU7qrt2mle+b9OXrqit0BmhZJvX5iEB4BtDkPRpy9VZqNYkOqXE6UfMPtChpaZ3WNn9Qs3k7YwPNAE1zaBdGJHbCwLpEgIjLlapECKAqLCXM9wYjVL8bUDCZpc29fWrd3bkDARiyY/yHwlEF5BRzxJeViqR5PH6wC0sJ9mtbO+Rh6B7r08oavV/+TK3WJHQG2Df60sagUCRGlWqVYYZEjCOCLMBeFZYtXugl22Z1nXLckfLFEh36A1Qql12AHJFxb9j9U+MDf8lpNAxD3mMyFgV7VViQgqJLKcFGLxToPJuzYdCSKvluFxFFxTFyD6G3ljmqXrcnERdLFwKUSn4qLJEDrsZGI4vO+ayiFysGNAPErxOINHafgAUGhqMxqWRVWIjeCVfjiBLRvQjEeWo0myK/FqLSxQW1Ox1ZQL5YFBuT04dMQAqgpMZRfGcMTKTTLwE71Ly9FQGINGIRAOqFImkc9aA/sAsL8xQEUuMovgy3PFx3c4EdnujxHspR0EIR0bf1Dak2dA4sIMsNG+Nw5ryc58lgm3Tm/PmUQihtGGJfIByBQqkk0QGa4+sqwFEjdWqfnxO+HlKZDCWSUxFOdwyn0MaCHFE2l+cC0MnPl7A/qMlVNg/iFIBJ3j/4cPp0BTa4H1a5Yde5n0L4IgAQRaT2+TnBBvuHVuj06QqcFtpcMBSW/UaK3QQb7F88kZrwsRAQd+PG1jbvzRl/XqRclUxluAiP+FhkJnwsBERB/b5pUKPRpJtGw1W4nm7YFk3D6WMh4L/QKwMt+gOyxqBnzNudKgAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" ContinueOnError="True" DisplayName="Find Element 'outline item'" sap:VirtualizedContainerService.HintSize="754,139" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+                      <ui:WaitUiElementAppear.FoundElement>
+                        <OutArgument x:TypeArguments="ui:UiElement">
+                          <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">AdminRecordExists</CSharpReference>
+                        </OutArgument>
+                      </ui:WaitUiElementAppear.FoundElement>
+                      <ui:WaitUiElementAppear.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e082e93d-7e8e-446b-a958-e5cab5db4bbc" InformativeScreenshot="50102b1174bab2d4a85bd243df94f16a" Selector="&lt;ctrl automationid='PrimarySplitView' /&gt;&lt;ctrl name='Philips.CIS.Chart.TabItemControl' role='page tab' /&gt;&lt;ctrl automationid='Admission Documents' /&gt;&lt;ctrl automationid='Previous Medications' /&gt;" TimeoutMS="10">
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:WaitUiElementAppear.Target>
+                    </ui:WaitUiElementAppear>
+                    <If sap:VirtualizedContainerService.HintSize="754,57" sap2010:WorkflowViewState.IdRef="If_2">
+                      <If.Condition>
+                        <InArgument x:TypeArguments="x:Boolean">
+                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">AdminRecordExists != null</CSharpValue>
+                        </InArgument>
+                      </If.Condition>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="376,245" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Previous Medications'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c0ae7d03-6beb-44d4-ad9f-23bc92a2a782" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable CvTextArgument="Previous Medications" CvType="Text" DesignTimeRectangle="63, 321, 193, 19" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Previous Medications'" FullSelectorArgument="&lt;ctrl automationid='PrimarySplitView' /&gt;&lt;ctrl name='Philips.CIS.Chart.TabItemControl' role='page tab' /&gt;&lt;ctrl automationid='Admission Documents' /&gt;&lt;ctrl automationid='Previous Medications' /&gt;&lt;ctrl automationid='NodeText' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='PrimarySplitView' /&gt;&lt;ctrl name='Philips.CIS.Chart.TabItemControl' role='page tab' /&gt;&lt;ctrl automationid='Admission Documents' /&gt;&lt;ctrl automationid='Previous Medications' /&gt;&lt;ctrl automationid='NodeText' role='text' check:text='Previous Medications' /&gt;" Guid="b827756a-188e-4555-8de9-754c6c01856b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMUAAAAXCAYAAAC7zovUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMjSURBVHhe7ZhRbtswDIZ3gaxHynVSeLfIDdrnbCfYnjogL7lBc4Kmj33rrmA1lPRLFE3ZipFs9cAPENBYFEVS/BWnX5xhGAUmCsMQmCgMQ2CiMAyBicIwBCYKwxCYKAxDkETR93/c4/a7+3r/oxirzU/38NZHq9vQ96/u2/3ur+wlwd7Id/30HmcC/fHg7jZhfrU5uH0/L77+7dmtfY7Bx61z/pc1XTqTogjNcNvCfiZRrLbP7oU1/n6Xa/KZRXH6/cuLF6I2UcxHFYUsLH/2v8GbZ33OnzdRmtue57zN9URxTbSzM+YzKgoCN+VqdypsuuMpNky+WctbNTRXzS9eS8J6/Vbj/rzPcwygXF/u0x2H8dDQGiaL4uC6aA877LHeHdSG1vIF/EKh0T21fVNoMfPcMLKf2tyMmnLhxr+lTUtNl85F3xTqAfimHD73cxCGaGACxQ1+ywPU9sFIIpgQBV4n+FrtALko9vAZm4Bi9DEdZUNP5DsWf/LRlnOt7jSCr+FceD6jpkkU4VuT21xS06XT+Jti2AzqrR3tiPGmZ42oNUjyFz4TODDySQfUKgoek0YZi/I3+RevPpP5avGLNS051xjWM+eOJp1VU/k5+ri0pktnUhRoOmlDRQIouFxLA4ekNk0UljzAVPyRvZOPiij4gWLwmEHeOxw04sTrjo+3IgruG4PsX7T4pY+GnIGWC41LRNFU00GMpd/Wmi6dyd8UHFlEkG+h+g3Cm/gBjRd9yAPU/OUD023kLcdBo481XPLDGj7tVRFFLV9tXt6y9ZzDZ4JsHpnIUsPLWjSIQotp4EfmOdITYzVdOtcRRTwAes5H7VYazokDFLZ8YB0XgX9+Xov3YIoNh8YHf+UDee+yWb292EuzKfzDvjLvbWqiqORMZwFR4Fn+b1hYS/B8wx5t/r19Nc+8huJorenSuYooCK3ovPEJ3JZyD9kg4ZniTxwA99cd34vY5AHKWEDeOzQCgbWIUTaLfzaRLxetX1cR1lTOlAt/HuyVtXK/GTW9VBS1mi6dJArDMAImCsMQmCgMQ2CiMAyBicIwBCYKwyhw7gOHReX21tEf4AAAAABJRU5ErkJggg==" InformativeScreenshot="1bb9348f82a51a21089dc16f36376a08.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' cls='HwndWrapper*' title='IntelliSpace Critical Care and Anesthesia - Test Hospital' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CvType="Icon" DesignTimeRectangle="23, 223, 24, 24" ElementType="Icon" FriendlyName="'graphic'" FullSelectorArgument="&lt;ctrl automationid='PrimarySplitView' /&gt;&lt;ctrl name='Philips.CIS.Chart.TabItemControl' role='page tab' /&gt;&lt;ctrl role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='PrimarySplitView' /&gt;&lt;ctrl name='Philips.CIS.Chart.TabItemControl' role='page tab' /&gt;&lt;ctrl role='graphic' automationid='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOkSURBVEhLxZbZT9tAEMb5/x/71kptVVFVogWKoBwhHDmcC3JC4hyEHFQqUkkIOXASO2E638BazoFppIo+fEq8np3fzuzsrJceHh7oNfX/gOPxmLq9HrXbnbnqdLo0Go1mHCwqG2j0+xQMRyiRSlMynZlQKn1GOx4vZfW8LMzpYFHZwN79PcWTKTJNU5xOyxcM0duPy1StX804WUQTwJNEUtKmIHq+QAfHPgpForS166HN3X1aWV0nXyBI3iMfnbL9cDicceqmSWA8IUDLskQxfr4oX9I9v5tWLp+nN+8+iA1snU7dZAPhRAFN0xLBWf3qpx0x3iGi4dCkbE6nbX+EVrc9lDo7l3HrL4pqSTnrcYXGTuPidMCToegpgFcyBv26vqY974EszBfQyHPkp2MtTFs7uxTg3/3DY7pttewFztMEMHpyKo77g4EoehKnGheJZT1GXanVZVGPUU7qrt2mle+b9OXrqit0BmhZJvX5iEB4BtDkPRpy9VZqNYkOqXE6UfMPtChpaZ3WNn9Qs3k7YwPNAE1zaBdGJHbCwLpEgIjLlapECKAqLCXM9wYjVL8bUDCZpc29fWrd3bkDARiyY/yHwlEF5BRzxJeViqR5PH6wC0sJ9mtbO+Rh6B7r08oavV/+TK3WJHQG2Df60sagUCRGlWqVYYZEjCOCLMBeFZYtXugl22Z1nXLckfLFEh36A1Qql12AHJFxb9j9U+MDf8lpNAxD3mMyFgV7VViQgqJLKcFGLxToPJuzYdCSKvluFxFFxTFyD6G3ljmqXrcnERdLFwKUSn4qLJEDrsZGI4vO+ayiFysGNAPErxOINHafgAUGhqMxqWRVWIjeCVfjiBLRvQjEeWo0myK/FqLSxQW1Ox1ZQL5YFBuT04dMQAqgpMZRfGcMTKTTLwE71Ly9FQGINGIRAOqFImkc9aA/sAsL8xQEUuMovgy3PFx3c4EdnujxHspR0EIR0bf1Dak2dA4sIMsNG+Nw5ryc58lgm3Tm/PmUQihtGGJfIByBQqkk0QGa4+sqwFEjdWqfnxO+HlKZDCWSUxFOdwyn0MaCHFE2l+cC0MnPl7A/qMlVNg/iFIBJ3j/4cPp0BTa4H1a5Yde5n0L4IgAQRaT2+TnBBvuHVuj06QqcFtpcMBSW/UaK3QQb7F88kZrwsRAQd+PG1jbvzRl/XqRclUxluAiP+FhkJnwsBERB/b5pUKPRpJtGw1W4nm7YFk3D6WMh4L/QKwMt+gOyxqBnzNudKgAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_12" />
+                      </If.Else>
+                    </If>
+                    <uix:NCheckState DisplayName="Check App State 'Previous Medications'" sap:VirtualizedContainerService.HintSize="754,1173" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="c0ae7d03-6beb-44d4-ad9f-23bc92a2a782" Version="V3">
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,931" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:Boolean" Name="DocumentIsEnabled" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'graphic Image'" sap:VirtualizedContainerService.HintSize="388,189" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c0ae7d03-6beb-44d4-ad9f-23bc92a2a782" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable CvType="Icon" DesignTimeRectangle="36, 79, 32, 32" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'graphic Image'" FullSelectorArgument="&lt;ctrl automationid='rbnCtrl' /&gt;&lt;ctrl automationid='ChartMonitorStrip' /&gt;&lt;ctrl automationid='ChartMonitorStrip.Chart' /&gt;&lt;ctrl automationid='Image' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='rbnCtrl' /&gt;&lt;ctrl automationid='ChartMonitorStrip' /&gt;&lt;ctrl automationid='ChartMonitorStrip.Chart' /&gt;&lt;ctrl automationid='Image' role='graphic' /&gt;" Guid="39ee700a-8653-4a8e-b25e-1ed41460e0a1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARBSURBVFhH3ZfbT5tlHMf9M3zbqReK80IzDXpnvFETd2HClTdmanAWBsK2xEVhlWQMt3Eqh22MURiF0pYeGULLqeOwluM2SlfH3IpRKETOhXJuC1+f96XACn3lbfsmEr/JJ32fXjzPJ7/n1+ft8xKOWI6+0MzsHDotVnRZuzlj7e2Da2IiMEN0CRLa3NrCc+cISm5LYW7v4EyVQoVqlRp/jbmwReaIJgeFRv5ArVbPTMyV+929uJpfCKVGT6TGmHkiDW9ClSotqtR61OoMGCWV2tzcDMwaXliF6Am5cr+7B3fbOjEwPMJIqfV1jJTf7w/MzD0sQjpmMq50WbeFnNOL6H/iZKQ0hrsRSbEK+Xw+ztC/tB2hUFI+H3cp3oT0TWY8cU3tYhl0QCpXQk2k6EbnKhVaSKOD1+vjjKWnj1REh+YuaxCqul9RdKuMafTJqWmm3w4Lq9CG18uZZ04nmlrbQtLY3IrSikrYHQ4i7w2sxB5WofWNDd4wtbTC/tiBDfJ8WEIKqYjQ2vo6b5hIlf6HQmtrvGFqboleaHV1lTeMfAitrKzwRvRCai2Wl5d5w9jUgqFohJREaGlpOSpGxyfR0DGAHEUDvs4sQrKkAlnkudrci4lZN7NWqLAKeTxLEdNnewrxbQ0++aEQr4uyQX2XR8jHqwl5iD0ngahQjvah3+EN8eLlXeiB/RmScitxPOEaBInFoFKkoM7KQJ2rApV6B1RSCajTOfjs4nW0DQ7Dv+91wiq0uOgJm4m/Z3CpQo+3iAyVfGtX5Ex5B67oBnBCrN4VE5zOxUlxMeY9y4HVt8MipMHCwmLYNJKe+fRCAaiEor2qEEqMQ+TtP4oPLxt2v6NSKyD4KgOK9oGgfgoppKjVwL2wEDa5NQ14U0Sq833Z3sJsQgSBKB9xl0qDtu2gkJMWUodc8DDEFToI6QYm1flCYkKe4QEjY3NOYXzKA2XnU2b8c7UVb1xQQHDmBj44m0OE/q1CAaF5tzts0qQavEx6gxb6Mt+IYu0ApPU2DD2fZIQ05mFmfFlmIUI1ECTdRGxqNgchcseam58Pm2vV9YgREaGUcsSQCpxIr8V7F9WoMv+Gfsc44ogkPX4nTQXh+WoIEwrxcVrR4VtWQ4Rm5+bCRt1kwUfnJaDIVrzYK2w9JCRNXVx3j1l3J7wKjfzpQmK+DMfir0BAnz+BhemeqWq04/0M7Z5MQgFi4jMw5fYEVt8OqxB9xw+X6ZlZtPfY8HlaAQTfZEEQ+LXRDXz8RyWOkW1iZMip/cqpdDT22TkcjESoXCbHoM0eEQ8f2WAw3UPcTxK8dkoMYfxVcmJfZxpYKJIw2/R2YiaM/Y+xtnHwP3aQEH0tHnO5cEeugIxcYSKlklBWKUd69k2cTMnCu99mIDb5F8RlluJGfQezTfsrs5MgITr77+3RQF97/P5tfPQnGb/YwKFyQOi/zhETAv4BP8x1LoHT9REAAAAASUVORK5CYII=" InformativeScreenshot="22587b866e0fd8bb6f3e65e04a029ae4.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' cls='HwndWrapper*' title='IntelliSpace Critical Care and Anesthesia - Test Hospital' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="16, 111, 71, 34" ElementType="Button" FriendlyName="'DropDownPart'" FullSelectorArgument="&lt;ctrl automationid='rbnCtrl' /&gt;&lt;ctrl automationid='ChartMonitorStrip' /&gt;&lt;ctrl automationid='ChartMonitorStrip.Chart' /&gt;&lt;ctrl automationid='DropDownPart' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='rbnCtrl' /&gt;&lt;ctrl automationid='ChartMonitorStrip' /&gt;&lt;ctrl automationid='ChartMonitorStrip.Chart' /&gt;&lt;ctrl automationid='DropDownPart' role='push button' check:text='DropDownPart' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAmCAYAAACMJGZuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJRSURBVGhD7Zi9TiMxEIDzSCfxFNfdO1Ai2i0orkBQ0GwF0ukKOCkyPfUWPMO+AikiKiRaksx5/JPMOFmzs7COAvNJVjK2115/eByLCYzIarWCp9kMbqcG/k3vB5c7W/7eTeHs6gZ+nl7Aj+PfcHRyCb/O/8D1wyM8v7zCYrkMs47HqLIQFPZZZWmFLBa+vOGnjZe2vhSjy/pKqCwBKkvA3mS1poLKtCHqogVT1dDMQ8jItY3DfmTNG6hrA6Z+b7Eqy7qqobarjJ/dfHtZc2jijnI7rLE1BKyrbIraUjcNF5JrK0B5WUwQEefA3VJBPMpw51VrIbm2MhSXlaaeW/TGQLLTSKrl2gpRWJbfHZhGvBjbYlFZhNZAxRaMYCrG9PIyNQ0teLfa9evHUhGFhh23dYjn2gpQ/oA/YFSWAJUloEPW9q9W/qb9PcjIoodnkBcP4YMjXc8wesqy4D0n3ocOjtKy2H0IQ5S3SVO+6Xxf3paOSePwvd2Mic/4u5SP2THA5o5/wDBGQ68X+AzWx762kBedTCZbJcdAWf4F1vO6l4/9fb/tMy4dk8ZhQfHCGu5T6zFcnEiJ49g2JiW+VO4ZQl9RiFBWqNuRknjhdO/Zma7pmDTOtSEkTnb0ZrdIxuf0EYX0l0Ul7F3WR8cfRk9ZGJO0S2O2gK40pGlscWnStZhc7OeWpzltG0ZGFt3qOyZygrra+fNcUKg3JrOYd2I2N46FE+Sfcf/zX/cdRr9kVRwqS4DKEqCyBKgsASpLgMoSoLIEqCwBKkuAyhKgsnoD8B8E49p0/Zr4MQAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Filter'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="c0ae7d03-6beb-44d4-ad9f-23bc92a2a782" Text="Previous Medications" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable DesignTimeRectangle="60, 471, 379, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'WindowsForms10.EDIT.app…'" FullSelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='filterTextBox' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='filterTextBox' /&gt;" Guid="8522a9f5-b975-4acd-b424-191d7d5b06fa" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAX8AAAAaCAYAAABfClw6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACVSURBVHhe7dSxDQJBEATBDZtMSeMyeByEA+j97SqppYlg5pxzSZJaOX9JCvY5/3k8JUnL+3n+AOzl/AGCbs9/Zt4LgC2cP0CQ8wcIcv4AQc4fIMj5AwQ5f4Ag5w8Q5PwBgpw/QJDzBwhy/gBBzh8gyPkDBN2ePwD7OH+AIOcPEOT8AYL+nr8kaXdf5y9J6uT8JSnXuV69koIXtR2aFgAAAABJRU5ErkJggg==" InformativeScreenshot="2ea89ed76d1b3f7730ee9332b246f80a.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' ctrlname='DocumentCatalogView' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="19, 474, 37, 17" ElementType="Text" FriendlyName="'Filter'" FullSelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='filterLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='filterLabel' check:text='Filter:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACkAAAAVCAYAAADb2McgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADRSURBVEhL7ZPtEcMgCEBdin2YxmXYxVncgAa/Aqm9Nq1pvZ4/3l1UwCdRF2Pk2VmSo/gzyeAZwHPorV3MLikSzrHTiFSVa5KBPQD7YAtdyUESmdSiYWpJ00lkhE63U6zI13l1iJLvUeZzfZLvlveck5KPOykbgw95TLhLpLqOkWzsB5K1EwWkFyWJ0RxQxiWm5dW184zpZMo9HHA6ybtOKn4jme+UvmOCuZNpXGp1JL/wcGps+a1tM/26N+Q+6/xab+N9yYlZkqNYkqNYkmOIfAO5H+8KVS7ZZgAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NTypeInto>
+                          <uix:NClick ActivateBefore="True" ClickType="Double" ContinueOnError="True" DisplayName="Click 'Previous Medications'" sap:VirtualizedContainerService.HintSize="388,189" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c0ae7d03-6beb-44d4-ad9f-23bc92a2a782" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable DesignTimeRectangle="82, 80, 116, 16" DesignTimeScaleFactor="1" FriendlyName="'Previous Medications'" FullSelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='CatalogTabControl' /&gt;&lt;wnd ctrlname='AllDocumentsTabPage' /&gt;&lt;wnd ctrlname='AllDocumentsTreeView' /&gt;&lt;ctrl name='Previous Medications' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='CatalogTabControl' /&gt;&lt;wnd ctrlname='AllDocumentsTabPage' /&gt;&lt;wnd ctrlname='AllDocumentsTreeView' /&gt;&lt;ctrl name='Previous Medications' role='outline item' automationid='' check:text='Previous Medications' /&gt;" Guid="76f363ba-30b3-40df-847e-6bf4e72a21cd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHgAAAAUCAYAAABGUvnzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKGSURBVGhD7VaLjewgDExdFEQ9VJNmUgxnG8yOHUjy9vatdIiRIoWfPZ5xdtnywtRYBk+OZfDkWAZPjmXw5FgGP8GRcggpH3X4l3A2mIvZtry1J+a9Ln0E3xBLa4iW+R7frAc5v83/yCmEnPDgF7QYGPwS4Ughb3+te6WGQOKhmXuO7zbsR4zoGPwF3BpsxrXQZL4EJs5jfrSAMmc+oD2WRkGxJLY/W+dRUDcuX2J5Qk8xiRtzouZsHCh/iPQYg3vcKww3epBz44Lny56dPwg4V/i5ffxwDIxl8p21KJq7NcKdFv9uMAVC4zhBC6wm6jtsbPsq4aMWjQb0RSTgGPcRq9QpqnGGc3skYfY6X3a9OJUBxHXcML+JScKiGB7CQw3hmJ0mklg3WqDmuPZAi1uDTRFQXAH/7EEzyFiLwDWY1xjdWG5PWbBjU9QAvF9yq6gUW3MaTgPuZh8B87d3f74HNPXCYIwv+JwW95esUXCG3yvPqwhuDukN35H8fiIHXdzL08Zln+ZrnY0QXkV8vkMEErb9eqgp8o68+ancPTfMr+8Yy0HuLT6m8B4Y/B+1uP+JRvhk0mkXXczEKSsX3JJrjFOeh18QYHgBxPPy3ot7wd3nw7G+m1gArrnNo6kXBp9iPfyCASMtfmkw12P/3He6yHii5jbbYkCXMrCLhcNLDPmbqGtHosuTpqsNdMKoBjc/5g4CE4x4jr/PL3t1rlOH2e5iDbXQdwaMn2jxa4NpshSqP0kuiZiDcxhDculZm1OEqmsxwRn5QvpnGkY1nOYvuEMeuX0j56ZB7zw3Rx1TY0f8arFejoGxcA05mnwEHD/Q4mzwwlRYBk+OZfDkWAZPjmXw1Mj5B/QJACKJvd6OAAAAAElFTkSuQmCC" InformativeScreenshot="eebb43664e35e087c304508330b75c2c.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' ctrlname='DocumentCatalogView' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="18, 41, 42, 19" ElementType="TabPage" FriendlyName="'All'" FullSelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='CatalogTabControl' /&gt;&lt;ctrl name='All ' role='page tab' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='CatalogTabControl' /&gt;&lt;ctrl name='All ' role='page tab' automationid='' check:text='All' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC4AAAAXCAYAAAB0zH1SAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACcSURBVFhH7dTBCQQhDAXQ1JWCrCfV2ItYzF8NjuPKXOaw8mX9IBJPzxCVlBJ2XA7fLQe+On8OzwZVQ772dvzLvIRnmApkxtHDHaZQUdioY4dnK+gijkF87+GG1zFpnZ6B1PAv1HAJL4nhdUxEysMcVh8XXvjU4ZoRSQt/BEWE63dhhfuYhNiqO/13oe04YQ58dQ58dQ58dbaFA8AH49nfRJLbuA4AAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                          <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Need to add an activity to change database settings" ClickType="Single" ContinueOnError="True" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="388,213" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c0ae7d03-6beb-44d4-ad9f-23bc92a2a782" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable DesignTimeRectangle="424, 670, 84, 25" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;wnd ctrlname='oKButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='oKButton' check:text='OK' /&gt;" Guid="26321ecf-d97c-4e23-a191-aa10c94828cd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFgAAAAdCAYAAAAuAKvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAECSURBVGhD7dbBDYQgEIVhqqIerlZCG97phSZsgA5mwUUkYkxYneBsnsl3WJzT76xRhRAI+CAwsxIY13PXNE3ngZdlgZvmeb4OvP2G3yAwMwRmhsDMEJgZAjOTE9gZUkoV2vr9nreklSFX5j1ZHee03WcGERHYWx2j1gEdmTryIbAzMa5xeXYsAYG/22jc4Xzd6By1Crw+jLi5vp4d6P2Bm7//Jm2xJuurmRT9RXET4YHzZq8z+f2MwJ16Nvj4bn6Bv3sHb9vczA8iIHD/V0Q7P46IwKuu7+D8qRbPyswgcgILhcDMEJgZAjNDYGYIzOwycLoJ950GTofwnCYw8EBgVoE+ykdsjtLOaVQAAAAASUVORK5CYII=" InformativeScreenshot="de69f1914f9e9f59dece7cc55478e8f6.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' ctrlname='DocumentCatalogView' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="82, 80, 116, 16" FriendlyName="'Previous Medications'" FullSelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='CatalogTabControl' /&gt;&lt;wnd ctrlname='AllDocumentsTabPage' /&gt;&lt;wnd ctrlname='AllDocumentsTreeView' /&gt;&lt;ctrl name='Previous Medications' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='CatalogTabControl' /&gt;&lt;wnd ctrlname='AllDocumentsTabPage' /&gt;&lt;wnd ctrlname='AllDocumentsTreeView' /&gt;&lt;ctrl name='Previous Medications' role='outline item' automationid='' check:text='Previous Medications' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHgAAAAUCAYAAABGUvnzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKGSURBVGhD7VaLjewgDExdFEQ9VJNmUgxnG8yOHUjy9vatdIiRIoWfPZ5xdtnywtRYBk+OZfDkWAZPjmXw5FgGP8GRcggpH3X4l3A2mIvZtry1J+a9Ln0E3xBLa4iW+R7frAc5v83/yCmEnPDgF7QYGPwS4Ughb3+te6WGQOKhmXuO7zbsR4zoGPwF3BpsxrXQZL4EJs5jfrSAMmc+oD2WRkGxJLY/W+dRUDcuX2J5Qk8xiRtzouZsHCh/iPQYg3vcKww3epBz44Lny56dPwg4V/i5ffxwDIxl8p21KJq7NcKdFv9uMAVC4zhBC6wm6jtsbPsq4aMWjQb0RSTgGPcRq9QpqnGGc3skYfY6X3a9OJUBxHXcML+JScKiGB7CQw3hmJ0mklg3WqDmuPZAi1uDTRFQXAH/7EEzyFiLwDWY1xjdWG5PWbBjU9QAvF9yq6gUW3MaTgPuZh8B87d3f74HNPXCYIwv+JwW95esUXCG3yvPqwhuDukN35H8fiIHXdzL08Zln+ZrnY0QXkV8vkMEErb9eqgp8o68+ancPTfMr+8Yy0HuLT6m8B4Y/B+1uP+JRvhk0mkXXczEKSsX3JJrjFOeh18QYHgBxPPy3ot7wd3nw7G+m1gArrnNo6kXBp9iPfyCASMtfmkw12P/3He6yHii5jbbYkCXMrCLhcNLDPmbqGtHosuTpqsNdMKoBjc/5g4CE4x4jr/PL3t1rlOH2e5iDbXQdwaMn2jxa4NpshSqP0kuiZiDcxhDculZm1OEqmsxwRn5QvpnGkY1nOYvuEMeuX0j56ZB7zw3Rx1TY0f8arFejoGxcA05mnwEHD/Q4mzwwlRYBk+OZfDkWAZPjmXw1Mj5B/QJACKJvd6OAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable CvTextArgument="Previous Medications" CvType="Text" DesignTimeRectangle="63, 321, 193, 19" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Previous Medications'" FullSelectorArgument="&lt;ctrl automationid='PrimarySplitView' /&gt;&lt;ctrl name='Philips.CIS.Chart.TabItemControl' role='page tab' /&gt;&lt;ctrl automationid='Admission Documents' /&gt;&lt;ctrl automationid='Previous Medications' /&gt;&lt;ctrl automationid='NodeText' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='PrimarySplitView' /&gt;&lt;ctrl name='Philips.CIS.Chart.TabItemControl' role='page tab' /&gt;&lt;ctrl automationid='Admission Documents' /&gt;&lt;ctrl automationid='Previous Medications' /&gt;&lt;ctrl automationid='NodeText' role='text' check:text='Previous Medications' /&gt;" Guid="5e7dc4b5-07a9-4918-9041-128b7602c46b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMUAAAAXCAYAAAC7zovUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMjSURBVHhe7ZhRbtswDIZ3gaxHynVSeLfIDdrnbCfYnjogL7lBc4Kmj33rrmA1lPRLFE3ZipFs9cAPENBYFEVS/BWnX5xhGAUmCsMQmCgMQ2CiMAyBicIwBCYKwxCYKAxDkETR93/c4/a7+3r/oxirzU/38NZHq9vQ96/u2/3ur+wlwd7Id/30HmcC/fHg7jZhfrU5uH0/L77+7dmtfY7Bx61z/pc1XTqTogjNcNvCfiZRrLbP7oU1/n6Xa/KZRXH6/cuLF6I2UcxHFYUsLH/2v8GbZ33OnzdRmtue57zN9URxTbSzM+YzKgoCN+VqdypsuuMpNky+WctbNTRXzS9eS8J6/Vbj/rzPcwygXF/u0x2H8dDQGiaL4uC6aA877LHeHdSG1vIF/EKh0T21fVNoMfPcMLKf2tyMmnLhxr+lTUtNl85F3xTqAfimHD73cxCGaGACxQ1+ywPU9sFIIpgQBV4n+FrtALko9vAZm4Bi9DEdZUNP5DsWf/LRlnOt7jSCr+FceD6jpkkU4VuT21xS06XT+Jti2AzqrR3tiPGmZ42oNUjyFz4TODDySQfUKgoek0YZi/I3+RevPpP5avGLNS051xjWM+eOJp1VU/k5+ri0pktnUhRoOmlDRQIouFxLA4ekNk0UljzAVPyRvZOPiij4gWLwmEHeOxw04sTrjo+3IgruG4PsX7T4pY+GnIGWC41LRNFU00GMpd/Wmi6dyd8UHFlEkG+h+g3Cm/gBjRd9yAPU/OUD023kLcdBo481XPLDGj7tVRFFLV9tXt6y9ZzDZ4JsHpnIUsPLWjSIQotp4EfmOdITYzVdOtcRRTwAes5H7VYazokDFLZ8YB0XgX9+Xov3YIoNh8YHf+UDee+yWb292EuzKfzDvjLvbWqiqORMZwFR4Fn+b1hYS/B8wx5t/r19Nc+8huJorenSuYooCK3ovPEJ3JZyD9kg4ZniTxwA99cd34vY5AHKWEDeOzQCgbWIUTaLfzaRLxetX1cR1lTOlAt/HuyVtXK/GTW9VBS1mi6dJArDMAImCsMQmCgMQ2CiMAyBicIwBCYKwyhw7gOHReX21tEf4AAAAABJRU5ErkJggg==" InformativeScreenshot="846621ffa50f9edf19d94257b4795894.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' cls='HwndWrapper*' title='IntelliSpace Critical Care and Anesthesia - Test Hospital' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvType="Icon" DesignTimeRectangle="23, 223, 24, 24" ElementType="Icon" FriendlyName="'graphic'" FullSelectorArgument="&lt;ctrl automationid='PrimarySplitView' /&gt;&lt;ctrl name='Philips.CIS.Chart.TabItemControl' role='page tab' /&gt;&lt;ctrl role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='PrimarySplitView' /&gt;&lt;ctrl name='Philips.CIS.Chart.TabItemControl' role='page tab' /&gt;&lt;ctrl role='graphic' automationid='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOkSURBVEhLxZbZT9tAEMb5/x/71kptVVFVogWKoBwhHDmcC3JC4hyEHFQqUkkIOXASO2E638BazoFppIo+fEq8np3fzuzsrJceHh7oNfX/gOPxmLq9HrXbnbnqdLo0Go1mHCwqG2j0+xQMRyiRSlMynZlQKn1GOx4vZfW8LMzpYFHZwN79PcWTKTJNU5xOyxcM0duPy1StX804WUQTwJNEUtKmIHq+QAfHPgpForS166HN3X1aWV0nXyBI3iMfnbL9cDicceqmSWA8IUDLskQxfr4oX9I9v5tWLp+nN+8+iA1snU7dZAPhRAFN0xLBWf3qpx0x3iGi4dCkbE6nbX+EVrc9lDo7l3HrL4pqSTnrcYXGTuPidMCToegpgFcyBv26vqY974EszBfQyHPkp2MtTFs7uxTg3/3DY7pttewFztMEMHpyKo77g4EoehKnGheJZT1GXanVZVGPUU7qrt2mle+b9OXrqit0BmhZJvX5iEB4BtDkPRpy9VZqNYkOqXE6UfMPtChpaZ3WNn9Qs3k7YwPNAE1zaBdGJHbCwLpEgIjLlapECKAqLCXM9wYjVL8bUDCZpc29fWrd3bkDARiyY/yHwlEF5BRzxJeViqR5PH6wC0sJ9mtbO+Rh6B7r08oavV/+TK3WJHQG2Df60sagUCRGlWqVYYZEjCOCLMBeFZYtXugl22Z1nXLckfLFEh36A1Qql12AHJFxb9j9U+MDf8lpNAxD3mMyFgV7VViQgqJLKcFGLxToPJuzYdCSKvluFxFFxTFyD6G3ljmqXrcnERdLFwKUSn4qLJEDrsZGI4vO+ayiFysGNAPErxOINHafgAUGhqMxqWRVWIjeCVfjiBLRvQjEeWo0myK/FqLSxQW1Ox1ZQL5YFBuT04dMQAqgpMZRfGcMTKTTLwE71Ly9FQGINGIRAOqFImkc9aA/sAsL8xQEUuMovgy3PFx3c4EdnujxHspR0EIR0bf1Dak2dA4sIMsNG+Nw5ryc58lgm3Tm/PmUQihtGGJfIByBQqkk0QGa4+sqwFEjdWqfnxO+HlKZDCWSUxFOdwyn0MaCHFE2l+cC0MnPl7A/qMlVNg/iFIBJ3j/4cPp0BTa4H1a5Yde5n0L4IgAQRaT2+TnBBvuHVuj06QqcFtpcMBSW/UaK3QQb7F88kZrwsRAQd+PG1jbvzRl/XqRclUxluAiP+FhkJnwsBERB/b5pUKPRpJtGw1W4nm7YFk3D6WMh4L/QKwMt+gOyxqBnzNudKgAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NCheckState>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="20, 167, 1896, 44" DesignTimeScaleFactor="1" FriendlyName="'Lifetime Id'" FullSelectorArgument="&lt;ctrl automationid='PtInfoBarUserControl' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='PtInfoBarUserControl' role='client' check:fulltext='Lifetime Id   pt321&amp;#xD;&amp;#xA;Age on admission (Calculated)   &amp;#xD;&amp;#xA;Attending   &amp;#xD;&amp;#xA;DNR Status' /&gt;" Guid="6f5c0220-24c5-42c4-9985-2ed8eee02555" ImageBase64="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" InformativeScreenshot="c5bee8910505b5f31ea8f195a96c0a4d.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' cls='HwndWrapper*' title='IntelliSpace Critical Care and Anesthesia - Test Hospital' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvElementArea="69, 40, 53, 32" CvTextArea="80, 46, 31, 12" CvTextArgument="Chart" CvType="Button" DesignTimeRectangle="70, 41, 52, 31" ElementType="TabPage" FriendlyName="'Chart'" FullSelectorArgument="&lt;ctrl automationid='rbnCtrl' /&gt;&lt;ctrl automationid='ChartMonitorStrip' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='rbnCtrl' /&gt;&lt;ctrl automationid='ChartMonitorStrip' role='page tab' check:text='Chart' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADgAAAAjCAYAAADBl8lGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEUSURBVFhH7ZXLDcMgDEAzQffsAozBCj15CqZAirpCxnD5x7RJlLQoiqmfxMEQkB8GMtzuD+y5Ddg5RfA5jl21TCXYCyLIHRHkjgjuZ0KjFSqVmjaux2MRlEYTg9NpIzgZ1E4KbIo9rs+EuIXg92s0EIyVq+QquAuG6oFLYY2UnI1V9sdXk0wtkGNddinOAdDz2Mc3+2gjWO7bEj5Zl1j+xoJLdGlDaJXinHkj6NgxzqtgSe4tDsK5QlRwY84Bfhc8fAdJXG2OX+eSgo5UhX2vKIn9vHx0g+xVBT0hwXzUyJ3bTJb8OzUgrFbQ9eTH6PRH5uKIIHdEkDsiyB0R5I4IckcEufNfgj7IrReoU6lgr3QuiPgCTAxmF/z0d7oAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NCheckState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Close patient's chart." sap:VirtualizedContainerService.HintSize="1120,182" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c0ae7d03-6beb-44d4-ad9f-23bc92a2a782" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CvType="Icon" DesignTimeRectangle="1886, 175, 26, 26" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'graphic'" FullSelectorArgument="&lt;ctrl idx='3' role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='' role='graphic' /&gt;" Guid="b8f682f1-108d-4bcc-86fc-2a5e18f5f13e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKLSURBVEhL7ZTdT1JhHMf7O3gza+suN2Mr1+zFdUF3bXXV1ubcXCoICqk0bBbWfCkgkNTyZYCbCimVTVfa5sBKSp3KJDVtywoTEY6E5aybb885RiZww3GjGy4+OxfPc76f8/v9nufsC4VC+B+kxAmz5P2KoTE3rMMudL54DdvwGzin3mHZ54+7PwJrcSBIwe4cw2V9B4QKA/gFOnAJgkIdTlxtRHlLD0Zn5kFR63HfZyUOUhTaBhwQlmjAlTSDI20Hp8REMIMjI09pK/ZLjMhRGvDWsxA3g5X4lXsOWQpSYfEDnKm0QW4cxNnqXnCJWFjRiSuNQzhf8xi8ogaIKo2g1mOrTlhMt7jK0gd+oZ6pMEvZhQ9fgnC6PyHneg8sg26sBDZwUdvPrAvya5jZR+ckLF5dC+CoXAtOcct2awllZie8q9/IwfIg/OMnmvrGcUBu2V4XN0GkuhuTk7DY518DP6+ahP6ZKSGz0oqRqSVsbv3CuMeLDGXn3zV65ofyrsXksBJzc9W7xSorHJMfsfF9C9PzyztSBhMO5qpicli1+ohMs6vVuocu+MhcLc+mQYU3obW5kFa60+qcsjsxOawOl7LNDk4BfbhMEN16hMXPAXQ5ZnFM1Y1+1wKW/WFcqH/KrPPya9FOrl50TsJiGsekB9kVBvDIdTp1oxcKixPH1b1MhafVdig7RiC6aWeu0zl1M1bIeKIzWInpqukfyGFxLfmB3Aev9N+ZmsEnCIoMOFmug2vmfdwMVuII/aOTyFbUI0OqQbqkAWmSe0gX65Epu41Lda2YmFuM+x7NnsQ0fnLY6A+o6x5AlfkJdD3P8XJ6FmvBYNz9EfYsZktKnDRS4qSREieNlDhJhPAbuqaoAKhPJhcAAAAASUVORK5CYII=" InformativeScreenshot="00e959bb0c94de4539ab27a3db981d35.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' cls='HwndWrapper*' omit:title='IntelliSpace Critical Care and Anesthesia - Test Hospital' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvType="InputBox" DesignTimeRectangle="22, 169, 395, 40" ElementType="DropDown" FriendlyName="'Philips.CIS.Chart.PtInf…'" FullSelectorArgument="&lt;ctrl automationid='comboBox' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='comboBox' role='combo box' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAY8AAAAsCAYAAACdZTQTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQ/SURBVHhe7ds9TuNAGMbxnGDPwgkQBWeJtKLlBNkaoSCEkBDaI2yTlVKtqEGkoURUCDpEJEqKd8eecez5sjPOsAvx/yc9RRJ7xm7eJ86yo+VyKYQQQkhKKA9CCCHJWZXH3d2dnJ+fy9HRESGEEGLl7OxMrq+v/fIoigMAgJjpdOqXR9EsAADEFD1BeQAAklAeAIBka5fH/PKnfPvu5MdC7s3n/bzIyY8c66Qwe7r3UuVDrkXvufv7xbwGgK8tsTz+yNy8FnmQg8Rh66/xMeXh7xOTd//gvos/upRUKA8A22KD8hC5//1LvfdLTp7NGx3WH+qb+TTlURaHev28kF3KA8AW2ag8qm/VBwv9UpdJcVyV6vjAT0XlwA4Pb3udZjnVx8+tY7r2iYmXR/walMbTRJGDRce+lAeALZP1yWN+2fjcDMzmEPXX8Ie3e4y9Rz2kV4O42ufyQb9WgkUXFC6P1mvwiuBB5qY8o/tSHgC2TP/yCAxtl3uOP1yd4R0astZ7VXkE1mjdJyZQHl3X4DxtNVEeAIYisTzshIahf1zbUHeGt/NzUDNWeXQ8KUSHuCewXuc1mD8UKGPvEd2X8gCwZfo/ebjMgGwb4v4a4fIIfavX/l15xK9B03voVMdG96U8AGyZfOXhDV0zmFuHujO8O4fsPyiPpEFvnkLMT3eUB4ChyF4eqwG5+vmnPsf9B3Z/eFeFY/91U/0P8euVh79PTGi9jmtYLOr3nVKI7kt5ANgy+cpD0ceYqG/j/jmNfy8oB3ZbGTTilktHefj7xITXK0SvYVWKJtYfDET2pTwAbJm1ywMAgArlAQBIRnkAAJJRHgAAy+HhoYxGo1WK1y7KAwBgeX9/l/39/bI4dnZ25O3tzXxSozwAAJ7X11fZ29uTx8dH846N8gAAJKM8AADJKA8AQLK1y+P2Yizji1vzqvY0m8h4rD5b5UL0UU8ym4wlcEqxmIwnM3WE5q8xlsms+tTVsq5SrBU79yPvAQCGZIPy0IO1HrSGGqr6sMTyaB74NJOJGuLuueU1mAEfXFdJK4989wAAQ9K7PMqB3zo8NygPxRv0xTnlkL+Vi0zlkfMeAGBIepZH+wDXNi+PcAnkKo+89wAAQ9KvPFZPAW02KI/W9TOVR+Z7AIAh+TzloQqhmVg5qJMpDwD4zz7nk4c5136vQnkAwP/WrzzKv4aaSGRGG3rwBgd5Z3ko0T0ylUfmewCAIelXHmaoegPfESwFxV4rclw53ENPBpnKI/M9AMCQ9CyPgh7i3rdv9Y28ns+B/69R/lxkf+P3B3TbYM9VHoV89wAAQ7JBeRTMkC8GcBV3EJvhWx/jD92yPKxjVGLtkLU8CnnuAQCGZO3y+CraygMAkAflAQBIFiyP09NT8/HXQ3kAwMc7Pj72y+Pm5kam02nZLIQQQkgzRXFcXV355UEIIYSsG8qDEEJIYpbyF8G89DxjYYTOAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1056" IconBase64="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" InformativeScreenshot="33afd6631307c744d2752feaef4111c1.png" Selector="&lt;wnd app='philips.cis.displaycontroller.exe' cls='HwndWrapper*' title='IntelliSpace Critical Care and Anesthesia - Test Hospital' /&gt;" Title="IntelliSpace Critical Care and Anesthesia - Test Hospital">
+            <uix:TargetApp.FilePath>
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">ICCAPath</CSharpValue>
+              </InArgument>
+            </uix:TargetApp.FilePath>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="1278,247" sap2010:WorkflowViewState.IdRef="Sequence_17">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="TestTearDown.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,136" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="TestTearDown.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ICCAPath">
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">ICCAPath</CSharpValue>
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+  </Sequence>
+</Activity>
