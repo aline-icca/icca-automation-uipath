@@ -1,0 +1,86 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_50973_Setup_Weight_BSA_Infusions" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1794,1642" sap2010:WorkflowViewState.IdRef="_50973_Setup_Weight_BSA_Infusions_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="1.Pre-Condition: At least 2 care units have been configured.  User has direct physician order entry permission&#xD;&#xA;NOTE: Daily BSA should be configured on a flowsheet in order to view daily BSA.&#xD;&#xA;&#xD;&#xA;2.Go to the institution editor and go to the misc tab. Change weight type to admission. &#xD;&#xA;ER: No crashes. No errors.&#xD;&#xA;&#xD;&#xA;3.Go to the care unit list and select the care unit used for testing [TESTUNIT].  Select to edit.  Override weight type to be daily weight.  Select OK and store changes to institution editor. &#xD;&#xA;ER: Will behave as expected per spec &lt;E03_101&gt;&#xD;&#xA;&#xD;&#xA;4. Go to pharmacy product editor and enter configuration as defined the following table Table 3 Drug Configurations.  Store all changes. &#xD;&#xA;ER: Will behave as expected per spec tag &lt;E03_104&gt; and &lt;E36_003&gt; and &lt;E36_006&gt;&#xD;&#xA;&#xD;&#xA;5. Open the Standard order dialog&#xD;&#xA;ER: Will function as per spec tage &lt;E17.7_g&gt; and spec tag &lt;E17.12&gt;&#xD;&#xA;&#xD;&#xA;6. Enter multiple standard medication orders for ibuprofen.  Select the PO route and tablet formulation. Some are BSA based dosing and some do not.  Enter doses.  Select OK to store.&#xD;&#xA;ER: Dose/BSA fields are displayed and enabled.  Dose fields are displayed and enabled. No BSA choice field. No calculated dose fields displayed.  Will function as per spec tag &lt;E17.8&gt;&#xD;&#xA;&#xD;&#xA;7. Select to add standard medication orders for acetaminophen elixir (PO).  Enter max values for the dose fields.&#xD;&#xA;ER: Weight related and calc related fields are not displayed.  Limits are based upon general bounds as per spec tag &lt;E17.4_b&gt;&#xD;&#xA;&#xD;&#xA;8. Exclude all patient types except pediatric and navigate to details area.  Enter details and select OK.&#xD;&#xA;ER: Weight related and calc related fields are now displayed and enabled.  No weight drop down field. The dose field is cleared as it is outside the max of 650mg.&#xD;&#xA;&#xD;&#xA;9. Select to add a standard medication order for acetaminophen elixir.  Enter details.  Do not exclude any patient types.  Select OK.&#xD;&#xA;ER: Weight dose fields are not displayed.  Weight list is not displayed.  Limits are based upon adult as per spec tag &lt;E17.4_b&gt; and &lt;E17.4_j&gt;&#xD;&#xA;&#xD;&#xA;10. Add multiple other standard orders for Furosemide and Labetalol. Some have weight-based doses and some do not.  Some have bsa-based doses and some do not. &#xD;&#xA;ER: No errors. No crashes.&#xD;&#xA;&#xD;&#xA;11. Store all changes.&#xD;&#xA;ER: No crashes. No errors reported.&#xD;&#xA;&#xD;&#xA;12. Go to pharmacy categories and select epinephrine.&#xD;&#xA;ER: No errors or crashes.  will function as per spec tag &lt;E19.4&gt;&#xD;&#xA;&#xD;&#xA;13. Select and enter multiple standard drip orders.  Some are weight based dosing.  Some are not.  Store them all.&#xD;&#xA;ER: Both weight based and non-weight based fields are displayed.  Cannot enter both weight based and non-weight based dose fields.  No weight drop down field is shown.   Rate is calculated for those that are not weight based. &#xD;&#xA;&#xD;&#xA;14. Add standard drip orders for dopamine.  Store.&#xD;&#xA;ER: Only weight-based fields are displayed as per spec tag &lt;E17.4_m&gt;  Rate is not calculated.&#xD;&#xA;&#xD;&#xA;15. Add standard drip orders for heparin. Store.&#xD;&#xA;Only non-weight based fields are displayed.  Rate is calculated.  Will function as per spec tag &lt;E17.4_n&gt;&#xD;&#xA;&#xD;&#xA;16. Go to flowsheet editor to the adult flowsheets.  Add all newly entered standard orders for drips and medications to the flowsheet configuration.   Store.&#xD;&#xA;ER: No errors. No crashes.&#xD;&#xA;&#xD;&#xA;17. Activate all changes.&#xD;&#xA;ER: No errors reported." DisplayName="_50973_Setup_Weight_BSA_Infusions" sap:VirtualizedContainerService.HintSize="512,1577" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="450,143" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="450,143" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="450,126" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+  </Sequence>
+</Activity>

@@ -1,0 +1,86 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_49456_Unit_of_Measure_Drug_Calculator" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1794,1522" sap2010:WorkflowViewState.IdRef="_49456_Unit_of_Measure_Drug_Calculator_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="&#xD;&#xA;1.Enable the 'Fixed Volume' Calculation Mode via the appsetting EnableFixedVolumeDosingCalcMode&#xD;&#xA;Order Medicated Drips using each of the following drugs and the 'Calculation Mode' set to 'Fixed Volume'&#xD;&#xA;Drugs: &#xD;&#xA;• Epinephrine (Both weight-based (WB) and non-weight based (NWB))&#xD;&#xA;• Diltiazem (NWB)&#xD;&#xA;• Dopamine (WB)&#xD;&#xA;• Alfentanil (WB and ‘Volume per Amount’)&#xD;&#xA;For each drug, enter a drug amount to trigger the calculated concentration to generate a value which is outside of normal range but within the limits.&#xD;&#xA;ER: Medicated Drip Order Properties functions as per tag &lt;H0.Y40_005&gt; &amp; &lt;H0.Y40_010&gt;&#xD;&#xA;&#xD;&#xA;2.Using the orders in step 1, enter a drug amount to trigger the calculated concentration to generate a value which is outside the drug-specific configurable concentration limits&#xD;&#xA;ER: Drug concentration functions as per spec tag &lt;H0.Y40_005&gt; &amp; &lt;H0.Y40_010&gt;&#xD;&#xA;&#xD;&#xA;3.Click OK on Order Entry dialog&#xD;&#xA;ER: The system functions as per spec tag &lt;H0.Y40_005&gt; &amp; &lt;H0.Y40_010&gt;&#xD;&#xA;&#xD;&#xA;4.Order another Medicated Drip, observe the displayed 'Calculation Mode' position in the Properties list &#xD;&#xA;ER: 'Calculation Mode' functions as per spec tag &lt;H0.Y40_005&gt; &amp; &lt;H0.Y40_010&gt;&#xD;&#xA;&#xD;&#xA;5.Order a Medicated Drip using a weight-based standard order which has not been configured to have a 'Calculation Mode' set to 'Fixed Volume' (e.g. any standard order from stand content) and observe the value of the 'Calculation Mode'&#xD;&#xA;ER: The default selection functions as per spec tag &lt;H0.Y40_005&gt; &amp; &lt;H0.Y40_010&gt;&#xD;&#xA;&#xD;&#xA;6.Enter all the required properties for the previous order and make a note on entered drug amount, dose and rate&#xD;&#xA;OK, Save and examine the Order Properties&#xD;&#xA;ER: The Medicated Drip Order is saved successfully with 'Fixed Concentration' mode as per spec tag &lt;H0.Y40_005&gt; &amp; &lt;H0.Y40_010&gt;&#xD;&#xA;&#xD;&#xA;7.Change the dose for the Medicated Drip Order&#xD;&#xA;ER: The drug and rate function as per spec tag &lt;H0.Y40_005&gt; &amp; &lt;H0.Y40_010&gt;&#xD;&#xA;&#xD;&#xA;8.Without saving the changed values, Change 'Calculation Mode' to 'Fixed Volume' &#xD;&#xA;OK, Save and make a note on the values of drug amount, dose and rate&#xD;&#xA;ER: Orders saved successfully.&#xD;&#xA;&#xD;&#xA;9.Change the dose of the just saved Medicated Drip Order&#xD;&#xA;ER: The drug and rate function as per spec tag &lt;H0.Y40_005&gt; &amp; &lt;H0.Y40_010&gt;&#xD;&#xA;&#xD;&#xA;10.Precondition&#xD;&#xA;Navigate to the Pharmaceutical Editor.&#xD;&#xA;Configure a medication with the limits dose &amp; dose per patient weight.&#xD;&#xA;Configure another medication with the limits dose &amp; dose per BSA&#xD;&#xA;Configure a medicated drip with the limits amount in solution, concentration &amp; dose per time.&#xD;&#xA;Configure another medicated drip with the limits amount in solution, concentration &amp; dose per patient weight per time.&#xD;&#xA;Configure another medicated drip with the limits amount in solution, amount in solution per weight, concentration &amp; dose per patient weight per time.&#xD;&#xA;Configure these drugs to be available in both the CC and AR applications.&#xD;&#xA;Activate&#xD;&#xA;&#xD;&#xA;11.Open the Order Entry dialog and order each medication and medicated drip in CC and AR. Observe the calculated doses.&#xD;&#xA;ER: Calculated Parameters are displayed and function as per spec tag &lt;E0.Y02_404&gt; &amp; &lt;E0.Y02_405&gt;" DisplayName="_49456_Unit_of_Measure_Drug_Calculator" sap:VirtualizedContainerService.HintSize="512,1457" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="450,143" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="450,143" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="450,126" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+  </Sequence>
+</Activity>

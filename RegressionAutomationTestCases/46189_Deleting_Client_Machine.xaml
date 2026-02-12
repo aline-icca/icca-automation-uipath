@@ -1,0 +1,548 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_46189_Deleting_Client_Machine" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1530,6649" sap2010:WorkflowViewState.IdRef="_46189_Deleting_Client_Machine_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPathTeam.ServicesManager.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="1. PreCondtion: A test system that has 2 or more client machines setup that can be deleted. Have one client machine setup as an Anethesia Client and one setup as critical care client&#xA;&#xA;2. PreCondition: Open one of the client machines &#xA;&#xA;3. Delete the two client machines&#xA;&#xA;ER: The two machines no longer show in the Client machine list&#xA;&#xA;4. Go to the client that you opened in step 2 and save a document&#xA;&#xA;ER: Client Machine is still working per &lt;J01.E26_006 #1&gt; &#xA;&#xA;5. Close the client and try to start it again&#xA;&#xA;ER: Client Machine is no longer working per &lt;J01.E26_006 #2&gt;&#xA;&#xA;6. Open the other client you deleted in step 3&#xA;&#xA;ER: Client Machine is no longer working per &lt;J01.E26_006 #2&gt;" DisplayName="_46189_Deleting_Client_Machine" sap:VirtualizedContainerService.HintSize="1540,6584" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="1478,57" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ConfigEditorLogin.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,136" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="ConfigEditorLogin.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="Username" />
+          <InArgument x:TypeArguments="x:String" x:Key="Password" />
+          <InOutArgument x:TypeArguments="x:String" x:Key="ConfigEditorPath" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="1478,6016" sap2010:WorkflowViewState.IdRef="Sequence_13">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Philips IntelliSpace CCA - System Management - Test Hospital" sap:VirtualizedContainerService.HintSize="1416,5896" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1382,5542" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'Configuration Editors'" sap:VirtualizedContainerService.HintSize="1320,189" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="a716b082-44d1-4d18-9f08-0dc005f6e381" CvTextArea="95, 112, 77, 13" CvTextArgument="Administrative" CvType="Text" DesignTimeRectangle="94, 107, 80, 24" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Administrative' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Administrative' role='outline item' automationid='' check:text='Administrative' /&gt;" Guid="02936029-fa90-4350-a67b-2e8874ac826a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAcCAYAAAD/YJjAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI/SURBVGhD7VW7jcMwDM04N0MGygy3wbUeIxOkzBQBUgS4Lk2QylU6HkmLEkXLluKoOxJ40IekRD4/2ztw62pOaGdLhP58wW6HSx+3jcHijDZ331fHBhCpYolaYroQ7GiAK7QvXKG94QrtC1dob3RV6PCE2+MJ+5Lvn6BRob8wPHC/RtYWQltyVmOothcMQ8lXQyH3U1E0KZQvecENKoV/WswmdCb0QzQpdH9GMs+/cLgAj9rHJIY0NiGU90cYMFfsdLzyGZOFRuQhhHGwfjkrnJvyqZb79OZom52V10A29RDeOm0xd4QT+qje2OdxVG+ozjUPpK5Q9RRVY8mnLtZ+muNZ8QFQQWgxVgqUnBA/8+tzs6aQzEiMacqepcE+iV/Ilbsu97ivxZQJK6upRaFyAa9NAVzcCIdSbJa3srZjKV7mpvgJK6RkcQIdv5Z7h1PsjeYSp/etD1FTKL3u1paeTpGEkk+v7ViKj3MiIBSBNimwjdC8jxZCJyXyHbpP8odTkqUzKgqtFGsLb/XptR1L8daHYIJ4r4FQIiSqSsdXcikPX3u6K30+rEINVhVaaGQu/1RQahLXNndpbcdSfJgfzviDkeZDszSPSirlIrgu+R6ST9W8njv1Rz8pTWD2DeV18q8qNCtEYfZRDnbDgy0JRYL02o6leJmru5Ligj/s8gO1ZzExwfgPrlRZyaVe5xyQsqcUNu2vfUMd76HyDXW8DVdoX7hCe8MV2heu0N5YUiiT6uOmUQxXbj3NCe1qAH+8cx9rHWh0vwAAAABJRU5ErkJggg==" InformativeScreenshot="2643753662a324ca7ad8a6a3eb1e3b42.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ConfigDisplayController' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="a716b082-44d1-4d18-9f08-0dc005f6e381" CvTextArea="68, 88, 115, 15" CvTextArgument="Configuration Editors" CvType="Text" DesignTimeRectangle="67, 83, 117, 24" FullSelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Configuration Editors' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Configuration Editors' role='outline item' automationid='' check:text='Configuration Editors' /&gt;" Guid="b4836685-052a-40a6-9d4a-d82e1017e4d3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHkAAAAcCAYAAABFwxCgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKoSURBVGhD7Vcxdh0hDNzj5Ax7lfScIU2aNG7pfIuUe4y0KbbOOQhoAY+EwOz+7//9DPMe9rICaaQReL38erFujq89Fjfx5TFFHgBT5AEwRR4AU+QBMEUeAFPkATBFHgAPFHlzZlncEobZ4rvBsFu3rtbtcfooVEXe7XoIEsdqb6O2GfDxsGR3Z9fVMer3jh38QZ3y0BoZY+dnheOdoYp8CGz82Uvwp/Cmwnx8IjoeEJdExlo1oDbYU0QO12ojKOtcWBcTsP7ESls4xW9d7t9vmCxc47hPFgTnLJZxVr11QvHe3tEI+6WfbO/LpQD5aIjMYvjBcjD+8IBN2vP7GrcjLtZXu3FLkZukj8Llm2gzBSnVRvtKosdVhcSgwfKaCJzLWAiypVjKKRGxz+ciQGs765Vj47PCUe7r5rb5hi9ZliK/lxCzdYrif6oiE2Es0AmR0caAsZQCYmzmozcXgWDzRc8nMQ4SgWyQH/rJzw2Ocdrk1tIrQhe51pmFQ+g4GZzNKyIX/q6LzD8UU6xGAS/nIhBsvfVCP/lZ4XiGW7Sx5hI49ze5SKi3+0UiyVYQFv7ePQURoSh5LcZSCoixL+UiUPgBtPzk5wrHXm4AanTFpogcF8sgmRB0C3ZcKyHaB4lkWyAP/ig5SCY9e9DHRSUW8U1OlH2su/Peq7kIULyKyCiOBxMBfBYc/dtebrv1H55pEtZxRwRV5AB+/Ukh0ntIThaCzWsie9ApjP78GiwYcjAW9shYsVkOH+GLVcTKNr8H96KtOxcB5gNGKhjktxqj54A+znLD+lWarSryUyATmLgLni4y/x9a78SJ2/C5TvLEh2CKPACmyANgijwApsgD4Dkiv3yjr+n5++Lvk8g7Xn9+v9v49+d39KojEF1+/J3jwghCn4Nz/wGhvVcULqZtvAAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'Administrative'" sap:VirtualizedContainerService.HintSize="1320,189" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="fa10db7e-1cd3-410b-9460-acfd53e207d9" CvTextArea="122, 184, 85, 13" CvTextArgument="Client Machines" CvType="Text" DesignTimeRectangle="121, 179, 87, 24" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Client Machines' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Client Machines' role='outline item' automationid='' check:text='Client Machines' /&gt;" Guid="6c205f3d-0600-45e3-b1c8-40b705cd42ad" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFsAAAAcCAYAAAAOa8NNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIZSURBVGhD7ZUBjsQgCEV7Lg/keTxNL9PDuIBowaKZycyy2YSXNGtdxM8vOkcN3AizHQmzHQmzHQmzHQmzHQmzHQmzHQmzHXnP7KvUlEq9+PXf8cf6l2ZfJdXjOMaTCkjsYj8WfdWSUsWUS3AP3DufPNE4M+rJVc++yE63w4cwzW5Gy4LOmr9icudVsxPsN+mgj/8LZjtgmI0FLYzoYpVoNK6fALGOYwp1ovyfjOfHMoDMzrXAhx/NfeaaMjxstnn6BtM+QvdTE4br2swYYlEv0E5de7SWxtNsLtLsnEkQpsMNRmIwYxhHeQ5l1G3qq50NOtResObk+RZ1Q/F3Tip8uoK2mvo+uxh6XdSr4k5okr7i5mn2lFwhBVEMngJZuDgVI4ZR72+YPWLFVWY2g8w562J2mvp4F/PIK+rd+cbYZpvFALMg/MvH5n6+bTYO8e6GBxeIeURfJWLv3zAbx6pWsSfVdM/Phwr58M5edBCyE03CXje7jQ0jVWOInDJGojQA8r2PdzGQcVmvgBpA5mAMszlYJYVNpBAhQN1hwAk/YLRuK7qts77+AONXhvE86exJaH7qsnmDnaY+3sUAq3qvAj/md9Bzb8A0G9HHk40xBenjo4rfiKb3vkbOd+j/e7OhKui0niNDQ8jTYujaaerjXQyxqJdOWZ83dANLs4PvE2Y7EmY7EmY7EmY7EmY7EmY7EmY7Ema7UesP3NUpZXO1QykAAAAASUVORK5CYII=" InformativeScreenshot="6f32e60c900e0ee801dacb8bf3f811d7.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ConfigDisplayController' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="fa10db7e-1cd3-410b-9460-acfd53e207d9" CvTextArea="95, 112, 77, 13" CvTextArgument="Administrative" CvType="Text" DesignTimeRectangle="94, 107, 80, 24" FullSelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Administrative' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Administrative' role='outline item' automationid='' check:text='Administrative' /&gt;" Guid="6695f7b5-4b13-4060-99c8-1fa733ecebdd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAcCAYAAAD/YJjAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI/SURBVGhD7VW7jcMwDM04N0MGygy3wbUeIxOkzBQBUgS4Lk2QylU6HkmLEkXLluKoOxJ40IekRD4/2ztw62pOaGdLhP58wW6HSx+3jcHijDZ331fHBhCpYolaYroQ7GiAK7QvXKG94QrtC1dob3RV6PCE2+MJ+5Lvn6BRob8wPHC/RtYWQltyVmOothcMQ8lXQyH3U1E0KZQvecENKoV/WswmdCb0QzQpdH9GMs+/cLgAj9rHJIY0NiGU90cYMFfsdLzyGZOFRuQhhHGwfjkrnJvyqZb79OZom52V10A29RDeOm0xd4QT+qje2OdxVG+ozjUPpK5Q9RRVY8mnLtZ+muNZ8QFQQWgxVgqUnBA/8+tzs6aQzEiMacqepcE+iV/Ilbsu97ivxZQJK6upRaFyAa9NAVzcCIdSbJa3srZjKV7mpvgJK6RkcQIdv5Z7h1PsjeYSp/etD1FTKL3u1paeTpGEkk+v7ViKj3MiIBSBNimwjdC8jxZCJyXyHbpP8odTkqUzKgqtFGsLb/XptR1L8daHYIJ4r4FQIiSqSsdXcikPX3u6K30+rEINVhVaaGQu/1RQahLXNndpbcdSfJgfzviDkeZDszSPSirlIrgu+R6ST9W8njv1Rz8pTWD2DeV18q8qNCtEYfZRDnbDgy0JRYL02o6leJmru5Ligj/s8gO1ZzExwfgPrlRZyaVe5xyQsqcUNu2vfUMd76HyDXW8DVdoX7hCe8MV2heu0N5YUiiT6uOmUQxXbj3NCe1qAH+8cx9rHWh0vwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NCheckState DisplayName="Check App State 'Client Machines'" sap:VirtualizedContainerService.HintSize="1320,2262" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="816,2013" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add...'" sap:VirtualizedContainerService.HintSize="754,189" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="477538d5-0358-431a-b40b-fe7572e6f22a" CvElementArea="281, 130, 84, 25" CvTextArea="304, 135, 36, 13" CvTextArgument="Add..." CvType="Button" DesignTimeRectangle="281, 130, 84, 25" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='addEditDeleteGroupBox' /&gt;&lt;wnd ctrlname='addButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='addEditDeleteGroupBox' /&gt;&lt;wnd ctrlname='addButton' check:text='Add...' /&gt;" Guid="b84bcc13-56f3-432f-9b9f-6d2a25f9b762" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFgAAAAdCAYAAAAuAKvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEiSURBVGhD7ZbBEYMgEEXpiW6oJDdaoRWqyNkO7GAjBBxXCYnGHTeTf3ij69/Tc10x4zgSkAOChYFgYZhgc7uDE2BOWdFoBvthTllRGoZhAAeAYGEgWBgIFub3BEdP1nqKe7OLUCQ4kreGzDtBEHyQLMeSNZZ8bOQVCD5G9JNcHyk4k68sT+LMNN2VpcRepgAlgtN6KJO7mcLn6nCh1CzvZTrQIXgjbbEm8oQ6Cq3eXqYEFYLTepg/8cK8JoLbroRa9zIlKBC8mtjEekpfSexlSrhecFNKIDefJpb3Zdrn/l425B/mnlqCywVnKS5snrPTRFoFdXU4x19IJ4PgPwCChYFgYSBYGAgW5mPB4DuYU1Y0msF+mNNlAc4HgoWBYFFGegCm9t8dA8wQXAAAAABJRU5ErkJggg==" InformativeScreenshot="bb188715ed3dfdc73efba415fddb7694.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClientMachine' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="477538d5-0358-431a-b40b-fe7572e6f22a" CvElementArea="199, 344, 84, 25" CvTextArea="232, 350, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="199, 344, 84, 25" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='oKButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='oKButton' check:text='OK' /&gt;" Guid="13750602-0b11-49d1-939e-3f53d27c715f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFgAAAAdCAYAAAAuAKvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD5SURBVGhD7dbBDYQgEIVheqIbmqEVGrAISrEDOphFFhXlsCHuC07yDv9F5/Q5EkxKSRguAoMjMLgL8LIs7A+1ph3wuq7sQQQGR2BwBAZHYHAEBqcHODgxxhxZH8930Ys1TsIxH8XbPGf9OTMpFcDR24zaAgZxLfINOLiM60KdnZsC4O82unB7Xja6ojbA5WPkzY3t7MTeD9z9/nvbFlvxsZnZ0F+Eu6UcuG52mannM4EHG9ng+9n8gt4PPHgG79vczU9KAfD4LaKfn5cK4NLQPbhe1fKzY2ZSeoCVRmBwBAZHYHAEBkdgcD+B2fNa0wsw+38EBkdgaEk+YY+0/Z1XCQUAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NCheckState DisplayName="Check App State 'Add Client'" sap:VirtualizedContainerService.HintSize="754,1552" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,1303" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Text="Test" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable CVScreenId="05437bf1-7e89-496c-bbef-2f3d89775d15" CvElementArea="119, 62, 242, 24" CvType="InputBox" DesignTimeRectangle="120, 63, 240, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='clientGroupBox' /&gt;&lt;wnd ctrlname='nameTextBox' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='clientGroupBox' /&gt;&lt;wnd ctrlname='nameTextBox' /&gt;" Guid="0d84a1b3-e132-42e0-9cf4-5d5c077d845a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPQAAAAaCAYAAACAYXEMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACFSURBVHhe7dPBCcNAEATBC1uZOo3LQP4YfWyhr7epgoFJoNfe+zSzxgRtFtoV9DpeZjZ0P4MG5hE0hDwGvdb6PODfCRpCBA0hgoYQQUOIoCFE0BAiaAgRNIQIGkIEDSGChhBBQ4igIeQxaGAOQUOIoCFE0BByG7SZzdxX0GY2f4I2y2yfb/3NdBXWm1+nAAAAAElFTkSuQmCC" InformativeScreenshot="377ca2af98ff27fa3537ac09019cb154.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClientMachineEditForm' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="05437bf1-7e89-496c-bbef-2f3d89775d15" CvTextArea="31, 64, 36, 12" CvTextArgument="Name:" CvType="Text" DesignTimeRectangle="32, 63, 64, 23" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='clientGroupBox' /&gt;&lt;wnd ctrlname='nameLabel' /&gt;&lt;wnd ctrlname='internalLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='clientGroupBox' /&gt;&lt;wnd ctrlname='nameLabel' /&gt;&lt;wnd ctrlname='internalLabel' check:text='Name:' /&gt;" Guid="54003b2d-e09b-480b-ae46-04042fc2ef36" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAbCAYAAADFyymQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEWSURBVFhH7ZTBEQIhDEW3KuqhG4qhF2qhgwiRSPjKYceDzPgPb2YTIyvPD1etVciEQgAKASgEoBBgCilJwnVJSGUOaC9KtvoPACFBQnACKKRtPseZEiekpCBXS5CBM8l9HnOVHG02SCrjHbVICp/6Yz4kKaP+Fe9C9EePVOwSov2xIX12gppQk/Kqx0b7ppc5J+BgIe3ZUrITotKcEL+RbZ0lLmv1ek3JCXwWYikBIeuxuSlE17Lvwho2ewAbIY2ektiwnh4FL+zbhJzJXsjrAnz2NB0xu9m7QuAO0Xq+7+w7xFhS0f/hEfV2nOLthPTaJA9McOM8IUShEIBCAAoBKASgEIBCAAoBKASgEIBCAAoBKGShygP+71EPvt7S+gAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Location'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Text="Lab" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable CVScreenId="2062023d-5f19-443c-b213-33ae1644c0ad" CvElementArea="119, 190, 243, 24" CvType="InputBox" DesignTimeRectangle="120, 191, 240, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='clientGroupBox' /&gt;&lt;wnd ctrlname='locationTextBox' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='clientGroupBox' /&gt;&lt;wnd ctrlname='locationTextBox' /&gt;" Guid="d83e798d-5c2b-464a-b072-04f11ef1abf8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPQAAAAaCAYAAACAYXEMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB2SURBVHhe7dPBDYAwEMAw5u7U3aD8+AADXGRLGSHX3vtIamRoKdQz9FpL0tA+hwbmMTSEGBpCDA0hhoYQQ0OIoSHE0BBiaAgxNIQYGkIMDSGGhhBDQ4ihIcTQEGJoCDE0hBgaQgwNIb9DS5rZa2hJ8zO0lGmfG6s13OMZOXQzAAAAAElFTkSuQmCC" InformativeScreenshot="eff1f6a0db08af92f25e573107354f29.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClientMachineEditForm' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="2062023d-5f19-443c-b213-33ae1644c0ad" CvTextArea="31, 192, 51, 12" CvTextArgument="Location:" CvType="Text" DesignTimeRectangle="32, 191, 80, 23" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='clientGroupBox' /&gt;&lt;wnd ctrlname='locationLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='clientGroupBox' /&gt;&lt;wnd ctrlname='locationLabel' check:text='Location:' /&gt;" Guid="60c876e1-2e2b-4c0f-86ce-1e8fb44f0598" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAbCAYAAADiZah4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE/SURBVGhD7ZThDYMgEIWdinnYhmHYhVnc4OpR0AMr2uQlteb9+BLhKKdfH0zzPAvBQaFgKBQMhYKhUDCb0BTETV6iKeJJEpyTkMyc9nVBUrPuf/m90IdxTWiuTTJleiEqqdYWlrTF4Lbxggtpv07RZNqEHvUpa4L/UFuIOn+TlF8Q+hbhYxlH37x8/hgfzfqOvG8VMDrygz5F9PAd/kbo+sF1LopfBenz2TVhJQ6Ejvr0td3a+3AutEtDk9ij3yyk5thfEHrW5zFCd/Ndco7+hHX+i4SO+jxGqE2KjpskvWv9HZrTWefyvptEve/WvWo97zfocyL0xndoPaKVIrip9dKL1FrPIjVdZey8eJtKu5dKsHKO+tg1H8b3FEogUCgYCgVDoWAoFAyFgqFQMBQKhkLBUCgYCgVDoWAoFMosLzeHblYOJUMaAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Institution'" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable CVScreenId="25e2bec3-9bf5-4e1c-9369-467601526b80" CvElementArea="119, 268, 250, 24" CvType="InputBox" DesignTimeRectangle="120, 269, 248, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;wnd ctrlname='clientGroupBox' /&gt;&lt;wnd ctrlname='institutionComboBox' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='clientGroupBox' /&gt;&lt;wnd ctrlname='institutionComboBox' /&gt;" Guid="c6849eee-eca4-4f78-b7b9-1c76c06826bf" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPwAAAAaCAYAAACTtjH4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIqSURBVHhe7ZjRccIwDEDZKbvw4WUyCD9ZgC8myBAMwAZs4FaOrTi2CWnPLRC/j3dHJEVy73hR6OF+v1sAaAOEB2gIFf58PgPATikKf7vdAGBnIDxAQyA8QEMgPEBDIDxAQyD8bxl723W9HUs5gDdlm/Dy5T4c7KGIsUNcu4nR9l1n+7GU87iZSe9SrAYq74ZzBRAePpCfb/gq0r2Z8ArCw76pKLzIErb+UprBzG8EXT9EdZ6SOFuEd9ehz9rMUQXtNR7Vu5yxpnCuoe8WMddL70F4eC2Xy6UYF0q5asKLYCrDYGaJ48+3b9ldTY0NPz1gzOBzz2a6e+f6UUQONSrvk3O5Hj6v9yQ1AP/E9Xq1x+PRnk6nLCcxyUlNHK8k/GDNIibXXoyFfIGtwkfbVvFzMuGezFyr19yzc0X5rB/A/1OS/pHsQh3hXSwVM4gzbeIQnzbsVuFLc3wsk3qaM/dPZmaCbhfevQ34Xvp3Zf0AXkMs/Zrswh9t+DLza3QF4bN8JLDGopmpoGmvR+eSB4vOifJpP4AXEqRfk12oJHzyG95dTzVjb2aBRB4zaL3+/i5RmrOITVtce0QbvzgzEdQ9CPxZ4lx6rqyODQ9vioi+JrtQTfj0NVolcRsyxKP7XB8fL4lTmpPG4h5xvDRzUftNPFNy4TquczF5cwjX8p98hIfP5efCfyoICoDwAC3RjvAAgPAALYHwAA3xUHgA2CeZ8ACwfxAeoBnu9gt6NXxjREIrgQAAAABJRU5ErkJggg==" InformativeScreenshot="f401460dec1bd1f9222b56091810f26e.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClientMachineEditForm' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="25e2bec3-9bf5-4e1c-9369-467601526b80" CvTextArea="31, 270, 61, 12" CvTextArgument="Institution:" CvType="Text" DesignTimeRectangle="32, 269, 88, 23" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='clientGroupBox' /&gt;&lt;wnd ctrlname='institutionLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='clientGroupBox' /&gt;&lt;wnd ctrlname='institutionLabel' check:text='Institution:' /&gt;" Guid="b2d261c3-568e-4221-b94a-e00234338e00" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAbCAYAAADxsuiMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF2SURBVGhD7ZbbkcMgDACpinrUDcUwboUe3AEdcAiDrWCQM8md4szpYyfmJcsbWYmJMSZFDhUujAoXYlmWggoXAmWv66rCpTgL95CMMRVInmx+jpCctckFMhdcstalMFpj4WKRuS9iXOH4UC/JRjipvyD8y7kWXivKQav6RwF+nzfJOp8FHeMCVmOJAQmma6Ri9zHKvtiP1/s6yavuYXOm9xTkOeE5afB1DVtOS5ZexyzbhfzJtQFubTS+ijXJi8s5c3/hNDk67h5kQ0h4fy5/4dAqmY35Wd4TXqusvfJbRQkJP33ZWy4lBzbmZ3lT+EFwtgp4QXi718NeHDOx+nP/ocKDg0MGVhz4co09cu+f3ZnhGvlR6/vrPBapaJzveziJ0Y/v1cMx8doiyv9wLvl+L93T5nEvPdOv5bnydtQ5cIP70f2zWNO35Dy+l3DlT1HhwqhwYVS4MCpcGBUujAoXRoULo8KFUeHCoHBEhQujwoVR4aLE9AO0ojFc59mbEwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Test Hospital'" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable CVScreenId="c18acada-a46d-477b-9ac6-24a312b02685" CvTextArea="2, 16, 72, 14" CvTextArgument="Test Hospital" CvType="Text" DesignTimeRectangle="1, 15, 246, 14" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;ctrl name='Clinical Unit:' role='list' /&gt;&lt;ctrl name='Test Hospital' role='list item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Clinical Unit:' role='list' /&gt;&lt;ctrl name='Test Hospital' role='list item' automationid='' check:text='Test Hospital' /&gt;" Guid="5ca9ebac-6e00-4bed-8241-dd5451dd6e5e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPgAAAARCAYAAADwmmFBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHaSURBVHhe7ZhBjsIwDEU5FwfiDKin6DE4QZecAmkWSOzYIFZdscs0juO6iaftVF2Q6Ft60tR24ix4pMyhaRqHQCDqC+82BEcgKg0R/HD+AQBUBgQHoGIg+Brat7u/3u5o1QD4YnLB/YeZ39/z6N1JLV7Hw7Wvj2tbq8bQzGRvK7cHIuuKc0UgOCiU+Rt8F8m+THABgoP62Si4l4MvdTeV5HTj9BD361P1cViirBGcnmPMzXyIkK3kVT/VetcZ5zpdP/wQgvaSNRAclMcmwb1Q8uG/9KO0+u/zIDf17HGDhy+U7sK1pZm0duw/enFjj8i6cC7ag+uyJukB4MvZIPjTdZOcf2YRJrJF1gpuBc/JBFuYOdcvtaVzqXq2HwBl8H/BKZdGFCXctDHCDbpWcGsO5zKJw5xxfx44BOUyIdcLTre9BAQHZbPDDW4zvhbvIHhWV8JKTs1MhUz3+utc/otE5qh6uh8AhbBB8OQ3OD2HnuO1H4Xxstye0i+/ny2sOZNcuKVlD3WjmzMTIUl8PouupefK+nCDg8LZJHj6WixS0A0YQ62jfTgsUaw5aU7vofPWzEnvEHqmr8Vn3Uc5/2bAQf9ph+CgbOYFLxUICQABwQGoGBEcAFAjjfsF/p6rp2bUx2MAAAAASUVORK5CYII=" InformativeScreenshot="2c81587f3bddb7a75e551324468acf6b.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' cls='ComboLBox' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="c18acada-a46d-477b-9ac6-24a312b02685" CvTextArea="1, 1, 48, 13" CvTextArgument="&lt;blank&gt;" CvType="Text" DesignTimeRectangle="1, 1, 246, 14" ElementType="ListItem" FullSelectorArgument="&lt;ctrl name='Clinical Unit:' role='list' /&gt;&lt;ctrl name='&amp;lt;blank&amp;gt;' role='list item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Clinical Unit:' role='list' /&gt;&lt;ctrl name='&amp;lt;blank&amp;gt;' role='list item' automationid='' check:text='&amp;lt;blank&amp;gt;' /&gt;" Guid="55bb04bb-3167-4456-9bf1-bf2c64d094a1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPgAAAARCAYAAADwmmFBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFcSURBVHhe7ZjdbcUgDEaZi4GYoWIKpskqfcgwNDZ2S/4abqs+FJ0jfRKJ8U1eTnyTkHOuhJA5o4IDwHwgOMDE/EzwtdQYS13tcMd3tSd+0wsAJxAcYGIQHGBixgVfUg1paWsTsaRQQ5DEWtxKqy0lWq0l+oaB3na41CR1u+ay7ffLA8AYz4KL2J1oioi4nfvyfZPZxdxJauh+E/nQq79/6l1rid1DwRDJ5V4QHWCMe8GvxHaOEqu0aZu5tj4KrsJ2gh97d4Knmi7k7kF0gDEuBG/T81Js5ySx/J0+C66TXR4SmkHBff+AvSr67j4AoOfvJrj227lt5/gEl3V7/75znAkOMMa94M7dO3gnqQrndavpR7b+3OgE97Ve13oMxAZ4jWfBHRFuJ2yTTXMprH0F17q8V78ouB7KX/zWJ3IjNsBrjAsOAP8OBAeYmE/Bw9s7IWSyIDghEyfnXD8A8cp8x1duoewAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Clinical Unit'" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable CVScreenId="7eea2daf-a42e-40e1-8dcb-2e6a6291fd89" CvElementArea="119, 306, 250, 24" CvType="InputBox" DesignTimeRectangle="120, 307, 248, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;wnd ctrlname='clientGroupBox' /&gt;&lt;wnd ctrlname='unitComboBox' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='clientGroupBox' /&gt;&lt;wnd ctrlname='unitComboBox' /&gt;" Guid="8a0d5c6f-2a67-433e-b30b-c648df0ea844" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPwAAAAaCAYAAACTtjH4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGqSURBVHhe7djBcYMwEEBReqIXH9SMCvFFDfjkCijCBbgDOlBYaZURRhCwM5kJ+w9vhmGl4Mu3grtxHCMAGwgeMOQ7+NvtBuCkmsE/n08AJ0PwgCEEDxhC8IAhBA8Y8nvBDz72vY/D0dlPPtkLYIbgAUMIHjDks+CDi50L+VrD9K6LXSf66Addp7Pge51lvR92783Bh+hkrs8M03oXdB1g0P1+b94Xrdl7wUvoVXiJhDndKwEOEncJdRZtvV7Dftmb/v5i7xB9X31JKIlePgvhw5rH4xEvl0u8Xq+LmdyTmayp7x8LvhV68Rp1itjF0JolEnAV/OveWfAuukbsNcKHRa3o12IXO4PPp2sz9GIRtfz7vQw+nfzypZHsDL6s33q+SuHPPgdwbnX0W7GLvz3h0369d+iEl+v8/r52gnPCw7IS/Vbs4ljwxdo7fBVtCrDMdZZ+tKvv7T3hy3V6ru7RtYQOZBL6VuziveALCXAWcI4vaQasv7KnubyXHwx+kl8J8j6JndCB/T4LHsC/QvCAIQQPGELwgCEEDxiyGjyAc1oED+D8CB4wY4xf3w1TScEBegMAAAAASUVORK5CYII=" InformativeScreenshot="4093e43d9de20622172f2b4f64462d9e.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClientMachineEditForm' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="7eea2daf-a42e-40e1-8dcb-2e6a6291fd89" CvTextArea="31, 306, 65, 13" CvTextArgument="Clinical Unit:" CvType="Text" DesignTimeRectangle="32, 306, 88, 23" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='clientGroupBox' /&gt;&lt;wnd ctrlname='unitLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='clientGroupBox' /&gt;&lt;wnd ctrlname='unitLabel' check:text='Clinical Unit:' /&gt;" Guid="10b6b43e-1246-435a-bed1-1972ce79ae35" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAbCAYAAADxsuiMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGNSURBVGhD7ZbRkYQgDECpinrohmIYW6EHO7ADjrAEMcDheGd0ZvPxBgUC4S2wqm3bgsCHCGdGhDMjwplYliVxTri3QWsbfK/tv+CY40FA9rqurXBvdVBKFbT1u4wzUq6KG8VBvTLBzep6lDF9sFoH6zt9mOgK/8iuF+KCOSv6r9whvPBK4VGuGiSFMkhpDZ6EKg77pFhY6H5aVKx3vRPUxFVA/W/Cp7mYuGn2+RJ5HgcxvTlvoBXeW1jdBonVZUzcuNzuzJ449onPaUHGteMhaZwsqIpr+0yET3Pp7/BnhdeJUjBxWtL2wzOcmMEPWKhE0DERqJ8Jn+byxisFhI8EYeK0pO2072C84x/ztwq/cIdfEn74Yb95h0emXym0xH7DRbZ3eJoD66DvbIfnccodHWnGmObyua/rMYBn7/DM8bjnJDFxWmLcYJHNV0qSBCcpv6cviJlwoIpJcYO56Tt9JvGvEC7cgwhnRoQzI8KZEeHMiHBmRDgzIpwZEc6MCGdGhDMDwgERzowIZ2ULPwQMIhEZgRqcAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PACU'" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable CVScreenId="dbdf9c7c-a4f2-4469-94f7-bb9db83fbe46" CvTextArea="2, 72, 31, 12" CvTextArgument="PACU" CvType="Text" DesignTimeRectangle="1, 71, 246, 14" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;ctrl name='Bed:' role='list' /&gt;&lt;ctrl name='PACU' role='list item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Bed:' role='list' /&gt;&lt;ctrl name='PACU' role='list item' automationid='' check:text='PACU' /&gt;" Guid="6537216c-ea66-4b09-b681-feecfc957061" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPgAAAARCAYAAADwmmFBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE8SURBVHhe7dkxDoIwFIBhz+WBPIPhFByDEzh6ChMHEjYWwsTE9uRJKaVQiEqIaf6XfIMU3H4LeEqSRBiGiW+0bQJnmEjHBn66PgFEhsCBiBE4ELF54Gktubl/76eRi3NBr5C06paqWs6ztaec721/qZn8Xpjv9b5r6RiA3QQCH6N7x+qHrOdUbXdeK2nqHO/0cbvRlnLT6wkcONxm4EsRasS6K18eZne2a13MC9G/EThwuC8C19tzE7Guubv7WrBLa2vnA/jZZuC6S8ujnK7bqJ3Y9XPWBJ/LCRw4XiBwZ7xg/RdoOvY2XQMPBUvgwOE2d/Apb8dWer79EeAZHPgnnwU+iXkwjTr4Ft38tXbLhuPmXPf2H8CuPgo8FKT/Nt2/jR+j1h8DZ0LP6wB2MQ8cQDQIHIiYDRxAjBJ5Aez15jlH/cMTAAAAAElFTkSuQmCC" InformativeScreenshot="8f5a7a271877b0dfe7d8cbac82a2ba8d.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' cls='ComboLBox' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="dbdf9c7c-a4f2-4469-94f7-bb9db83fbe46" CvTextArea="2, 1, 47, 13" CvTextArgument="&lt;blank&gt;" CvType="Text" DesignTimeRectangle="1, 1, 246, 14" ElementType="ListItem" FullSelectorArgument="&lt;ctrl name='Bed:' role='list' /&gt;&lt;ctrl name='&amp;lt;blank&amp;gt;' role='list item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Bed:' role='list' /&gt;&lt;ctrl name='&amp;lt;blank&amp;gt;' role='list item' automationid='' check:text='&amp;lt;blank&amp;gt;' /&gt;" Guid="fa834719-6b0d-466c-a9f9-a8b367356805" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPgAAAARCAYAAADwmmFBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFUSURBVHhe7djbjcMgEEBR10VBFEEVVONmXAzrGQYF/FiPd7Ufi+6RkOxg4vzcEGdJKRUGgzHn0MABzIfAgYn9LPAtlxBy2ex08N3ck9+sBXBC4MDECByYmD/wNZYlrvXYQsxxKcsiI5TcqrS5NQebqyO0Cxxr6+laoszbPdf9+nZ7AD7PgUvYXWhKQtxf+/S+x9zCHCI1er2FfFir739au5Ucui8FI5HLZyF0wOc+8Kuwm2PEGm3c91w7PgauwXaBH9cOgccSL+LuETrgcxF43T0vw25OEcvP6XPgurPLl4QOZ+Dteke9GvrwOQD0/m4H1/X22n6lfweX4/r8fdc4Ozjgcx94c/cM3kWqwbV5m9M/2frXvDt4O9b72hpD2MA7z4E3EtwQbI1Nx2Ww9i+4zstz9cvA9VR+4td1EjdhA+/4Awfw7xA4MDECByZG4MDEUkrlC3Wwt1wODsh3AAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Bed'" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable CVScreenId="72dbf15c-a3cc-4903-b8d0-3c53cda84062" CvElementArea="119, 344, 250, 24" CvType="InputBox" DesignTimeRectangle="120, 345, 248, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;wnd ctrlname='clientGroupBox' /&gt;&lt;wnd ctrlname='bedComboBox' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='clientGroupBox' /&gt;&lt;wnd ctrlname='bedComboBox' /&gt;" Guid="57da7716-1911-4c51-bbe1-227bd2fbfcd3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPwAAAAaCAYAAACTtjH4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGqSURBVHhe7djBcYMwEEBReqIXH9SMCvFFDfjkCijCBbgDOlBYaZURRhCwM5kJ+w9vhmGl4Mu3grtxHCMAGwgeMOQ7+NvtBuCkmsE/n08AJ0PwgCEEDxhC8IAhBA8Y8nvBDz72vY/D0dlPPtkLYIbgAUMIHjDks+CDi50L+VrD9K6LXSf66Addp7Pge51lvR92783Bh+hkrs8M03oXdB1g0P1+b94Xrdl7wUvoVXiJhDndKwEOEncJdRZtvV7Dftmb/v5i7xB9X31JKIlePgvhw5rH4xEvl0u8Xq+LmdyTmayp7x8LvhV68Rp1itjF0JolEnAV/OveWfAuukbsNcKHRa3o12IXO4PPp2sz9GIRtfz7vQw+nfzypZHsDL6s33q+SuHPPgdwbnX0W7GLvz3h0369d+iEl+v8/r52gnPCw7IS/Vbs4ljwxdo7fBVtCrDMdZZ+tKvv7T3hy3V6ru7RtYQOZBL6VuziveALCXAWcI4vaQasv7KnubyXHwx+kl8J8j6JndCB/T4LHsC/QvCAIQQPGELwgCEEDxiyGjyAc1oED+D8CB4wY4xf3w1TScEBegMAAAAASUVORK5CYII=" InformativeScreenshot="81ba7cb8f96cde075033fdcdeb210cf1.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClientMachineEditForm' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="72dbf15c-a3cc-4903-b8d0-3c53cda84062" CvTextArea="31, 345, 26, 13" CvTextArgument="Bed:" CvType="Text" DesignTimeRectangle="32, 345, 80, 23" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='clientGroupBox' /&gt;&lt;wnd ctrlname='bedLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='clientGroupBox' /&gt;&lt;wnd ctrlname='bedLabel' check:text='Bed:' /&gt;" Guid="0592effc-3ef9-4bd3-8925-58954e8a679b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAbCAYAAADiZah4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEBSURBVGhD7Za7EQMhDESpinrohmLohVroQMf/hMYeX7CRb4MX7FnRm5WwK6UIwUGhYCgUDIWCwQvNUbyPkj/99gJuoU2Ec+IUIZ3Dj6DQGbrQIGnlFKpUlZ9CoTNYoTaXLNGv9nqJeX1fs6rdSmgKZ/53vgrN0YsLaQ82MT7mkVt7t6Qhep8H09CXC1Utq9w3NEk42trybKltshH6Nn6svJZ2yt5rf7R1zlJoxQo9Vtk2VGEFUugMVmjP9+Nz3NCe16xa/5r77VVCeUPtSu9h/cpX1IM1/mKN776K5qNEYFAoGAoFQ6FgKBQMhYKhUDAUCoZCwVAoGAoFQ6FgKBRKkQukyviJbdufaQAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PACU1'" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable CVScreenId="d3ebaa1b-d674-4838-8c84-60b5f7ad5523" CvTextArea="2, 16, 38, 12" CvTextArgument="PACU1" CvType="Text" DesignTimeRectangle="1, 15, 246, 14" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;ctrl name='PACU1' role='list item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='PACU1' role='list item' automationid='' check:text='PACU1' /&gt;" Guid="f35341db-5f2c-4450-9d6b-b178b61c7aad" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPgAAAASCAYAAAB2DhPvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFhSURBVHhe7ZkxDsIgFIY9lwfyDIZT9BiewNFTmDiYuLk0Tk7dsK9QChSsmMYY8v3JN8ijdfp4QDdKKU0IqS/iNoITUmmc4Jv9BQAqA8EBKgbBASpmLnjz0Fe7fzd56p33gOGmm7YvtQ+9ndUuenvqzKM219PNvjd6V2psf9fH5H8CQCkZwSfBBlljkWVO2/XzOt003niPkdsXtBdWnv9A8N3ZLAjpRQUASlkUPNVlRWLpyiLk0J1dTbrvXPqBDwQ30MEB1uILwWV7biWWmt/dk8K+qSXnIzjAWiwKPmybz/ew7qT2ZJffh2f2XI7gAL8nI7iXSNj4Ak3itukieE5OBAf4OYsdPCTq2ILMd4sAZ3CAf6JM8EDmkVDq7C26/bR2PIzjdq6//R/nIzjAKhQJnhbSnNP92/R4Gz9JLfJ6iRaL6TOZSXhDDwClzAUHgGpAcICKcYITQuoLghNScZRS+gV5Y1dOtFQ78QAAAABJRU5ErkJggg==" InformativeScreenshot="2babf8d5ca0977d8826b88a02c573a04.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' cls='ComboLBox' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="d3ebaa1b-d674-4838-8c84-60b5f7ad5523" CvTextArea="2, 1, 47, 13" CvTextArgument="&lt;blank&gt;" CvType="Text" DesignTimeRectangle="1, 1, 246, 14" ElementType="ListItem" FullSelectorArgument="&lt;ctrl name='&amp;lt;blank&amp;gt;' role='list item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='&amp;lt;blank&amp;gt;' role='list item' automationid='' check:text='&amp;lt;blank&amp;gt;' /&gt;" Guid="c7333cad-55fc-4484-b6f8-1f26ac42b25f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPgAAAARCAYAAADwmmFBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFcSURBVHhe7ZjdbcUgDEaZi4GYoWIKpskqfcgwNDZ2S/4abqs+FJ0jfRKJ8U1eTnyTkHOuhJA5o4IDwHwgOMDE/EzwtdQYS13tcMd3tSd+0wsAJxAcYGIQHGBixgVfUg1paWsTsaRQQ5DEWtxKqy0lWq0l+oaB3na41CR1u+ay7ffLA8AYz4KL2J1oioi4nfvyfZPZxdxJauh+E/nQq79/6l1rid1DwRDJ5V4QHWCMe8GvxHaOEqu0aZu5tj4KrsJ2gh97d4Knmi7k7kF0gDEuBG/T81Js5ySx/J0+C66TXR4SmkHBff+AvSr67j4AoOfvJrj227lt5/gEl3V7/75znAkOMMa94M7dO3gnqQrndavpR7b+3OgE97Ve13oMxAZ4jWfBHRFuJ2yTTXMprH0F17q8V78ouB7KX/zWJ3IjNsBrjAsOAP8OBAeYmE/Bw9s7IWSyIDghEyfnXD8A8cp8x1duoewAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Anesthesia Recorder'" sap:VirtualizedContainerService.HintSize="388,189" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable CVScreenId="e73e8d79-0bca-474e-8a5a-accb0a8a63b3" CvElementArea="31, 426, 15, 14" CvType="CheckBox" DesignTimeRectangle="31, 426, 15, 14" DesignTimeScaleFactor="1" ElementType="CheckBox" Guid="604d5ed6-504f-4e3b-b4b5-47474b1ef572" InformativeScreenshot="151258f23e3c0ce7eab802c4475fdf7f.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClientMachineEditForm' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="e73e8d79-0bca-474e-8a5a-accb0a8a63b3" CvTextArea="47, 426, 148, 13" CvTextArgument="Anesthesia Recorder Client" CvType="Text" DesignTimeRectangle="47, 426, 148, 13" ElementType="Text" Guid="44191eb6-12da-41f3-a35b-b569d3f4bfb7" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable CVScreenId="e73e8d79-0bca-474e-8a5a-accb0a8a63b3" CvElementArea="200, 500, 83, 25" CvTextArea="233, 506, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="200, 500, 84, 25" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='oKButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='oKButton' check:text='OK' /&gt;" Guid="d1343cc8-e774-4a85-a6f3-6cf1d03103bd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFgAAAAdCAYAAAAuAKvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEHSURBVGhD7dbBEYMgEIVheqIbKsmNVmiFKnK2AzrYIEFl1UNI3MHNvMN3wOzpz+pgUkoEchBYGAILY4HN4wkXYE3Z4WQY+rGm7FAHpmmCLyCwMAQWhsDCEFiYrsDBkTFmZX3cfouerHEU1vlI3uY567eZAdQEjt7mqG3AQK6NvAscXI7rQp0dR0ng9za6sHteNrpGbQKXPyNvbmxnB9ER+PD6L+YttuRjMzNHv0nc2R8ErptdZur3GYE79Wzw/ts8mI7And/gZZsP8wMoCdx/izjOj6EmcNF1D65XtfxsnRlAV2CFEFgYAgtDYGEILOzjwPAb1pQdToahH2vaHuB6CCwMgUUlegEniRnmT/+kZAAAAABJRU5ErkJggg==" InformativeScreenshot="ec874f8eaeb87cf6cf31a2bead517d73.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClientMachineEditForm' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="e73e8d79-0bca-474e-8a5a-accb0a8a63b3" CvElementArea="296, 500, 84, 25" CvTextArea="319, 505, 37, 13" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="296, 500, 84, 25" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='formCancelButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='formCancelButton' check:text='Cancel' /&gt;" Guid="5a3e53bf-a5e0-4844-a281-c6feb581aad3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFgAAAAdCAYAAAAuAKvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFBSURBVGhD7ZbhDYMgEEbZiW1YhlVYwCEYxQ3c4OpRpAeF1qReTOj34yV6cBgeB2K2bSOgBwQrA8HKVIKXZQEXIJ2+CV7XFfwABCsDwcpAsDIQrMx/C46erPX9tou4XXD0lowxBetjt58Kswt+ynUUSiyQ2yccRR9V5ha8yzSWfHxvG1Z1FuLd0dbmR/L2lWfKYsm4yJlaME+uqt4BqV+Wkp4NuZDbghMSVwos3oU6P8fLIsmcqQU3csZw9QnBMqd65x3RW7A2LnbO9II/VHB9TJwQzM+98VL8GKc/XtX/Yu4T/OEMruWfrOCR4GFl78wteHyLCBw/ztIk7oTg40f27QxO7/mbswtm2hvD8wfGVZdj1u3SzwhmmltEkT2I/4Pg2YFgZSBYGQhWBoKVgWBlvgoGvyOdVoLB9UCwMhCsykYPVoRDK+opQRcAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="8, 31, 384, 501" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Add Client' role='client' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Add Client' role='client' automationid='' check:text='Add Client' /&gt;" Guid="a4868fd9-36d1-4966-88f5-8fc6fe432cad" InformativeScreenshot="93ad1ae56b8e422a00632e29329a8fe3.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClientMachineEditForm' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="05437bf1-7e89-496c-bbef-2f3d89775d15" CvElementArea="200, 500, 83, 25" CvTextArea="233, 506, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="200, 500, 84, 25" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='oKButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='oKButton' check:text='OK' /&gt;" Guid="434563e4-e6cf-455e-bce0-6fd9a61e64cc" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                    </uix:NCheckState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="754,182" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="9f67fd20-e009-48b3-b796-93c3f1c7a635" CvElementArea="199, 344, 84, 25" CvTextArea="232, 350, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="199, 344, 84, 25" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='oKButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='oKButton' check:text='OK' /&gt;" Guid="1d9a27b9-6ff7-474a-a9ec-9a87c4fd9074" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFgAAAAdCAYAAAAuAKvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD5SURBVGhD7dbBDYQgEIVheqIbmqEVGrAISrEDOphFFhXlsCHuC07yDv9F5/Q5EkxKSRguAoMjMLgL8LIs7A+1ph3wuq7sQQQGR2BwBAZHYHAEBqcHODgxxhxZH8930Ys1TsIxH8XbPGf9OTMpFcDR24zaAgZxLfINOLiM60KdnZsC4O82unB7Xja6ojbA5WPkzY3t7MTeD9z9/nvbFlvxsZnZ0F+Eu6UcuG52mannM4EHG9ng+9n8gt4PPHgG79vczU9KAfD4LaKfn5cK4NLQPbhe1fKzY2ZSeoCVRmBwBAZHYHAEBkdgcD+B2fNa0wsw+38EBkdgaEk+YY+0/Z1XCQUAAAAASUVORK5CYII=" InformativeScreenshot="700f9cf1353ecc49c0a0de5d6284a194.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClientMachine' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="9f67fd20-e009-48b3-b796-93c3f1c7a635" CvElementArea="295, 344, 84, 26" CvTextArea="318, 349, 37, 13" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="295, 344, 84, 25" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='formCancelButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='formCancelButton' check:text='Cancel' /&gt;" Guid="b6577740-8ab7-401e-b742-0a81550c5abd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFgAAAAdCAYAAAAuAKvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFBSURBVGhD7ZbhDYMgEEbZiW1YhlVYwCEYxQ3c4OpRpAeF1qReTOj34yV6cBgeB2K2bSOgBwQrA8HKVIKXZQEXIJ2+CV7XFfwABCsDwcpAsDIQrMx/C46erPX9tou4XXD0lowxBetjt58Kswt+ynUUSiyQ2yccRR9V5ha8yzSWfHxvG1Z1FuLd0dbmR/L2lWfKYsm4yJlaME+uqt4BqV+Wkp4NuZDbghMSVwos3oU6P8fLIsmcqQU3csZw9QnBMqd65x3RW7A2LnbO9II/VHB9TJwQzM+98VL8GKc/XtX/Yu4T/OEMruWfrOCR4GFl78wteHyLCBw/ztIk7oTg40f27QxO7/mbswtm2hvD8wfGVZdj1u3SzwhmmltEkT2I/4Pg2YFgZSBYGQhWBoKVgWBlvgoGvyOdVoLB9UCwMhCsykYPVoRDK+opQRcAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="8, 31, 383, 345" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Client Machines' role='client' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Client Machines' role='client' automationid='' check:text='Client Machines' /&gt;" Guid="e6cca9ef-f7c0-4834-b224-86fac262742c" InformativeScreenshot="3a7c0a02e4637483fe93ffc6fd75e756.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClientMachine' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="477538d5-0358-431a-b40b-fe7572e6f22a" CvElementArea="199, 344, 84, 25" CvTextArea="232, 350, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="199, 344, 84, 25" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='oKButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='oKButton' check:text='OK' /&gt;" Guid="7df0902f-6313-4334-857d-7c1775f40bd5" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'push button'" sap:VirtualizedContainerService.HintSize="1320,189" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="6d13f8d6-a509-4fcf-b6af-c3b550169be8" CvElementArea="48, 52, 30, 25" CvType="Icon" DesignTimeRectangle="49, 52, 32, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='toolBar' /&gt;&lt;ctrl idx='7' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='toolBar' /&gt;&lt;ctrl automationid='' role='push button' /&gt;" Guid="63f2423e-22bc-400d-9994-5237890d40f5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAfCAYAAACPvW/2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATOSURBVFhH3ZbrT1t1GMf7D5BoTPTFNo1BjFtijJlKosFsMxFDsDgm6pBxkYGwsLBuMCZmY2wJjA6YRcqlMAoE2BizQEEcRYGBFNZxdTBupUALLSsX23PKHfL1d8rF0J6Slfii8cXn1XnO93zyPM85v8MxGAxwJDhra2twJBxPaHV1FY7E/0doeXkZGo0GFZWViIq5RPgB0ZsUl5RAqVRiaWmJ9d7d4KysrMBeFhcXIZfLkSpIQ2yaGEntRgi6KIiemFAyMI/U4krcTEmFTCbDwsICa4Yt9iTU09ODjJw8XBZLkfSYyHRSyOmlcWdwHtKRRfyhXkJhrRyJKQLU1dWxZthiT0IikQhXiuvAb6eQRjqT+4QmnTFBqtqQadMt47fRRURkSODs7MyaYQsOswv2kp2djfiSOvOYcnrJmEhnqlQLqCcyj4hM78wKxoxrKC6vNguxZdjCptA8NQtaOwxqpAuG4Y5tjMpOZApSkFj6O3LJmJidkY4wMos7ZFTGVWSVSv8bIVozgMmWexgvvYrx2zyM5UdjTMxwAePiKFRmJiDjrhR5rarNzhCZKSIzuyEzvbAOqWIQ3hcSwOVyrfJ3g8O8mpaMFl2GuiQOMzIRFroeYF3VQWjH6lCrmfXhNkjys5AgyEJRcx+qiVQfI0OtoVu/AulDBfz8A+Dq6gqFQmGVvxusQk9/CoKuWgC6oxrLvY1Eom2TDSGGjloJioQ3IbzFx9ViGRLSspEiFCH4uhCf+Z6Gl5cXeDwexHlitD9uB2WkrJ7DBrtQ8rcYSj4JNRnXlOQGZmpFmH6QBW05HxO/JGGSoK1IwQgZY32sJ6598xEOv+qE4EB/REREoLCwECqVCk1NTXBzc4Onpydqamqg1+utnmUJq1B/6iloc85CR4RUgkAM8r/GwI0v0f3jMbRHfYhH595D69l30Bz6Jup9X4GE64ToIwegVQ3uyNHpdCi7V4ajR46Cn8RHYmIiWlpadtRYwio0cMsf+oKLmLtzBdrcSKiFIRj/ORjD/K/wNN4D3Zc+hiLyXbQQoYZT+1Bx/CVEue23EmJg/nGaHjYhICAAPj4+CA8Ph0QisarbwqbQs4JozN6Ngy6Ph4msMGgyQqEkY+y//jn+YjrFex/ysINo8N+PCm/bQlvk5ubCz8/PLBUSEoL09HTWOvaRWQhpMsOhJkIjm0I9sVtCbxEh0qHnEGKoqqpCaGgoXFxc4O7uzlpjU2iKfHs2hM5vCAm/ZxVqDHh+IQbmUC4oKDCfcWzXOczJbcm2ENkhZrFZhc5vCpEOlW8KTY4MWGXZC4f5PbBkOC0Q+sIYstSkQ2ahMCLE7JAvEeJajOzfHZpQ9ltl2QurUGv8CTKqc6Dvx5O3LXpbaKtDG0v9AdrOHEJz0AFIvngREYdfgHqozyrLXjjz8/OwZFR+H7K4k2iI4UIpCIaxIBIGMfkuCYMwxj+BoWvu6ItxRWPQ67j9qRMEHvvQ+Ws2/p6ZssqyF1Yh2jiH8S4ZOkUXUXnmE2Qcf9tMpvchpHPfQJrHa0g+9jLyfQ5Czv8OQ3+WgTbMwmSirbLshWMymUiQNTRlgHFWj7mpCUxPqi0Yh35iDDNaDYwzz8y1bBl7gUPTNBwJxxOiKAqOBMdoNMKRcLAOUfgH1hChgn2EEqoAAAAASUVORK5CYII=" InformativeScreenshot="67376b8c1cb5e1d8a88c5e83d262aa3c.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ConfigDisplayController' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="6d13f8d6-a509-4fcf-b6af-c3b550169be8" CvElementArea="16, 51, 31, 28" CvType="Icon" DesignTimeRectangle="17, 52, 32, 27" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='toolBar' /&gt;&lt;ctrl idx='6' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='toolBar' /&gt;&lt;ctrl automationid='' role='push button' /&gt;" Guid="d741e51f-ed9b-4c55-b7dc-542e85b72962" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAfCAYAAACPvW/2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARdSURBVFhH1Zf7S5tXGMfff0FFEQXxFxX8wRui84I671cQx372glTU1V3K6KQt6GTMWunqLWbaIZu3WJS5mOEQQbJOcF6msxO1to2XulRjYsw9MW++e8+hCUv6NkqQNTvweQ95c87zfN5z3vOEMGq1Gt4EY7Va4U14n9D5+Tm8if+v0K7SiPc6nyJdsIP3e585Qe4lPNii/dyOGkazhTfGZWAsFgsug+zEQIUOTi1wbTtHWjDXHtH+zi9yDC2fQK0z8ca5iCsXIu3h70p8I30FudrAG8sdVyr08/rfePJSTbk/K0O9aJM3ljsYs9mMy/BCoX+r0L5Kj8SvZ52IaPgOH94R8sZyx5UIkWZ7jZW7WFhA8NPjdyNEJFjucs5JmKyA7hw444Z0/PirZ0Imkwl8bG9vY2lpycH0b384hBwSHCZOxMBJaDgJlckGhdEGuZ7FvXEp8j9td4pBODw85M1nh1doZWUFEokEExMTlPHxcfSLxFRoV2WBmVsJIqHlJE7NdgkbXupY7GpYPDtj8dUjKdKufQmRSOTEwMAApFLpGznt8Aq1tbVha2uLbglpLMslel0YtxRmqM3ACSdxZLDhkJPY07J4zkk8VbPYVLF4omTRJJLig9u90Ol0TtTW1qKuru6NnHbcCtlsNipDKujzYx0VWn1lwiG3GvucyAtuNXY4kc1TFn9xIn+esFhVWLFybMXtESnKbglwdnbmRE1NjWdCm5ubVMRoNNIn25DJEXZ9CPUCMT5/KMGNfgk+65PgE46Pv5XgulCCjzjqOep6Jci5KUTRjfv0wY6Pjx1UV1d7JrS+vg6NRgOlUomjoyPsyPZw9wcxbj74HjVNHai6de9CvrjbA7FYjLW1Nezv79MXuqqqyjMhciKICAlycHDggKzc8vIyFhYWLsXi4iI2Njawt7dH51dWVnom1NTUhObmZtpfJYmJie6FyDviChHq6OhAf38/+vr6IBQKKQKBgNLd3Y2uri50dnY6QebYIZ/JGDK2p6fHMTcjI4MK8eUlMAaDAa4QobGxMczOzmJkZASNjY0oLS1FcXEx8vLykJubi8zMTBo8LS0NycnJSEhIQFxcHGJjYykxMTGIiopCSkoKWltbaS2bmppCSUkJPfp8eQlvFRodHcXMzAwNRiSKiopQWFiIgoIC5OfnU8h9Qk5ODrKzs5GVleWACBNSU1MRFBSE3t5eKkViuBXS6/VwhQgNDw9jenqa7nt5eTnm5uY8YmhoCAzDoL29HYODg3R1iRBfXgKvkFwuR1lZGQIDAxEeHo6KigrMz897BNl6IuTr6wt/f3+0tLTQ08aXl8C4lnY75LjLZDJMTk7SYpaeno6kpCTEx8cjOjoakZGRiIiIQFhYGEJDQxEcHIyAgACKn58ffHx8KCEhIWhoaMDq6iqNR4ojXz47jFarhTvIv0lSHBUKhYN/V147pGbxQb5TqVS0yPLFd+VCof8ahph7E4zrr/G7xstWSIN/AElsY2RPXu6ZAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NCheckState DisplayName="Check App State 'Pending Activation'" sap:VirtualizedContainerService.HintSize="1320,643" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,394" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="388,122" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="ed70105a-37f7-4209-ad5c-a57c3df2e40e" CvElementArea="753, 357, 84, 25" CvTextArea="780, 362, 29, 13" CvTextArgument="Close" CvType="Button" DesignTimeRectangle="753, 357, 84, 25" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='formCancelButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='formCancelButton' check:text='Close' /&gt;" Guid="000937bf-eeca-4d99-8761-d35d85aad226" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFgAAAAdCAYAAAAuAKvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE7SURBVGhD7dbhkYMgEIZheqIbmqEVGrAISrEDO9gLGyULITEzcbm9m+/HO2PQ/MjjSnTbthHSC8DKAVi5BnhZFnRB0vQJeF1X9EUAVg7AygFYOQAr9zeAcyTvI+XROeOZA87Rk3Ou5mMG8FXdcQOlupYoFFgAX9EN03mKeXBOApfjOuHt9Sl0k8/rmaIfXz8jO8AMJ6e3O8fAd6yQ9vUUyB3w8vh2s+IOXNArdnPNnOwAv/vxB7CcZE5M/fD75Xy35UyeYlvAZxP8hCgnWm4F+xo/FY+139gm7AB/sgcz2PlE8p8l34h+gudnCPiTt4jXe3CO4QFd1kPi42YP5s9zwU0Bl/r34Pqo75DtYy+weIsZrHdbxwE/K3PA/y0AKwdg5QCsHICVA7Byp8Do+6RpA4yuD8DKAVi1jX4A60NmqoF+sX0AAAAASUVORK5CYII=" InformativeScreenshot="71949cee682206c1c6513cfc170389dc.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='PendingActivationForm' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="ed70105a-37f7-4209-ad5c-a57c3df2e40e" CvElementArea="657, 357, 84, 25" CvTextArea="690, 363, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="657, 357, 84, 25" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='oKButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='oKButton' check:text='OK' /&gt;" Guid="b03b6fa8-ba99-4c71-8f34-215eb44f5c4c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFgAAAAdCAYAAAAuAKvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEHSURBVGhD7dbBEYMgEIVheqIbKsmNVmiFKnK2AzrYIEFl1UNI3MHNvMN3wOzpz+pgUkoEchBYGAILY4HN4wkXYE3Z4WQY+rGm7FAHpmmCLyCwMAQWhsDCEFiYrsDBkTFmZX3cfouerHEU1vlI3uY567eZAdQEjt7mqG3AQK6NvAscXI7rQp0dR0ng9za6sHteNrpGbQKXPyNvbmxnB9ER+PD6L+YttuRjMzNHv0nc2R8ErptdZur3GYE79Wzw/ts8mI7And/gZZsP8wMoCdx/izjOj6EmcNF1D65XtfxsnRlAV2CFEFgYAgtDYGEILOzjwPAb1pQdToahH2vaHuB6CCwMgUUlegEniRnmT/+kZAAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="8, 31, 841, 358" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Pending Activation Changes' role='client' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Pending Activation Changes' role='client' automationid='' check:text='Pending Activation Changes' /&gt;" Guid="f24f665f-f816-460e-b9b1-f4d1fedb35c0" InformativeScreenshot="ed4a7b114f01a94ca51f714e85b0b73d.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='PendingActivationForm' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="ed70105a-37f7-4209-ad5c-a57c3df2e40e" CvElementArea="657, 357, 84, 25" CvTextArea="690, 363, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="657, 357, 84, 25" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='oKButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='oKButton' check:text='OK' /&gt;" Guid="cb3fdd0c-9211-4c93-9587-0ab273f819d9" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'Configuration Editors'" sap:VirtualizedContainerService.HintSize="1320,189" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="6d13f8d6-a509-4fcf-b6af-c3b550169be8" CvTextArea="95, 112, 77, 13" CvTextArgument="Administrative" CvType="Text" DesignTimeRectangle="94, 107, 80, 24" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Administrative' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Administrative' role='outline item' automationid='' check:text='Administrative' /&gt;" Guid="ceaed194-7fb7-4e8e-a1f4-823804009c70" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAcCAYAAAD/YJjAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIPSURBVGhD7ZVt0q4gCIZblwtyPa7GzbQYX1AwIK3mOfw73DONGR/CldbRQq4KoM4KoM4KoM4KoM4KoM4KoM4KoM4KoM76d6BnaSmVdtL0f9cD0LOVdLTjDdYvQL/EPPpgbamVn97iItZxU+yB9kVSS8dL4Y7FfJczUEdtgZ4FYMKqNR99VEKIB+xevhhof55bgVi25dp6jjGnRvgl0FisHSVe1BWPtdRxcmjer1suXQNeowc6deL5FZtbBhvWO1WzOKEydv9CNkDFWxSNDY3Ec2Fpx/tZPAgLgvn05QI5hvxvdrxnH9UUwJxgTFM2l1S3sf8mltcSCeRmUhtL1aS1BsoLjIkuoBeXoTWS9FVxoN3cjmRe5loW/wCFplrS/ym2tjx7w3v2k89R0qa1BIrHXR0LuLZvZwWhG0C7uR3JvM6FAK46xgb6BlT38QUotkdryD7RPvPYfFoLoC/F2sK/2lA8tyOZH3OBOqD+7ANQBDJ3lfR/icU4IIprXaff7tC97kAXjYyEXITe7leTfaJjd3M7kln5030t8INhB2p23JrvpcnV62IHtIman2NHf/iTki7qGwqqeQ34BlQVInT7KNPWT5DYQpjL7uZ2JLPy53ux1rXjQGjn56tcHQzb8Q8uduVLLPZ6Z4A7m2LwWjBCrX9KoZ8VQJ0VQJ0VQJ0VQJ0VQJ0VQJ0VQJ0VQF3V2h+I6kUU/uVr0AAAAABJRU5ErkJggg==" InformativeScreenshot="3190d367ad1789417d3c952e7824ad08.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ConfigDisplayController' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="6d13f8d6-a509-4fcf-b6af-c3b550169be8" CvTextArea="68, 88, 115, 15" CvTextArgument="Configuration Editors" CvType="Text" DesignTimeRectangle="67, 83, 117, 24" FullSelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Configuration Editors' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Configuration Editors' role='outline item' automationid='' check:text='Configuration Editors' /&gt;" Guid="5f07b185-ec83-4582-98fd-dfb82d939862" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHkAAAAcCAYAAABFwxCgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKPSURBVGhD7VdBVsQgDO25ehX33MKNG7fsvIXLHsMLdO05ECjgTwhIZ8YZn+S/h680kPzkB6YuL6/W6fjfY3GKfw8VeQKoyBNARZ4AKvIEUJEngIo8AVTkCXBHkTdnlsUtYZgtvZsMu3Xrat2epvdCU+Tdrocgaaz2OmqbAR93S3Z3dl0doX7r2MEf1KkMqZExdnkWON4YosiHwMafvQx/Cq8qzO8nIuMOcaPIWKsOxAZ7iMjhWu0EJZ0L61IC1p9Ybgun+LvL/fsNk4VrHPfxguCcxDLOirdOKN73uzjCfu6n2MdyqRB9dEQmMfwgORh/eMDG7eV9i9sRF+sr3bi1yF3SR+HKTbSZipRoi/tqosdVhcSgwcqaBJzzWIhoy7GEU8Jin8+FIa4drFeJjc8CR75vmNvmG75mWYv8U0LENiiK/yuKHAljgU6IjDYCjCUUEGMTH6O5MASbL3o5iWlEEaIN8kM/5bnDMU273Hp6Jcgitzqzcggdx4OTeUPkyt/lItMPxRyrU8CLc2EIttF6oZ/yLHA8wy3ZSHMxnPtNrhIa7X6WSLZVhJm/H09BQihKWYuxhAJi7ItyYaj8AHp+ynOD4yg3QGx0wSaInBbzIIUQdAt2XC+huA8SKbZAHvzF5CCZ/OwRPy4asSLf7ETYR7q77L00F4YYryEyiuNBRACfFUf/dpTbbv2HZ56EddRRhChyAL3+uBD5PSTHC0HmLZE94ilM/vwaLBhyMBb28FipWQ4f4YuVxSo2vwf3om04FwbiA0YuGOS3GiPngD7OcsP6NZqtKfJDwBNQ3AQPF5n+Dy13ouI6/K2TrPgVqMgTQEWeACryBFCRJ4CKPAGKyG/PTzcbnx/vyavi8XDuC88zilPjV2/FAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'Administrative'" sap:VirtualizedContainerService.HintSize="1320,189" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="6d13f8d6-a509-4fcf-b6af-c3b550169be8" CvTextArea="122, 184, 85, 13" CvTextArgument="Client Machines" CvType="Text" DesignTimeRectangle="121, 179, 87, 24" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Client Machines' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Client Machines' role='outline item' automationid='' check:text='Client Machines' /&gt;" Guid="527199e1-43f6-43ac-aa9a-f5d2a1a339ad" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFsAAAAcCAYAAAAOa8NNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJKSURBVGhD7VYxjgIxDOQ59wYexBvuB9fuM3gBJa9AugKJjgZRUdHl7MTOOsExy7Gb00m2NNps4iTj2UlgFTy6hYvdMbLYqxU0vz78ucSTYmzhwOe3Y2agrhxZbPwCWrLjTbiz+8Gd3RPu7H5wZ/fEr509XMPxcg1rbew/4A/4T3L2en+nkRTH/Wkk+zbpUxgu9zAM2hgB98CND+eif3PAzlvYiL7JsHgv9SGeOTsJLQs6h90sIjOmin2H/SoekewCYi+EJ87GghpCMNmCNApHi8h5lDNEJ2LwmMyn0ASIYt/CAB9+t6W+7S0cDwASWz19eY1qH8H7kROgqk3NeVi3HEunLkXmYjqbilSdUxFCgXCDvDCIkYWL64RCqFHUqc4GHsVeMGdL/Wr+uGYsvLqCTE68j5UDaNZb5J3BJCnHdna1eAFJKObgKZCFi1ORc6q58f0FsXOuuMpUM8g1a14EixO3rRyr3pZuprNxkloMoCaEzzRbxNxip+viCPn5R1rwK68SsfcSYmObdhqD68CaqAuCT8aMd3bDQTJXfX9N7NRWhCyMIdaUORIFh+qd21aOVa9ANADPMZ3NycWisIkkIggUd1h8p3km6TQv34saML8lGPVHnnwvx/7KZdqd3eLEbSsH0Kp3vYcfczYPmoD2fuLshPJ4kjAqofL4FMUbpOM7TVHvujhui52cRgF/EXfFaVF4WZy4beVENOqNp4xD8H7mbMd8mORsx0xwZ/eDO7sn3Nn94M7uiaazccCfsz854M2jV7jY3SKEHzmeI98YkcC+AAAAAElFTkSuQmCC" InformativeScreenshot="50ec20df7cce5edc5e2579a545fc09c7.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ConfigDisplayController' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="6d13f8d6-a509-4fcf-b6af-c3b550169be8" CvTextArea="95, 112, 77, 13" CvTextArgument="Administrative" CvType="Text" DesignTimeRectangle="94, 107, 80, 24" FullSelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Administrative' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Administrative' role='outline item' automationid='' check:text='Administrative' /&gt;" Guid="0ba86472-bdd3-4755-bcbf-7df6e9062fe5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAcCAYAAAD/YJjAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIPSURBVGhD7ZVt0q4gCIZblwtyPa7GzbQYX1AwIK3mOfw73DONGR/CldbRQq4KoM4KoM4KoM4KoM4KoM4KoM4KoM4KoM76d6BnaSmVdtL0f9cD0LOVdLTjDdYvQL/EPPpgbamVn97iItZxU+yB9kVSS8dL4Y7FfJczUEdtgZ4FYMKqNR99VEKIB+xevhhof55bgVi25dp6jjGnRvgl0FisHSVe1BWPtdRxcmjer1suXQNeowc6deL5FZtbBhvWO1WzOKEydv9CNkDFWxSNDY3Ec2Fpx/tZPAgLgvn05QI5hvxvdrxnH9UUwJxgTFM2l1S3sf8mltcSCeRmUhtL1aS1BsoLjIkuoBeXoTWS9FVxoN3cjmRe5loW/wCFplrS/ym2tjx7w3v2k89R0qa1BIrHXR0LuLZvZwWhG0C7uR3JvM6FAK46xgb6BlT38QUotkdryD7RPvPYfFoLoC/F2sK/2lA8tyOZH3OBOqD+7ANQBDJ3lfR/icU4IIprXaff7tC97kAXjYyEXITe7leTfaJjd3M7kln5030t8INhB2p23JrvpcnV62IHtIman2NHf/iTki7qGwqqeQ34BlQVInT7KNPWT5DYQpjL7uZ2JLPy53ux1rXjQGjn56tcHQzb8Q8uduVLLPZ6Z4A7m2LwWjBCrX9KoZ8VQJ0VQJ0VQJ0VQJ0VQJ0VQJ0VQJ0VQF3V2h+I6kUU/uVr0AAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NCheckState DisplayName="Check App State 'Client Machines'" sap:VirtualizedContainerService.HintSize="1320,1420" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="816,1171" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Test'" sap:VirtualizedContainerService.HintSize="754,189" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="404fac6b-df9a-4608-8a72-1ba3313fff59" CvTextArea="34, 172, 27, 12" CvTextArgument="Test" CvType="Text" DesignTimeRectangle="33, 171, 225, 14" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;wnd ctrlname='addEditDeleteGroupBox' /&gt;&lt;wnd ctrlname='addEditDeleteExternalPanel' /&gt;&lt;wnd ctrlname='addEditDeletePanel' /&gt;&lt;wnd ctrlname='clientListBox' /&gt;&lt;ctrl name='label1' role='list' /&gt;&lt;ctrl name='Test' role='list item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='addEditDeleteGroupBox' /&gt;&lt;wnd ctrlname='addEditDeleteExternalPanel' /&gt;&lt;wnd ctrlname='addEditDeletePanel' /&gt;&lt;wnd ctrlname='clientListBox' /&gt;&lt;ctrl name='label1' role='list' /&gt;&lt;ctrl name='Test' role='list item' automationid='' check:text='Test' /&gt;" Guid="5d626650-37eb-4b24-891e-fa365630872e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOUAAAASCAYAAACkXhm3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAECSURBVHhe7djRCcMgFEBR53Ke4DxO4zIu4QavarTRYEBqaf24BwJJqp+XZ6pCCHIchwD4r9Rh6pEogU0QJbAZogQ2Q5TAZp6j9Fa0UqKGlxFXls3zYrUW68sjgKG5SZkD/STEFlECMxajTKHV6dkH58w1WbV1zbpyaRt3A7hbijKFp2uJzlyhtfdxl81rmJTAjIUonZjuXXou0XVRVkQJzPg8yvzudiR9H2HbY60SkzcSJTDji5NyzFtdpiZRAjMWokyn1OabMnLmXOOtueJLR9lzVOb15RbAg6Uo4w/dMbXGl0Os79p97ZGXf1+BobkoAfwMUQKbIUpgM0QJbOaMMsgLKsgos+i14SEAAAAASUVORK5CYII=" InformativeScreenshot="09f9044aafc3a6a4b51d6bfbcd667e54.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClientMachine' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="404fac6b-df9a-4608-8a72-1ba3313fff59" CvElementArea="281, 130, 84, 25" CvTextArea="304, 135, 36, 13" CvTextArgument="Add..." CvType="Button" DesignTimeRectangle="281, 130, 84, 25" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='addEditDeleteGroupBox' /&gt;&lt;wnd ctrlname='addButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='addEditDeleteGroupBox' /&gt;&lt;wnd ctrlname='addButton' check:text='Add...' /&gt;" Guid="309f3243-334d-4d4e-bffc-d25c75220b36" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFgAAAAdCAYAAAAuAKvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEiSURBVGhD7ZbBEYMgEEXpiW6oJDdaoRWqyNkO7GAjBBxXCYnGHTeTf3ij69/Tc10x4zgSkAOChYFgYZhgc7uDE2BOWdFoBvthTllRGoZhAAeAYGEgWBgIFub3BEdP1nqKe7OLUCQ4kreGzDtBEHyQLMeSNZZ8bOQVCD5G9JNcHyk4k68sT+LMNN2VpcRepgAlgtN6KJO7mcLn6nCh1CzvZTrQIXgjbbEm8oQ6Cq3eXqYEFYLTepg/8cK8JoLbroRa9zIlKBC8mtjEekpfSexlSrhecFNKIDefJpb3Zdrn/l425B/mnlqCywVnKS5snrPTRFoFdXU4x19IJ4PgPwCChYFgYSBYGAgW5mPB4DuYU1Y0msF+mNNlAc4HgoWBYFFGegCm9t8dA8wQXAAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Delete'" sap:VirtualizedContainerService.HintSize="754,189" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="a8bafcbe-eb68-4e1f-85bd-6522170b97f1" CvElementArea="281, 234, 84, 26" CvTextArea="304, 239, 37, 13" CvTextArgument="Delete" CvType="Button" DesignTimeRectangle="281, 234, 84, 25" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='addEditDeleteGroupBox' /&gt;&lt;wnd ctrlname='deleteButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='addEditDeleteGroupBox' /&gt;&lt;wnd ctrlname='deleteButton' check:text='Delete' /&gt;" Guid="5ae9fa68-15fe-4b23-bdf0-bc155618b925" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFgAAAAdCAYAAAAuAKvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE4SURBVGhD7ZbBEYMgFETpiW5ohlZowCIoxQ7s4CdEMR9F4kyykUz28A7y14NvFsRM0yQEBwWDoWAwheBhGMgH0E53gsdxJG9AwWAoGAwFg6FgML8pOHqx1kuszTrjOsFJkjFiFC5UcjVOCY7irRUfa7PvcbFgJ6F4NmJ93Ge3UPAJtoITwd2brNeSpNxwJasQXMvotYVmHkdfgscgTn10cKrRSX6WpAQfZg4afJzH0JnguV3zWZxk67mSvwpuZKqCW3kM/Tb4MVdbXG/pLLiVqQlu5jH0Jbg4g7dtU2TBrcypBuPpR/DSLn1VK87Lx/OSXwU3Mstse/Vr5RFcLLjcrvt78HwmrxkXnu+uP6eDTM7l9TN5ANcJ/hMoGAwFg6FgMBQMhoLBvBRM3kc7LQSTz0PBYCgYyiQ3GUohS3DKil4AAAAASUVORK5CYII=" InformativeScreenshot="4cb4ede80a719881d1922be575e60ef2.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClientMachine' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="a8bafcbe-eb68-4e1f-85bd-6522170b97f1" CvTextArea="35, 173, 27, 11" CvTextArgument="Test" CvType="Text" DesignTimeRectangle="33, 171, 225, 14" ElementType="ListItem" FullSelectorArgument="&lt;wnd ctrlname='addEditDeleteGroupBox' /&gt;&lt;wnd ctrlname='addEditDeleteExternalPanel' /&gt;&lt;wnd ctrlname='addEditDeletePanel' /&gt;&lt;wnd ctrlname='clientListBox' /&gt;&lt;ctrl name='label1' role='list' /&gt;&lt;ctrl name='Test' role='list item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='addEditDeleteGroupBox' /&gt;&lt;wnd ctrlname='addEditDeleteExternalPanel' /&gt;&lt;wnd ctrlname='addEditDeletePanel' /&gt;&lt;wnd ctrlname='clientListBox' /&gt;&lt;ctrl name='label1' role='list' /&gt;&lt;ctrl name='Test' role='list item' automationid='' check:text='Test' /&gt;" Guid="46d2ff88-aeb1-4f40-8d70-f4733fe2d242" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOUAAAASCAYAAACkXhm3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEfSURBVHhe7di9rYMwGEbhzMU8iBkyBmNkAkqmiJQCiY4mSmFR0X2JjU3MTxQLR8HFeaVHunBJuiNz70kpJXmeC2Ps2OkOdY9EyVgiW0V5Ot8AHIgogcQQJZCYz1GWD2nsO+56vRTel4RppbwPUpZbvwPghJ2UJtA9IfqIEggRGaUOzR6eMg+uuNrbrzV15z1nd39INvsuAFpUlDq8pm7H60v/Ds3/+fwK0jzDSQmEiIiyk2p2T1/b6GZROkQJhNgfpbm3nIvOf60VqS7uHlEC3/zwpNyW1YM9NYkSCBER5eJvSnM9PpPV/Ts+/Sp77abnx1MTwCdRUS5fU118JsRp3uf8V17++wpsCosSwN8QJZCYVZSMsWNHlIwltjFKJU/rHqoc1fza9wAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NCheckState DisplayName="Check App State 'ICCA'" sap:VirtualizedContainerService.HintSize="754,521" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable CVScreenId="6e6214ef-2653-4617-8da6-a644f4fab8a8" CvElementArea="119, 169, 93, 22" CvTextArea="155, 174, 22, 12" CvTextArgument="Yes" CvType="Button" DesignTimeRectangle="119, 169, 94, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='middleButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='middleButton' check:text='Yes' /&gt;" Guid="c98adf12-28a3-4a05-a809-36f5e17621e5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGIAAAAbCAYAAACHiFoHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEdSURBVGhD7Za9EcMgDEa1E9swSTpWYRWmSO0NvIFi/IuAwkVsBPcV7xzJcqN3kkLzPDNoD0QoASKUIETQ5wteRPReBJVi8Byi9yLYC6ZpAg8CEUqACCVAhBI6FOHZErH1Mh+cYTKOQ5LriQ5FLHgrmx4cG7Ls05rO6FPEgrfExoXi90ZgZ4hpmRwiwy7I77Z8/k1buhVxTkF8ZitJiEmnR0ySZwcR/2G9C8W9iDckXVMx3qciX2mK6FpE9TasuWv9bBzrKV1Z5cFvyXgiiomoc/zLqr1rwYAiyuPt7VYTnL0Od1xT1p81rRlSRL6CzobH5h+5G1PzJn2LGAiIUAJEKAEilHBbBHgH0XsRVIrBc4jepwFoB0QoASJUMPMPEZdKqr+Wau0AAAAASUVORK5CYII=" InformativeScreenshot="cf3c8fa906f13c4976b65cf26f528085.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ICCA' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="6e6214ef-2653-4617-8da6-a644f4fab8a8" CvElementArea="224, 169, 93, 23" CvTextArea="261, 174, 16, 12" CvTextArgument="No" CvType="Button" DesignTimeRectangle="223, 169, 94, 23" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='rightButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='rightButton' check:text='No' /&gt;" Guid="830b682f-8472-4504-b263-f0ac0e36f1c7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGIAAAAbCAYAAACHiFoHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVGhD7ZbBEYQgEAQ3J7IhGVIhAYMgFDIggz305G7Bx70OB2seXYXr+pl2SqWUouR+KAIEigChE7FtG5mIzf4iIudMJkARIFAECBQBAkWAsKaIFNSJqAtpmHmNdm8hFhbh1DkTPEXcQAs9+m8rRhHHtagcOA3pnIOytoicNLRWdCL2uaiP534VJi5oas8DsriIem6tsLP93AUf1YO3Yn0RrRWDnL4BQ0MAeYCIyt4KX7GNsPfZiD9xCfr9xstnxm/EHC4iKnvYdnbstL+mYReQNUU8EIoAgSJAoAgQKAKEnyLIPGz2nQhyHxQBAkVAUPQFFdAVeQmkRNEAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="8, 31, 405, 172" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='ICCA' role='client' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ICCA' role='client' automationid='' check:text='ICCA' /&gt;" Guid="1794e187-b994-4ac8-a940-5eea62c43211" InformativeScreenshot="13ff59f2fbfcb004f458596a230f293e.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ICCA' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="6e6214ef-2653-4617-8da6-a644f4fab8a8" CvElementArea="119, 169, 93, 22" CvTextArea="155, 174, 22, 12" CvTextArgument="Yes" CvType="Button" DesignTimeRectangle="119, 169, 94, 23" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='middleButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='middleButton' check:text='Yes' /&gt;" Guid="819a2df0-5c8b-4921-bde6-7aee987c4cc2" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                    </uix:NCheckState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="754,182" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="11165efd-15db-43fc-b12d-70c263e3c7d7" CvElementArea="199, 344, 84, 25" CvTextArea="232, 350, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="199, 344, 84, 25" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='oKButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='oKButton' check:text='OK' /&gt;" Guid="4e832cf9-2f27-47ee-ac1b-a97cfecec81c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFgAAAAdCAYAAAAuAKvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEHSURBVGhD7dbBEYMgEIVheqIbKsmNVmiFKnK2AzrYIEFl1UNI3MHNvMN3wOzpz+pgUkoEchBYGAILY4HN4wkXYE3Z4WQY+rGm7FAHpmmCLyCwMAQWhsDCEFiYrsDBkTFmZX3cfouerHEU1vlI3uY567eZAdQEjt7mqG3AQK6NvAscXI7rQp0dR0ng9za6sHteNrpGbQKXPyNvbmxnB9ER+PD6L+YttuRjMzNHv0nc2R8ErptdZur3GYE79Wzw/ts8mI7And/gZZsP8wMoCdx/izjOj6EmcNF1D65XtfxsnRlAV2CFEFgYAgtDYGEILOzjwPAb1pQdToahH2vaHuB6CCwMgUUlegEniRnmT/+kZAAAAABJRU5ErkJggg==" InformativeScreenshot="5874982e2096a1d4046e0a24e0a4a1ec.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClientMachine' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="11165efd-15db-43fc-b12d-70c263e3c7d7" CvElementArea="295, 344, 84, 26" CvTextArea="318, 349, 37, 13" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="295, 344, 84, 25" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='formCancelButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='formCancelButton' check:text='Cancel' /&gt;" Guid="e6a28018-f285-49a1-a546-fe5419b4d7b6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFgAAAAdCAYAAAAuAKvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFBSURBVGhD7ZbhDYMgEEbZiW1YhlVYwCEYxQ3c4OpRpAeF1qReTOj34yV6cBgeB2K2bSOgBwQrA8HKVIKXZQEXIJ2+CV7XFfwABCsDwcpAsDIQrMx/C46erPX9tou4XXD0lowxBetjt58Kswt+ynUUSiyQ2yccRR9V5ha8yzSWfHxvG1Z1FuLd0dbmR/L2lWfKYsm4yJlaME+uqt4BqV+Wkp4NuZDbghMSVwos3oU6P8fLIsmcqQU3csZw9QnBMqd65x3RW7A2LnbO9II/VHB9TJwQzM+98VL8GKc/XtX/Yu4T/OEMruWfrOCR4GFl78wteHyLCBw/ztIk7oTg40f27QxO7/mbswtm2hvD8wfGVZdj1u3SzwhmmltEkT2I/4Pg2YFgZSBYGQhWBoKVgWBlvgoGvyOdVoLB9UCwMhCsykYPVoRDK+opQRcAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="8, 31, 383, 345" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Client Machines' role='client' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Client Machines' role='client' automationid='' check:text='Client Machines' /&gt;" Guid="f7de9c54-e47c-48fa-b308-d0f82bd50c7a" InformativeScreenshot="f3ee46269a652fddeeba088918de050b.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClientMachine' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="404fac6b-df9a-4608-8a72-1ba3313fff59" CvElementArea="199, 344, 84, 25" CvTextArea="232, 350, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="199, 344, 84, 25" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='oKButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='oKButton' check:text='OK' /&gt;" Guid="94aee53a-b316-4469-8831-c872510e76f4" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="1320,182" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bc791a5-87ea-4278-bbb9-570fc7958222" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="6d13f8d6-a509-4fcf-b6af-c3b550169be8" CvElementArea="1893, 8, 19, 19" CvType="CloseButton" DesignTimeRectangle="1880, 8, 48, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="0c3863ef-96e1-458f-bd79-057b37966cdd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAAaCAYAAAD43n+tAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACSSURBVFhH7c9bCoAwDETR/ojuf11ZTHcQHbRQMBTEDsaQC8VHS8kpRxpsmT//uzRICfJegrxHA+FSEbm+7mEPZ2ZHA2HgZd1M1GjvbTQQsgZnYhAVhHoAG4PoINQgbAxK0NMaBs/+nRUVZAHYKBpoNDgTRQPh0tHA2MOZ2dFAX5Ug7yXIewnyXlxQrVUjrBNUdAfrZe9Jf5CpRwAAAABJRU5ErkJggg==" InformativeScreenshot="b54202a82038aa2edcfdfe0f6d2c94b5.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ConfigDisplayController' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="6d13f8d6-a509-4fcf-b6af-c3b550169be8" CvElementArea="8, 9, 21, 21" CvType="Icon" DesignTimeRectangle="8, 8, 22, 22" FullSelectorArgument="&lt;ctrl automationid='MenuBar' /&gt;&lt;ctrl name='System' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='MenuBar' /&gt;&lt;ctrl name='System' role='menu item' automationid='' check:text='System' /&gt;" Guid="433c7bfd-3fcb-476f-8495-fe89e7d1b1c7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGhSURBVEhL7dLPS8JgGAdw/7ikrnqS8uRZ8NjFutrBhOgHzFqHEDxU4CkokPDkYQsUJEgMyksYFFvbcoPp0553vXOvundi2qW+8GUvr9vzYa+LOIFf6tTNZdRdLDt/GBIEwes84UL+4bVaDVRNXyw0PtzfhUHlcpkBXvYPQqHLi3NSXiYgHOQf3ItG4b5QIOv34yK0Gg0GQ0DXddJg7Coc6qbTIK+twlOzCd2tbbLnhxDG8jMD1M5mQc7tQG99AzqJBAPl83mC/OiN3uJxeJUk6DjQXb0Oz9Uq3OZy5DccjggOx2v4f8SB2skktFIpeIjFQL65BgOGoJqWNxyvkZXN76fCwoG6mQx8qCpIlYp3PIZhMAju02PkJwDCz/uxVCLQpz0AzYF1TWMQ07JIEcP7+eAUCEPfCovY+HENnXsohKX3iuKJO2AiHEiWJW9Av98nANa2bRg6km0aDBSMYAIgDD1Cig0G+B6jWJZJ9vHo+IibQAiD2DjoH47lf9ajcCGaPeEUjsQz2D0sOmvRuc7ypbGZCVpE/qG540GKoiyxCnwBxaLXl0dWezIAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1056" FilePath="C:\\Program Files\\Philips\\CIS\\Bin\\philips.cis.configdisplaycontroller.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAWKSURBVFhHtZfLT5NpFMb5I2ZjXJi48rIYFybeFkY3Go0LoygT0JWJGglhRmUz/gNCYmLUhdwJGNQBlDsEBJxMzBAj14wOtPRKoaV3aaH19sx53vYtX0u5TfSEk6b93u/9Pee855zvI+f/Wk9PDxoaGvD48WMkf/rx1t3djfr6epSXl6OxsRHv3r378QI6OzsVlKCKigqMjo7CarHAbrPD7nD8GAEdHR2oq6tTm1dWVmJ8fBwzMzOwiNtsVtjsArc74HQ6v5+A9vb2NOizZ89gmp6G2WQSuAUWixVWA9wh0c/NzX0fAbW1taiqqsLz588xJdBpukngZnMickm51WqFU6Czs7OYdbkUfH5+fkMB+Qd+Aj35dbVxA/rU1JTy6alpmCRqs4lwM+zjE5jv6lYRO5Nw15xLwd1uN96PDWFgYGAtAHLavHINyPk5N/saLYBRM+WEz0jEKuVWG7wPH+LTzp0Yf/1aopfIXRL5XALu8Xjgd42ulYUV+GYEmMwCNs8YUm6Ts7bB09SE6PbtaLl4ERarJRU54ZGS2/B5vdkEbA5O0wIyz9smbeZw2LHQ1IzQ4cNwb9uGt9KGCu72IPBqAJ/378fLly8zj2HzcJoWkA5n9CJA2myhuRm+EycweeQI3u/bh8nJSXgWPAi2tSN0+jTu3btnPIY14ZqjPfmzQYARLpGz6Fjx3pYW+E+eVK0Zkiw8vXsXCwtehGVWBE6dQnV1NYLB4IZwGjtHe0qEFsDoU5Gz4iX6WZcIePEiIaCqUs68BNN79sA6MqIEBEVATU1Nos22AE8ToQVwyGj4rMBdEj0Xeab+RXT3bjUnvNKazqNHFSV+6BAWDx5cEZAFTuPeGihfVzsXMI2ccIQvXrmCyKVL0uuJQcOii+/di7KyMlXxPJaGR4/w4tgxvPolD3W11aqDFDgDTssiIN244MmTJ8m0OxA9exaBHTvg3rUr1W6fRUBpaSl8fh8C/gACgaC6loLLxpFoRDyaNpS4N21wcDAlgL9p53e1qLW1VXUBo/t46xbe5BdgVNL7z4ED8MsjN3bmDGqKi+EP+AUeQDAUVBuk4JEIotElLC1Fsby0jKGhIXVdw7UAoys4jQu5YHh4GC4Zs4GGetiPH0d/cxPGz51Tlb8sc6BdCvDDhw+q4o3wqMCXBL68vKw8Jp4NngQaPWF8xo+NjaGtrU0t9MjzICLp5wOKncBBU1VYiPKyUgTnx9IjX9SRJwXE1oVnN1YxF/JGtqHbkyi6p9euwefzwS8e8PvV9TS4RM4zT8BjiMViW4fT+GqlBfCTRfdJpl7j1asYkX73y5nfvHlTgTWca1l0OvL4OvBv376pa3QFzLSuri6Vfv124/V5ld+/f18EjKbBk5tI2lfOPRaLrws3Gotdi3n7pndFkJoDkn5emJiYSLabXwouEb2+SZZK0UURZbUr+NqRI529ypzmv3Hnzu8JEb29vejr61Pp54aEBwQeDIUQDoVTIhh5lGkXXw+eGXk2S8G1FRQUqFnA9GsRYRHwMRzG4uJistel6FTka1c74evxGegqOI0b8iLTz086RaTBGblUvIb3S+Y2G/maYG39/f1gFhRY0q8FUQThLLZEuyWKjnC5bcPINZj/R3CIqfYVz8/PR7FMVwXXRhElMvF4E9NPEJ2FSbB2WarAaZHzz6AgExyPxxU4Ly8PV+SB91DeNRU00yji8uXLagPezJu0EC3my5cvCkz/+vVryrOBmT3ucf78eRTeuIGutsbsYKM1yYtooYzfqzKMtBCmn3B+NwriE1G7EazTnZubi99+LUZf9x8bgzONgOvXryshRUVFCs7ow9IZ/GTUxvQTqP3ChQtynLfx56vWrYMzrUXeCx88eKBE0M/I43k9Zyb+GmzfBDgn5z+CBxV/zAUGKQAAAABJRU5ErkJggg==" InformativeScreenshot="55f9e0eb3bcd4874cb41da47837095b7.png" Selector="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ConfigDisplayController' /&gt;" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="1478,126" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+  </Sequence>
+</Activity>

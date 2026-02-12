@@ -1,0 +1,86 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_51024_Dose_And_Quantity_Iteraction_Application" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1794,2232" sap2010:WorkflowViewState.IdRef="_51024_Dose_And_Quantity_Iteraction_Application_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="1. Precondition: At least 2 care units have been configured.  User has direct physician order entry permission&#xD;&#xA;Set up:  Direct physician entry is configured.   Discrete dose medication order has quantity attribute configured.  Attribute of dose is configured to cause a split. &#xD;&#xA;NOTE: Make sure Quantity is configured&#xD;&#xA;Config Editor -&gt; Order Catalog-&gt; Intake -&gt; Formulary -&gt;Drugs -&gt; Medication Order-&gt; Edit Medication Order -&gt; Material Tab for Drug-&gt; Property Tab -&gt;Add Quantity to standard property by checking the quantity –&gt; Edit Numeric Property -&gt; Check the Edits will focus a new order check box&#xD;&#xA;&#xD;&#xA;2. Go to orders editor. Add quantity to the dose material usage.  Make sure that the dose itself causes a split. Make the dose not mandatory. Store&#xD;&#xA;ER: No crashes. No stack trace.  Changes are stored. &#xD;&#xA;&#xD;&#xA;3. Update the pharmacy product configuration for acetaminophen po to have strength of 500mg.  Acetaminophen elixir should already have strength – verify that it has both strength value and volume.  Confirm that acetaminophen pr has no strength values.  &#xD;&#xA;Store and activate&#xD;&#xA;ER: No crashes. No stack trace.  Changes are stored as per spec tag &lt;B03.2_c&gt; and &lt;E17.3_c (1-4)&gt;&#xD;&#xA;&#xD;&#xA;4. Go to a patient’s record and add an order for acetaminophen.  Enter a route of by mouth. &#xD;&#xA;ER: No errors.  Quantity and Dose fields are enabled. Will function per spec tag &lt;E36_005&gt;.&#xD;&#xA;&#xD;&#xA;5. Enter a quantity of 1.&#xD;&#xA;ER: Dose of 500mg is calculated.&#xD;&#xA;&#xD;&#xA;6. Enter a quantity of 2&#xD;&#xA;ER: Dose of 1000mg is calculated.&#xD;&#xA;&#xD;&#xA;7. Clear quantity&#xD;&#xA;ER: Dose is cleared.&#xD;&#xA;&#xD;&#xA;8. Enter a dose of 0&#xD;&#xA;ER: Quantity is empty.&#xD;&#xA;&#xD;&#xA;9. Enter a dose of 750mg&#xD;&#xA;ER: Quantity of 1.5&#xD;&#xA;&#xD;&#xA;10. Enter a max dose value = 1500mg&#xD;&#xA;ER: Quantity clears and becomes disabled.&#xD;&#xA;&#xD;&#xA;11. Change the dose to 1000mg&#xD;&#xA;ER: Quantity no longer calculates.&#xD;&#xA;&#xD;&#xA;12. Clear the max dose field&#xD;&#xA;ER: Quantity is enabled and calculates.&#xD;&#xA;&#xD;&#xA;13. Enter a quantity of 99&#xD;&#xA;ER: Dose clears because a valid dose cannot be calculated.&#xD;&#xA;&#xD;&#xA;14. Select the elixir formulation&#xD;&#xA;ER: Quantity and dose are cleared.&#xD;&#xA;&#xD;&#xA;15. Enter a dose of 500mg&#xD;&#xA;ER: No quantity calculated.&#xD;&#xA;&#xD;&#xA;16. Enter a quantity of 6&#xD;&#xA;ER: Dose remains, no calulation.&#xD;&#xA;&#xD;&#xA;17. Enter a max dose of 750mg&#xD;&#xA;ER: Quantity clears and disabled.&#xD;&#xA;&#xD;&#xA;18. Enter a route of rectal and remove the route of PO&#xD;&#xA;ER: PR formulation is selected.&#xD;&#xA;&#xD;&#xA;19. Enter a quantity of 1&#xD;&#xA;ER: No dose is calculated.&#xD;&#xA;&#xD;&#xA;20. Enter a dose of 500mg&#xD;&#xA;ER: Quantity remains the same&#xD;&#xA;&#xD;&#xA;21. Change quantity to 2&#xD;&#xA;ER: Dose remains the same.&#xD;&#xA;&#xD;&#xA;22. Change the order back to po route alone and enter a 1000mg with a q4h schedule.  Give a start time of yesterday.  Selet OK.&#xD;&#xA;ER: Quantity of 2 calculated.&#xD;&#xA;&#xD;&#xA;23. Store the order.&#xD;&#xA;ER: No errors. No crashes. No stack trace.&#xD;&#xA;&#xD;&#xA;24. Chart a dose for the order&#xD;&#xA;ER: No errors. No crashes. No stack trace.&#xD;&#xA;&#xD;&#xA;25. Store.&#xD;&#xA;ER: No errors. No crashes. No stack trace.&#xD;&#xA;&#xD;&#xA;26. Go to the properties dialog of the po table order in chart mode.&#xD;&#xA;ER: Both dose and quantity fields have values.  Both fields are enabled.   Both values are in the history. &#xD;&#xA;&#xD;&#xA;27. Go back to the tablet order and change the dose to 500mg and select OK&#xD;&#xA;ER: Quantity calculated of 1.&#xD;&#xA;&#xD;&#xA;28. Change the quantity to 1&#xD;&#xA;ER: Dose changes to 500mg.  Order splits.&#xD;&#xA;&#xD;&#xA;29. Check the contents of the original and split order.&#xD;&#xA;ER: Both have the appropriate dose and quantity.&#xD;&#xA;&#xD;&#xA;30. Store&#xD;&#xA;ER: No errors. No crashes. No stack trace." DisplayName="_51024_Dose_And_Quantity_Iteraction_Application" sap:VirtualizedContainerService.HintSize="512,2087" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="450,143" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="450,143" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="450,126" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+  </Sequence>
+</Activity>

@@ -1,0 +1,86 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_50978_Weight_Based_Calculations_Application" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1794,1987" sap2010:WorkflowViewState.IdRef="_50978_Weight_Based_Calculations_Application_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="1. Precondition:&#xD;&#xA;Tables 5 &amp; 6 are attached.&#xD;&#xA;Set Up For New Drug for Molarity   &#xD;&#xA;(1) go into the pharmacy product editor&#xD;&#xA;(2) Define a new drug called Mole Drug&#xD;&#xA;(3) go to the formulation tab of the new drug and select to add a new formulation&#xD;&#xA;(4) call the formulation Mole Weight&#xD;&#xA;(5) give it the unt family of molarity&#xD;&#xA;(6) Go to the limits page&#xD;&#xA;(7) Select to add a limit of dose and edit the bound for general&#xD;&#xA;(8) enter units of mmol and a max/high of 1000&#xD;&#xA;(9) select ok on bound and limit&#xD;&#xA;(10) select to add a llimit of dose per patient weight and edit the bound for general&#xD;&#xA;(11) enter the units of mmol/kg and max/high of 100&#xD;&#xA;(12) select ok on the bound, limit, formulation&#xD;&#xA;(13) select to add another formulation called Mole BSA&#xD;&#xA;(14) repeat steps 5 to 9 above for this formulation&#xD;&#xA;(15) Select to add a limit of dose per BSA and edit the general bound&#xD;&#xA;(16) enter units of mmol/M2 and a max/high of 500&#xD;&#xA;(17) select ok all the way out&#xD;&#xA;(18) activate&#xD;&#xA;&#xD;&#xA;2. Enter medication orders for the drugs and patients identified in Table 5 Dose/Weight Bounds Cases. Enter the drug information and review what fields and values are initially displayed. For acetaminophen, use the PO route and elixir formulation. Determine what bound is used for dose/weight by slewing for the min and max values. Check for the display of fields as indicated.  Store an order for each case and chart/store an intervention for each order.&#xD;&#xA;ER: Results as described in the table. Orders stored without problems. No crashes. No errors reported. Nothing in log files. Will function as per spec tag &lt;B03.4_a&gt;&#xD;&#xA;&#xD;&#xA;3. Go to PEDS1.  Select to add an acetaminophen order. Enter po route and elixir formulation.&#xD;&#xA;ER: Weight dose, weight, and calc dose fields are initially displayed.  When elixir formulation is selected, the weight dose fields are enabled and the weight field is initialized with the latest daily weight.  The calc dose fields remain disabled. &#xD;&#xA;&#xD;&#xA;4. View the contents of the weight list.&#xD;&#xA;ER: Two weights displayed.&#xD;&#xA;&#xD;&#xA;5. Select the tablet formulation&#xD;&#xA;ER: Weight is cleared.  Dose/weight fields and weight drop down are disabled. &#xD;&#xA;&#xD;&#xA;6. Select the elixir formulation. Perform the test cases described in Table 6 Acetaminophen.   Check the calculated values.&#xD;&#xA;ER: Calculated dose is updated and is based upon dose * weight in kg.  The dose field is updated and has the value less than or equal to the calculated dose in multiples of 80.  The order may turn yellow because of dose bounds issue and is normal in this test situation and most of the following ones as well.  Calculated fields will not have values if the calculated value is outside of configured limits.&#xD;&#xA;&#xD;&#xA;7. Store orders with weight based doses and weight.&#xD;&#xA;ER: No errors, no crashes. &#xD;&#xA;&#xD;&#xA;8. Store orders with doses.  No weight is selected.&#xD;&#xA;ER: No errors, no crashes.&#xD;&#xA;&#xD;&#xA;9. Select to view the properties dialog.&#xD;&#xA;ER: Weight value used is displayed along with weights, weight doses, and calculated values for weight based.  For non-weight based doses, no weight value is displayed, but fields disabled.&#xD;&#xA;&#xD;&#xA;10. Select to view the administration record report.&#xD;&#xA;ER: All fields are in the report&#xD;&#xA;&#xD;&#xA;11. Chart doses for these two orders.  View properties dialog for the charted interventions.  View reports for the charted interventions.&#xD;&#xA;ER: Interventions default dose if no max dose was entered. Properties dialog/Reports show all appropriate information.   Weight fields are not shown. Weight values are not in the audit trail.&#xD;&#xA;&#xD;&#xA;12. Go to PEDS2 and select to enter an acetaminophen order.  PO route and elixir formulation.&#xD;&#xA;ER: Defaults to daily weight as the only weight available.&#xD;&#xA;&#xD;&#xA;13. Enter other mandatory values and store.&#xD;&#xA;ER: No errors. No crashes.&#xD;&#xA;&#xD;&#xA;14. Chart and store an admission weight.  Enter an acetaminophen order for PO elixir.&#xD;&#xA;ER: Defaults to admission weight based upon system configuration.&#xD;&#xA;&#xD;&#xA;15. For PEDS 2, select to all of the standard medication orders entered for acetaminophen and Furosemide.  Complete missing mandatory values Store.&#xD;&#xA;ER: No errors. No crashes. &#xD;&#xA;&#xD;&#xA;16. Chart interventions for all new orders for PEDS 2.&#xD;&#xA;ER: No errors. No crashes.&#xD;&#xA;&#xD;&#xA;17. Enter medication orders that use weight based calculations for any other unit families not already covered including mass, Molarity equivalents, volumes, and units.  Potassium can be used for equivalents.  Heparin can be used for units.   MVI can be used for volume.  A new drug must be defined for Molarity, using mmol.  Additional bounds will need to be configured for these (dose and dose/weight).&#xD;&#xA;ER: Weight based calculations are provided with correct values." DisplayName="_50978_Weight_Based_Calculations_Application" sap:VirtualizedContainerService.HintSize="512,1922" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="450,143" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="450,143" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="450,126" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+  </Sequence>
+</Activity>

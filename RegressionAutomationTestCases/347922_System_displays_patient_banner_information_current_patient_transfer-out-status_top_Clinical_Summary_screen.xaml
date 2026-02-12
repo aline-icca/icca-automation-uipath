@@ -1,0 +1,888 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_347922_System_displays_patient_banner_information_current_patient_transfer_out_status_top_Clinical_Summary_screen" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="LifetimeId" Type="InArgument(x:String)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap2010:WorkflowViewState.IdRef>_347922_System_displays_patient_banner_information_current_patient_transfer_out_status_top_Clinical_Summary_screen_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.NetIQeDirectory.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPathTeam.ServicesManager.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="_347922_System_displays_patient_banner_information_current_patient_transfer_out_status_top_Clinical_Summary_screen" sap:VirtualizedContainerService.HintSize="1224,2212" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="url" />
+      <Variable x:TypeArguments="x:String" Name="username" />
+      <Variable x:TypeArguments="x:String" Name="ICCAWebUI" />
+      <Variable x:TypeArguments="x:String" Name="LifetimeId" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap2010:Annotation.AnnotationText=".&#xA;Precondition:&#xA;1. Configure Institution1 with Clinical unit &quot;ICU1P&quot; and &quot;ICU2P&quot;&#xA;2. Admit a patient to bed in Clinical unit &quot;ICU1P&quot;&#xA;3. Chart  below data in Face Sheet in ICCA&#xA; a. Patient Full Name&#xA; b. Lifetime Id &#xA; c. Date of Birth&#xA;&#xA;2.Launch ICCA web application and enter valid credentials&#xA;ER: User is able to login ICCA web application  with valid credentails successfully.&#xA;User is navigated to Clinical Panorama screen successfully&#xA;&#xA;3.Click on patient name in Clinical Panorama screen&#xA;ER: User is navigated to the Clinical Summary screen  for the selected  patient.&#xA;User is able to see Patient banner in black background at the top of Clinical Summary screen with below fields along with charted data as specified per spec tag &lt;J06.M01_043&gt;&#xA;Patient Full Name (without label) &#xA;Unit &amp; Bed identifier  (with label)&#xA;Date of Birth(with label) &#xA;Lifetime Id&#xA;Allergies (icon)&#xA;&#xA;4.Navigate to ICCA client and transfer patient from ICU1P to ICU2P. Donot Accept transfer in ICU2P&#xA;ER: User is able to see Patient as &quot;transfer-out&quot; status in ICU1P and &quot;transfer-in&quot; status in ICU2P successfully&#xA;&#xA;5.Click on Refresh button on Clinical Clinical Summary screen&#xA;ER: User is able to see  updated data for unit field along with rest fields  in data Patient banner  at the top of Clinical Summary screen  as specified per spec tag &lt;J06.M01_043&gt;.&#xA;Patient Full Name (without label) &#xA;Unit &amp; Bed identifier  (with label)&#xA;Date of Birth(with label) &#xA;Lifetime Id&#xA;Allergies (icon)" DisplayName="... Given" sap:VirtualizedContainerService.HintSize="1124,1956" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="password" />
+        <Variable x:TypeArguments="x:String" Name="ExpectedPatientName" />
+        <Variable x:TypeArguments="x:String" Name="ExpectedUnitBedICU" />
+        <Variable x:TypeArguments="x:String" Name="TextDoB" />
+        <Variable x:TypeArguments="x:String" Name="ExpectedUnitBedCCU" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="1090,335" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+        <ui:MultipleAssign.AssignOperations>
+          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+            <ui:AssignOperation sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">url</CSharpReference>
+                </OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">https://icipvm3/JupiterWebApp/#/login</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">username</CSharpReference>
+                </OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">Administrator</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">password</CSharpReference>
+                </OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">jupiter</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">ExpectedPatientName</CSharpReference>
+                </OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">CCU1 Patient Test1</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">ExpectedUnitBedCCU</CSharpReference>
+                </OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">CCU-CCU1</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">TextDoB</CSharpReference>
+                </OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">Date of Birth</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_12">ExpectedUnitBedICU</CSharpReference>
+                </OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">ICU-ICU1</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+          </scg:List>
+        </ui:MultipleAssign.AssignOperations>
+      </ui:MultipleAssign>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Login - Invoke Workflow File (Login.xaml)" sap:VirtualizedContainerService.HintSize="1090,182" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Login.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_ICCAPath" />
+          <OutArgument x:TypeArguments="x:String" x:Key="out_ConfigEditorPath" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Admit_ICU1 - Invoke Workflow File (Admit_ICU1.xaml)" sap:VirtualizedContainerService.HintSize="1090,182" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Admit_ICU1.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ICCAPath" />
+          <InOutArgument x:TypeArguments="x:String" x:Key="AdmittedPatientName" />
+          <InOutArgument x:TypeArguments="x:String" x:Key="PatientFirstName" />
+          <InArgument x:TypeArguments="x:String" x:Key="LifetimeId">
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">LifetimeId</CSharpValue>
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="EncounterId" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <Sequence DisplayName="Run WebUI and verify patient Banner" sap:VirtualizedContainerService.HintSize="1090,140" sap2010:WorkflowViewState.IdRef="Sequence_13">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Verifying Patient Banner Before Transfer" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1024,3411" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="8bc1b167-c1c4-4fc8-abfe-57394e0c7f88" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1022,3240" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence sap:VirtualizedContainerService.HintSize="988,2619" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT username'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="954,250" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="8bc1b167-c1c4-4fc8-abfe-57394e0c7f88" Version="V4">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="icipvm3/JupiterWebApp" CVScreenId="5c2b5fa3-8fc2-49a9-8b99-93cb55d77e24" CvElementArea="782, 637, 370, 41" CvType="InputBox" DesignTimeRectangle="785, 639, 366, 38" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='text' class='_1l5gt132 _1adqv6t0 _1adqv6t3' placeholder='User Name' aaname='' /&gt;" Guid="c0b60462-3765-4112-9a66-948c73fcbc6a" InformativeScreenshot="485e5df58120b80786df1fd6dfb84de0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="768, 638, 400, 184" ElementType="Container" FuzzySelectorArgument="&lt;webctrl id='user-input' tag='FORM' type='' class='_1g3r9a05' aaname='' check:innerText='icipcc.test&amp;#xA;icipcc.test&amp;#xA;Login' /&gt;" Guid="467b0c05-96a7-4c81-9fef-1220916036cf" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.Text>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_32">username</CSharpValue>
+                      </InArgument>
+                    </uix:NTypeInto.Text>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="954,250" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="8bc1b167-c1c4-4fc8-abfe-57394e0c7f88" Version="V4">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="icipvm3/JupiterWebApp" CVScreenId="5c2b5fa3-8fc2-49a9-8b99-93cb55d77e24" CvElementArea="782, 685, 371, 42" CvType="InputBox" DesignTimeRectangle="785, 687, 366, 38" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='_1l5gt132 _1adqv6t0 _1adqv6t3' placeholder='Password' aaname='' /&gt;" Guid="56d3c899-c7a7-4093-858d-7b6552ab8a84" InformativeScreenshot="c23a5c089a8621976d4b867320a0ec7b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="768, 638, 400, 184" ElementType="Container" FuzzySelectorArgument="&lt;webctrl id='user-input' tag='FORM' type='' class='_1g3r9a05' aaname='' check:innerText='icipcc.test&amp;#xA;icipcc.test&amp;#xA;Login' /&gt;" Guid="ddd09899-7ef7-4aa8-a548-11a5847e9369" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.Text>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">password</CSharpValue>
+                      </InArgument>
+                    </uix:NTypeInto.Text>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="954,225" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8bc1b167-c1c4-4fc8-abfe-57394e0c7f88" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="icipvm3/JupiterWebApp" CVScreenId="5c2b5fa3-8fc2-49a9-8b99-93cb55d77e24" CvElementArea="782, 781, 370, 43" CvTextArea="947, 793, 41, 18" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="784, 782, 368, 40" DesignTimeScaleFactor="1" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='signin' tag='BUTTON' type='submit' class='_10souyh0 _1adqv6t1 _1adqv6t0 _1adqv6t2 _1adqv6t3 _10souyh1 _1xzhl541 lpgjwe0' aaname='Login' check:innerText='Login' /&gt;" Guid="5ecf954a-a436-4b31-b51e-4621454e70bf" InformativeScreenshot="da22e851d699daef0db5ed9c1d37ff3c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="768, 638, 400, 184" ElementType="Container" FuzzySelectorArgument="&lt;webctrl id='user-input' tag='FORM' type='' class='_1g3r9a05' aaname='' check:innerText='icipcc.test&amp;#xA;icipcc.test&amp;#xA;Login' /&gt;" Guid="f056a907-9530-410e-a78e-a0686be072c0" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Element 'Element 'IntelliSpace Critical C…''" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="icipvm3/JupiterWebApp" CVScreenId="5440be6f-9d7e-4142-b2d5-a9d0bd947e42" ContentHash="Ad8GTkzTNki-6ZIokyYhDg" CvTextArea="34, 161, 480, 19" CvTextArgument="PHILIPS IntelliSpace Critical Care and Anesthesia" CvType="Text" DesignTimeRectangle="32, 147, 505, 48" DesignTimeScaleFactor="1" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' parentid='root' tag='DIV' class='_1oms2fp3' aaname='' check:innerText='IntelliSpace Critical Care and Anesthesia' /&gt;" Guid="03a659e5-a108-44a0-aac7-11b724730466" InformativeScreenshot="95af12dac75da96f525fb12d5fdf28a1.png" Reference="eigqaPKRfk2c2g5YtmQDNg/4sKf-RLoKkGsUH3Ghy9TQg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="5440be6f-9d7e-4142-b2d5-a9d0bd947e42" CvElementArea="1873, 160, 22, 20" CvTextArea="34, 161, 1832, 19" CvTextArgument="PHILIPS IntelliSpace Critical Care and Anesthesia First User" CvType="ArrowButton" DesignTimeRectangle="8, 147, 1920, 48" ElementType="Container" FuzzySelectorArgument="&lt;webctrl tag='HEADER' type='' class='lpgjwe0 icca-navigation-bar _1oms2fp0 _1adqv6t1 _1adqv6t0 _1grxcqc0 _1ps414sb _1oms2fp1 _1oms2fp4' aaname='' check:innerText='IntelliSpace Critical Care and Anesthesia&amp;#xA;First User' /&gt;" Guid="509be720-4287-44ec-8b6a-81244d9099c2" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NCheckState DisplayName="Check App State 'Patients in Clinical Pa…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="954,1794" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="8bc1b167-c1c4-4fc8-abfe-57394e0c7f88" Version="V4">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,1512" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="ExpectedDoB" />
+                          <Variable x:TypeArguments="x:String" Name="ReceivePatientBanner" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ICU1 Patient teste1'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8bc1b167-c1c4-4fc8-abfe-57394e0c7f88" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="icipvm3/JupiterWebApp" CVScreenId="5675d512-cbc7-4923-ad96-3ee7b8ca63a1" CvTextArea="470, 615, 103, 12" CvTextArgument="ICU1 Patient teste1" CvType="Text" DesignTimeRectangle="470, 615, 104, 14" DesignTimeScaleFactor="1" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='ICU1 Patient teste1' aria-role='tooltip' type='' tag='SPAN' class='' check:innerText='ICU1 Patient teste1' /&gt;" Guid="94de1e25-64af-4e84-8b9d-bc2a7d61cf15" InformativeScreenshot="18303a00ff2098f12402c9c1c397fafd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="5675d512-cbc7-4923-ad96-3ee7b8ca63a1" CvTextArea="302, 615, 28, 12" CvTextArgument="ICU1" CvType="Text" DesignTimeRectangle="303, 615, 27, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='ICU1' aria-role='tooltip' type='' tag='SPAN' class='' check:innerText='ICU1' /&gt;" Guid="ab95d204-e8f9-4cad-8843-5e1716e1116b" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NGetText DisplayName="Get Text 'CCU1 Patient Test1'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="8bc1b167-c1c4-4fc8-abfe-57394e0c7f88" Version="V4">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="icipvm3/JupiterWebApp" ContentHash="WKYeZqTgskqELQldXHEEOQ" DesignTimeRectangle="8, 195, 1920, 60" DesignTimeScaleFactor="1" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' parentid='root' tag='DIV' class='icca-patient-banner-primary-patient-info-container _1gzgqyt0' aaname='' /&gt;" Guid="f3a1d02b-1bc2-40ea-8638-d6d33a26a292" InformativeScreenshot="05662a20609dc87dfba33ce0d73d0a27.png" Reference="eigqaPKRfk2c2g5YtmQDNg/wAyRc3QcqUCvwQ2rlA2WhA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" SearchSteps="FuzzySelector" Version="V5">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="8d3bf440-7723-43c7-a48b-655a68a36316" CvTextArea="31, 215, 183, 18" CvTextArgument="CCU1 Patient Test1" CvType="Text" DesignTimeRectangle="32, 214, 184, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='_148vpjr0 _1adqv6t1 _1adqv6t0 _148vpjr1 icca-patient-banner-data-item-value icca-patient-banner-patient-name-value ' aaname='CCU1 Patient Test1' check:innerText='CCU1 Patient Test1' /&gt;" Guid="ddd6f063-69f2-47e9-b9ac-6f3c3c7ddcd2" SearchSteps="Selector, FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                          <uix:NGetText.TextString>
+                            <OutArgument x:TypeArguments="x:String">
+                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_13">ReceivePatientBanner</CSharpReference>
+                            </OutArgument>
+                          </uix:NGetText.TextString>
+                        </uix:NGetText>
+                        <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="416,226" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_9" Operator="Contains" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                          <uta:VerifyExpressionWithOperator.FirstExpression>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">ReceivePatientBanner</CSharpValue>
+                            </InArgument>
+                          </uta:VerifyExpressionWithOperator.FirstExpression>
+                          <uta:VerifyExpressionWithOperator.SecondExpression>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">ExpectedPatientName</CSharpValue>
+                            </InArgument>
+                          </uta:VerifyExpressionWithOperator.SecondExpression>
+                        </uta:VerifyExpressionWithOperator>
+                        <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="416,226" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_10" Operator="Contains" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                          <uta:VerifyExpressionWithOperator.FirstExpression>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">ReceivePatientBanner</CSharpValue>
+                            </InArgument>
+                          </uta:VerifyExpressionWithOperator.FirstExpression>
+                          <uta:VerifyExpressionWithOperator.SecondExpression>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">ExpectedUnitBedICU</CSharpValue>
+                            </InArgument>
+                          </uta:VerifyExpressionWithOperator.SecondExpression>
+                        </uta:VerifyExpressionWithOperator>
+                        <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="416,226" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_11" Operator="Contains" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                          <uta:VerifyExpressionWithOperator.FirstExpression>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38">ReceivePatientBanner</CSharpValue>
+                            </InArgument>
+                          </uta:VerifyExpressionWithOperator.FirstExpression>
+                          <uta:VerifyExpressionWithOperator.SecondExpression>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_39">TextDoB</CSharpValue>
+                            </InArgument>
+                          </uta:VerifyExpressionWithOperator.SecondExpression>
+                        </uta:VerifyExpressionWithOperator>
+                        <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="416,226" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_12" Operator="Contains" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                          <uta:VerifyExpressionWithOperator.FirstExpression>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_40">ReceivePatientBanner</CSharpValue>
+                            </InArgument>
+                          </uta:VerifyExpressionWithOperator.FirstExpression>
+                          <uta:VerifyExpressionWithOperator.SecondExpression>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_41">LifetimeId</CSharpValue>
+                            </InArgument>
+                          </uta:VerifyExpressionWithOperator.SecondExpression>
+                        </uta:VerifyExpressionWithOperator>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info">
+                          <ui:LogMessage.Message>
+                            <InArgument x:TypeArguments="x:Object">
+                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_42">DateTime.Now.ToString() + " - Successful."</CSharpValue>
+                            </InArgument>
+                          </ui:LogMessage.Message>
+                        </ui:LogMessage>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,230" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Trace">
+                          <ui:LogMessage.Message>
+                            <InArgument x:TypeArguments="x:Object">
+                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">DateTime.Now.ToString() + " - Login to ICCA web failed."</CSharpValue>
+                            </InArgument>
+                          </ui:LogMessage.Message>
+                        </ui:LogMessage>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="icipvm3/JupiterWebApp" CVScreenId="359aa4ea-f879-4988-80e5-38f0cc72c05e" ContentHash="PM538a2hvkSP3ayUr0Wc-g" CvElementArea="1820, 214, 76, 34" CvTextArea="58, 220, 280, 18" CvTextArgument="Patients in Clinical Panorama" CvType="Button" DesignTimeRectangle="56, 216, 1838, 36" DesignTimeScaleFactor="1" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' parentid='root' tag='DIV' class='panorama-table-container-header-flex-box _1gzgqyt0' aaname='' check:innerText='Patients in Clinical Panorama' /&gt;" Guid="148faccd-2017-4764-a810-036b07495e09" InformativeScreenshot="9ac4481926c3c8ae26fbc715f2998133.png" Reference="eigqaPKRfk2c2g5YtmQDNg/nQFKTI8BQEWGlC9yiX9K5g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="359aa4ea-f879-4988-80e5-38f0cc72c05e" CvElementArea="1873, 160, 22, 20" CvTextArea="34, 161, 1832, 19" CvTextArgument="PHILIPS IntelliSpace Critical Care and Anesthesia First User" CvType="ArrowButton" DesignTimeRectangle="8, 147, 1920, 48" ElementType="Container" FuzzySelectorArgument="&lt;webctrl tag='HEADER' type='' class='lpgjwe0 icca-navigation-bar _1oms2fp0 _1adqv6t1 _1adqv6t0 _1grxcqc0 _1ps414sb _1oms2fp1 _1oms2fp4' aaname='' check:innerText='IntelliSpace Critical Care and Anesthesia&amp;#xA;First User' /&gt;" Guid="5d3af924-6768-43d5-b2e1-36dd8c8cadce" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NCheckState.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NCheckState>
+                </Sequence>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SVG'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="988,225" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8bc1b167-c1c4-4fc8-abfe-57394e0c7f88" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="icipvm3/JupiterWebApp" CVScreenId="f5ec100f-b021-4d71-9dcc-fb5dd90be52c" CvElementArea="1783, 147, 124, 47" CvType="Button" DesignTimeRectangle="1872, 159, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' class='_1n21obd0 ' aaname='' /&gt;" Guid="09ceaf77-d556-46bb-aa61-f350c09abc64" InformativeScreenshot="f5ec6dd3a0b8c8c12eb445ca1c912ac6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="f5ec100f-b021-4d71-9dcc-fb5dd90be52c" CvElementArea="1783, 147, 124, 47" CvTextArea="1794, 162, 72, 15" CvTextArgument="First User" CvType="Button" DesignTimeRectangle="1787, 151, 117, 40" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='First  User' tag='BUTTON' type='button' class='_10souyh0 _1adqv6t1 _1adqv6t0 _1adqv6t2 _1adqv6t3 _10souyh4 s3t4tla' check:innerText='First User' /&gt;" Guid="f1ab3810-0272-44a2-8497-7c14c0c46d25" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="Element 'Logout'" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Target>
+                        <uix:TargetAnchorable BrowserURL="icipvm3/JupiterWebApp" DesignTimeRectangle="1787, 191, 117, 96" DesignTimeScaleFactor="1" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SECTION' type='' class='_10kdtsz0 _1vr9s6l0 _1adqv6t1 _1adqv6t0' aaname='' check:innerText='About&amp;#xA;Logout' /&gt;" Guid="61684dab-5f9e-4cec-9e38-3277526b14d2" InformativeScreenshot="c05e178bf9b0b84f67c9ca6707dd2063.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" SearchSteps="FuzzySelector" Version="V5">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="ab513068-2f04-40d3-ae71-61414a7871c0" CvTextArea="1798, 250, 51, 18" CvTextArgument="Logout" CvType="Text" DesignTimeRectangle="1787, 239, 117, 40" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Logout' aria-role='menuitem' tag='DIV' type='' class='_17upw9w3 _1adqv6t3 _1ps414sb _1h058l0 _10kdtsz3' check:innerText='Logout' /&gt;" Guid="dd9e7559-8c0e-45c3-8f62-3a788069322c" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:VerifyExecutionOptions.Target>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Logout'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="988,225" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8bc1b167-c1c4-4fc8-abfe-57394e0c7f88" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="icipvm3/JupiterWebApp" CVScreenId="3230ff73-3a1c-4450-bb83-26e1d35f6ddf" CvTextArea="1798, 250, 51, 18" CvTextArgument="Logout" CvType="Text" DesignTimeRectangle="1787, 239, 117, 40" DesignTimeScaleFactor="1" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Logout' aria-role='menuitem' tag='DIV' type='' class='_17upw9w3 _1adqv6t3 _1ps414sb _1h058l0 _10kdtsz3' check:innerText='Logout' /&gt;" Guid="7c625a3e-9277-45a7-84f6-87af08bb1cdf" InformativeScreenshot="4e53c70ce8ba7aad22ca08b2bbfe272e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="1787, 191, 117, 96" FuzzySelectorArgument="&lt;webctrl tag='SECTION' type='' class='_10kdtsz0 _1vr9s6l0 _1adqv6t1 _1adqv6t0' aaname='' check:innerText='About&amp;#xA;Logout' /&gt;" Guid="4127ddd9-6dab-4c8a-bdf6-cf819d5b2ff1" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="988,107" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_3" ScopeIdentifier="8bc1b167-c1c4-4fc8-abfe-57394e0c7f88" Version="V4" />
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.OCREngine>
+            <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+              <ActivityFunc.Argument>
+                <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+              </ActivityFunc.Argument>
+            </ActivityFunc>
+          </uix:NApplicationCard.OCREngine>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-8, -8, 1834, 1096" BrowserType="Chrome" ContentHash="AIW5S-DBiE6dr3QY5MYFuQ" IconBase64="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" InformativeScreenshot="35f3c55f1fe448a8fca50da9fba848b6.jpg" Reference="eigqaPKRfk2c2g5YtmQDNg/IyKeYeIwjkS_az9D_fNSUw" Selector="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" Version="V2">
+              <uix:TargetApp.Url>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">url</CSharpValue>
+                </InArgument>
+              </uix:TargetApp.Url>
+            </uix:TargetApp>
+          </uix:NApplicationCard.TargetApp>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </uix:NApplicationCard>
+      </Sequence>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="TransferICU1_CCU2 - Invoke Workflow File (TransferICU1_CCU2.xaml)" sap:VirtualizedContainerService.HintSize="1090,182" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="TransferICU1_CCU2.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <Sequence sap:VirtualizedContainerService.HintSize="1090,140" sap2010:WorkflowViewState.IdRef="Sequence_15">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Verify Patient Banner after transfer" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="8bc1b167-c1c4-4fc8-abfe-57394e0c7f88" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1022,3264" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence sap:VirtualizedContainerService.HintSize="988,2645" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT username'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="954,286" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="8bc1b167-c1c4-4fc8-abfe-57394e0c7f88" Version="V4">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="icipvm3/JupiterWebApp" CVScreenId="5c2b5fa3-8fc2-49a9-8b99-93cb55d77e24" CvElementArea="782, 637, 370, 41" CvType="InputBox" DesignTimeRectangle="785, 639, 366, 38" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='text' class='_1l5gt132 _1adqv6t0 _1adqv6t3' placeholder='User Name' aaname='' /&gt;" Guid="c0b60462-3765-4112-9a66-948c73fcbc6a" InformativeScreenshot="485e5df58120b80786df1fd6dfb84de0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="768, 638, 400, 184" ElementType="Container" FuzzySelectorArgument="&lt;webctrl id='user-input' tag='FORM' type='' class='_1g3r9a05' aaname='' check:innerText='icipcc.test&amp;#xA;icipcc.test&amp;#xA;Login' /&gt;" Guid="467b0c05-96a7-4c81-9fef-1220916036cf" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.Text>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">username</CSharpValue>
+                      </InArgument>
+                    </uix:NTypeInto.Text>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="954,286" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="8bc1b167-c1c4-4fc8-abfe-57394e0c7f88" Version="V4">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="icipvm3/JupiterWebApp" CVScreenId="5c2b5fa3-8fc2-49a9-8b99-93cb55d77e24" CvElementArea="782, 685, 371, 42" CvType="InputBox" DesignTimeRectangle="785, 687, 366, 38" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='_1l5gt132 _1adqv6t0 _1adqv6t3' placeholder='Password' aaname='' /&gt;" Guid="56d3c899-c7a7-4093-858d-7b6552ab8a84" InformativeScreenshot="c23a5c089a8621976d4b867320a0ec7b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="768, 638, 400, 184" ElementType="Container" FuzzySelectorArgument="&lt;webctrl id='user-input' tag='FORM' type='' class='_1g3r9a05' aaname='' check:innerText='icipcc.test&amp;#xA;icipcc.test&amp;#xA;Login' /&gt;" Guid="ddd09899-7ef7-4aa8-a548-11a5847e9369" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.Text>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_46">password</CSharpValue>
+                      </InArgument>
+                    </uix:NTypeInto.Text>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="954,225" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8bc1b167-c1c4-4fc8-abfe-57394e0c7f88" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="icipvm3/JupiterWebApp" CVScreenId="5c2b5fa3-8fc2-49a9-8b99-93cb55d77e24" CvElementArea="782, 781, 370, 43" CvTextArea="947, 793, 41, 18" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="784, 782, 368, 40" DesignTimeScaleFactor="1" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='signin' tag='BUTTON' type='submit' class='_10souyh0 _1adqv6t1 _1adqv6t0 _1adqv6t2 _1adqv6t3 _10souyh1 _1xzhl541 lpgjwe0' aaname='Login' check:innerText='Login' /&gt;" Guid="5ecf954a-a436-4b31-b51e-4621454e70bf" InformativeScreenshot="da22e851d699daef0db5ed9c1d37ff3c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="768, 638, 400, 184" ElementType="Container" FuzzySelectorArgument="&lt;webctrl id='user-input' tag='FORM' type='' class='_1g3r9a05' aaname='' check:innerText='icipcc.test&amp;#xA;icipcc.test&amp;#xA;Login' /&gt;" Guid="f056a907-9530-410e-a78e-a0686be072c0" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Element 'Element 'IntelliSpace Critical C…''" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="icipvm3/JupiterWebApp" CVScreenId="5440be6f-9d7e-4142-b2d5-a9d0bd947e42" ContentHash="Ad8GTkzTNki-6ZIokyYhDg" CvTextArea="34, 161, 480, 19" CvTextArgument="PHILIPS IntelliSpace Critical Care and Anesthesia" CvType="Text" DesignTimeRectangle="32, 147, 505, 48" DesignTimeScaleFactor="1" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' parentid='root' tag='DIV' class='_1oms2fp3' aaname='' check:innerText='IntelliSpace Critical Care and Anesthesia' /&gt;" Guid="03a659e5-a108-44a0-aac7-11b724730466" InformativeScreenshot="95af12dac75da96f525fb12d5fdf28a1.png" Reference="eigqaPKRfk2c2g5YtmQDNg/4sKf-RLoKkGsUH3Ghy9TQg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="5440be6f-9d7e-4142-b2d5-a9d0bd947e42" CvElementArea="1873, 160, 22, 20" CvTextArea="34, 161, 1832, 19" CvTextArgument="PHILIPS IntelliSpace Critical Care and Anesthesia First User" CvType="ArrowButton" DesignTimeRectangle="8, 147, 1920, 48" ElementType="Container" FuzzySelectorArgument="&lt;webctrl tag='HEADER' type='' class='lpgjwe0 icca-navigation-bar _1oms2fp0 _1adqv6t1 _1adqv6t0 _1grxcqc0 _1ps414sb _1oms2fp1 _1oms2fp4' aaname='' check:innerText='IntelliSpace Critical Care and Anesthesia&amp;#xA;First User' /&gt;" Guid="509be720-4287-44ec-8b6a-81244d9099c2" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NCheckState DisplayName="Check App State 'Patients in Clinical Pa…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="954,1754" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="8bc1b167-c1c4-4fc8-abfe-57394e0c7f88" Version="V4">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,1512" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="ExpectedDoB" />
+                          <Variable x:TypeArguments="x:String" Name="ReceivePatientBanner" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CCU1 Patient Test1'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8bc1b167-c1c4-4fc8-abfe-57394e0c7f88" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="icipvm3/JupiterWebApp" CVScreenId="94ed088c-307e-40dc-bf36-f8b109aae07e" ContentHash="4A_vxVgxdkiMz2JWg7qBFQ" CvTextArea="470, 535, 98, 12" CvTextArgument="ICU1 Patient Test1" CvType="Text" DesignTimeRectangle="469, 535, 100, 12" DesignTimeScaleFactor="1" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='_12mn2xx0' tag='SPAN' aaname='' check:innerText='ICU1 Patient Test1' /&gt;" Guid="2eb7f74b-358a-4086-b843-b574505a1421" InformativeScreenshot="0a7bdbe4a35584e1a6c9d3bb97dd5d64.png" Reference="eigqaPKRfk2c2g5YtmQDNg/Y-IOVMQbhEu6_WdkjaQ9Hw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="94ed088c-307e-40dc-bf36-f8b109aae07e" CvTextArea="302, 535, 59, 12" CvTextArgument="Transfer In" CvType="Text" DesignTimeRectangle="303, 535, 58, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Transfer In' aria-role='tooltip' type='' tag='SPAN' class='' check:innerText='Transfer In' /&gt;" Guid="b421e578-eb35-47ea-8da4-af3f6578e48f" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NGetText DisplayName="Get Text 'CCU1 Patient Test1'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="8bc1b167-c1c4-4fc8-abfe-57394e0c7f88" Version="V4">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="icipvm3/JupiterWebApp" ContentHash="WKYeZqTgskqELQldXHEEOQ" DesignTimeRectangle="8, 195, 1920, 60" DesignTimeScaleFactor="1" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' parentid='root' tag='DIV' class='icca-patient-banner-primary-patient-info-container _1gzgqyt0' aaname='' /&gt;" Guid="f3a1d02b-1bc2-40ea-8638-d6d33a26a292" InformativeScreenshot="05662a20609dc87dfba33ce0d73d0a27.png" Reference="eigqaPKRfk2c2g5YtmQDNg/wAyRc3QcqUCvwQ2rlA2WhA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" SearchSteps="FuzzySelector" Version="V5">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="8d3bf440-7723-43c7-a48b-655a68a36316" CvTextArea="31, 215, 183, 18" CvTextArgument="CCU1 Patient Test1" CvType="Text" DesignTimeRectangle="32, 214, 184, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='_148vpjr0 _1adqv6t1 _1adqv6t0 _148vpjr1 icca-patient-banner-data-item-value icca-patient-banner-patient-name-value ' aaname='CCU1 Patient Test1' check:innerText='CCU1 Patient Test1' /&gt;" Guid="ddd6f063-69f2-47e9-b9ac-6f3c3c7ddcd2" SearchSteps="Selector, FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                          <uix:NGetText.TextString>
+                            <OutArgument x:TypeArguments="x:String">
+                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_14">ReceivePatientBanner</CSharpReference>
+                            </OutArgument>
+                          </uix:NGetText.TextString>
+                        </uix:NGetText>
+                        <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="416,226" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_13" Operator="Contains" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                          <uta:VerifyExpressionWithOperator.FirstExpression>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">ReceivePatientBanner</CSharpValue>
+                            </InArgument>
+                          </uta:VerifyExpressionWithOperator.FirstExpression>
+                          <uta:VerifyExpressionWithOperator.SecondExpression>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">ExpectedPatientName</CSharpValue>
+                            </InArgument>
+                          </uta:VerifyExpressionWithOperator.SecondExpression>
+                        </uta:VerifyExpressionWithOperator>
+                        <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="416,226" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_14" Operator="Contains" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                          <uta:VerifyExpressionWithOperator.FirstExpression>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">ReceivePatientBanner</CSharpValue>
+                            </InArgument>
+                          </uta:VerifyExpressionWithOperator.FirstExpression>
+                          <uta:VerifyExpressionWithOperator.SecondExpression>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">ExpectedUnitBedCCU</CSharpValue>
+                            </InArgument>
+                          </uta:VerifyExpressionWithOperator.SecondExpression>
+                        </uta:VerifyExpressionWithOperator>
+                        <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="416,226" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_15" Operator="Contains" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                          <uta:VerifyExpressionWithOperator.FirstExpression>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">ReceivePatientBanner</CSharpValue>
+                            </InArgument>
+                          </uta:VerifyExpressionWithOperator.FirstExpression>
+                          <uta:VerifyExpressionWithOperator.SecondExpression>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">TextDoB</CSharpValue>
+                            </InArgument>
+                          </uta:VerifyExpressionWithOperator.SecondExpression>
+                        </uta:VerifyExpressionWithOperator>
+                        <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="416,226" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_16" Operator="Contains" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                          <uta:VerifyExpressionWithOperator.FirstExpression>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">ReceivePatientBanner</CSharpValue>
+                            </InArgument>
+                          </uta:VerifyExpressionWithOperator.FirstExpression>
+                          <uta:VerifyExpressionWithOperator.SecondExpression>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">LifetimeId</CSharpValue>
+                            </InArgument>
+                          </uta:VerifyExpressionWithOperator.SecondExpression>
+                        </uta:VerifyExpressionWithOperator>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info">
+                          <ui:LogMessage.Message>
+                            <InArgument x:TypeArguments="x:Object">
+                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">DateTime.Now.ToString() + " - Successful."</CSharpValue>
+                            </InArgument>
+                          </ui:LogMessage.Message>
+                        </ui:LogMessage>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,230" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Trace">
+                          <ui:LogMessage.Message>
+                            <InArgument x:TypeArguments="x:Object">
+                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">DateTime.Now.ToString() + " - Login to ICCA web failed."</CSharpValue>
+                            </InArgument>
+                          </ui:LogMessage.Message>
+                        </ui:LogMessage>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="icipvm3/JupiterWebApp" CVScreenId="359aa4ea-f879-4988-80e5-38f0cc72c05e" ContentHash="PM538a2hvkSP3ayUr0Wc-g" CvElementArea="1820, 214, 76, 34" CvTextArea="58, 220, 280, 18" CvTextArgument="Patients in Clinical Panorama" CvType="Button" DesignTimeRectangle="56, 216, 1838, 36" DesignTimeScaleFactor="1" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' parentid='root' tag='DIV' class='panorama-table-container-header-flex-box _1gzgqyt0' aaname='' check:innerText='Patients in Clinical Panorama' /&gt;" Guid="148faccd-2017-4764-a810-036b07495e09" InformativeScreenshot="9ac4481926c3c8ae26fbc715f2998133.png" Reference="eigqaPKRfk2c2g5YtmQDNg/nQFKTI8BQEWGlC9yiX9K5g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="359aa4ea-f879-4988-80e5-38f0cc72c05e" CvElementArea="1873, 160, 22, 20" CvTextArea="34, 161, 1832, 19" CvTextArgument="PHILIPS IntelliSpace Critical Care and Anesthesia First User" CvType="ArrowButton" DesignTimeRectangle="8, 147, 1920, 48" ElementType="Container" FuzzySelectorArgument="&lt;webctrl tag='HEADER' type='' class='lpgjwe0 icca-navigation-bar _1oms2fp0 _1adqv6t1 _1adqv6t0 _1grxcqc0 _1ps414sb _1oms2fp1 _1oms2fp4' aaname='' check:innerText='IntelliSpace Critical Care and Anesthesia&amp;#xA;First User' /&gt;" Guid="5d3af924-6768-43d5-b2e1-36dd8c8cadce" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NCheckState.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NCheckState>
+                </Sequence>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SVG'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="988,225" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8bc1b167-c1c4-4fc8-abfe-57394e0c7f88" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="icipvm3/JupiterWebApp" CVScreenId="f5ec100f-b021-4d71-9dcc-fb5dd90be52c" CvElementArea="1783, 147, 124, 47" CvType="Button" DesignTimeRectangle="1872, 159, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' class='_1n21obd0 ' aaname='' /&gt;" Guid="09ceaf77-d556-46bb-aa61-f350c09abc64" InformativeScreenshot="f5ec6dd3a0b8c8c12eb445ca1c912ac6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="f5ec100f-b021-4d71-9dcc-fb5dd90be52c" CvElementArea="1783, 147, 124, 47" CvTextArea="1794, 162, 72, 15" CvTextArgument="First User" CvType="Button" DesignTimeRectangle="1787, 151, 117, 40" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='First  User' tag='BUTTON' type='button' class='_10souyh0 _1adqv6t1 _1adqv6t0 _1adqv6t2 _1adqv6t3 _10souyh4 s3t4tla' check:innerText='First User' /&gt;" Guid="f1ab3810-0272-44a2-8497-7c14c0c46d25" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="Element 'Logout'" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Target>
+                        <uix:TargetAnchorable BrowserURL="icipvm3/JupiterWebApp" DesignTimeRectangle="1787, 191, 117, 96" DesignTimeScaleFactor="1" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SECTION' type='' class='_10kdtsz0 _1vr9s6l0 _1adqv6t1 _1adqv6t0' aaname='' check:innerText='About&amp;#xA;Logout' /&gt;" Guid="61684dab-5f9e-4cec-9e38-3277526b14d2" InformativeScreenshot="c05e178bf9b0b84f67c9ca6707dd2063.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" SearchSteps="FuzzySelector" Version="V5">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="ab513068-2f04-40d3-ae71-61414a7871c0" CvTextArea="1798, 250, 51, 18" CvTextArgument="Logout" CvType="Text" DesignTimeRectangle="1787, 239, 117, 40" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Logout' aria-role='menuitem' tag='DIV' type='' class='_17upw9w3 _1adqv6t3 _1ps414sb _1h058l0 _10kdtsz3' check:innerText='Logout' /&gt;" Guid="dd9e7559-8c0e-45c3-8f62-3a788069322c" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:VerifyExecutionOptions.Target>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Logout'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="988,225" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8bc1b167-c1c4-4fc8-abfe-57394e0c7f88" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="icipvm3/JupiterWebApp" CVScreenId="3230ff73-3a1c-4450-bb83-26e1d35f6ddf" CvTextArea="1798, 250, 51, 18" CvTextArgument="Logout" CvType="Text" DesignTimeRectangle="1787, 239, 117, 40" DesignTimeScaleFactor="1" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Logout' aria-role='menuitem' tag='DIV' type='' class='_17upw9w3 _1adqv6t3 _1ps414sb _1h058l0 _10kdtsz3' check:innerText='Logout' /&gt;" Guid="7c625a3e-9277-45a7-84f6-87af08bb1cdf" InformativeScreenshot="4e53c70ce8ba7aad22ca08b2bbfe272e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="1787, 191, 117, 96" FuzzySelectorArgument="&lt;webctrl tag='SECTION' type='' class='_10kdtsz0 _1vr9s6l0 _1adqv6t1 _1adqv6t0' aaname='' check:innerText='About&amp;#xA;Logout' /&gt;" Guid="4127ddd9-6dab-4c8a-bdf6-cf819d5b2ff1" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="988,107" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_4" Version="V4" />
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.OCREngine>
+            <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+              <ActivityFunc.Argument>
+                <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+              </ActivityFunc.Argument>
+            </ActivityFunc>
+          </uix:NApplicationCard.OCREngine>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-8, -8, 1834, 1096" BrowserType="Chrome" ContentHash="AIW5S-DBiE6dr3QY5MYFuQ" IconBase64="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" InformativeScreenshot="35f3c55f1fe448a8fca50da9fba848b6.jpg" Reference="eigqaPKRfk2c2g5YtmQDNg/IyKeYeIwjkS_az9D_fNSUw" Selector="&lt;html app='chrome.exe' title='IntelliSpace Critical Care and Anesthesia' /&gt;" Version="V2">
+              <uix:TargetApp.Url>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_57">url</CSharpValue>
+                </InArgument>
+              </uix:TargetApp.Url>
+            </uix:TargetApp>
+          </uix:NApplicationCard.TargetApp>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </uix:NApplicationCard>
+      </Sequence>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Logout - Invoke Workflow File (Logout.xaml)" sap:VirtualizedContainerService.HintSize="1090,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Logout.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_ICCAPath" />
+          <OutArgument x:TypeArguments="x:String" x:Key="out_Institution" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="1124,121" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="1124,112" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+  </Sequence>
+</Activity>

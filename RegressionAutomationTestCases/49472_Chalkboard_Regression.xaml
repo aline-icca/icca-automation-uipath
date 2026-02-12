@@ -1,0 +1,164 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_49472_Chalkboard_Regression" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1372,1269" sap2010:WorkflowViewState.IdRef="_49472_Chalkboard_Regression_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPathTeam.ServicesManager.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="1. Check the census title&#xA;ER: The census title is as spcified in the spec tag A08.1_c&#xA;&#xA;2. Check the sorting and scrolling of columns&#xA;ER: The sorting and scrolling of columns is as specified in the spec tag A08.1_d&#xA;&#xA;3. Check the list of admitted patients&#xA;ER: The list of admitted patients are as specified in the spec tags  A08.1_e and A08.1_f&#xA;&#xA;4. Check the column resizing&#xA;ER: The column resizing is as specified in the spec tag A08.1_g&#xA;&#xA;5. Check the configurable columns&#xA;ER: The configurable columns are as specified in the spec tag A08.1_h&#xA;&#xA;6. Check the open chart gesture&#xA;ER: The open chart gesture is as specified in the spec tag A08.2_a&#xA;&#xA;7. Check the census report&#xA;ER: The census report is as specified in the spec tag &lt;A08_001&gt;&#xA;&#xA;8. Check the OR chalkboard&#xA;ER: The OR chalkboard is as specified in the spec tags A08.4_a, A08.4_c, A08.4_d&#xA;&#xA;9. Check the encounter between field in the find patient dialog&#xA;ER: The encounter between field is as specified in the spec tag A05.1_d&#xA;&#xA;10. Check the open chart button in the find patient dialog&#xA;&#xA;ER: The open chart button is as specified in the spec tag A05.1_e" DisplayName="_49472_Chalkboard_Regression" sap:VirtualizedContainerService.HintSize="1244,1335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="502,228" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Login.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_ICCAPath" />
+          <OutArgument x:TypeArguments="x:String" x:Key="out_ConfigEditorPath" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="502,793" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Admit_CCU1.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="468,145" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Admit_CCU1.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ICCAPath" />
+          <InOutArgument x:TypeArguments="x:String" x:Key="AdmittedPatientName" />
+          <InOutArgument x:TypeArguments="x:String" x:Key="PatientFirstName" />
+          <InArgument x:TypeArguments="x:String" x:Key="LifetimeId" />
+          <InArgument x:TypeArguments="x:String" x:Key="EncounterId" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: IntelliSpace Critical Care and Anesthesia - Test Hospital" sap:VirtualizedContainerService.HintSize="468,556" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="9dda3403-7a37-453d-b863-fdcf352a6ec2" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,242" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Lifetime Id'" sap:VirtualizedContainerService.HintSize="382,182" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9dda3403-7a37-453d-b863-fdcf352a6ec2" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="cc4e63fd-afb5-480d-a001-30c0b3749f9a" CvElementArea="1894, 173, 19, 19" CvTextArea="1899, 177, 8, 10" CvType="Icon" DesignTimeRectangle="1886, 175, 26, 26" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;ctrl idx='3' role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='' role='graphic' /&gt;" Guid="729c36ed-837f-4944-9c61-ea70ddb24ba7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKSSURBVEhL7ZTdS1NhHMf7O/YmC4JuDKyFIYVSkd5FdBN0UWE0dZttiVMURS101dR58qVmL24wa9OllBpmpbPUMROHTTMksFrq3txiYdbNt+dsrbJzbs4R1s0uPpyL55zv5/n9fs9zdkQiEfwPUmLOLHtXMDI9B+sLJ7qfTcA26sS4ex4rvgDr+wl4i4OhddgdLlwwmCEroSCWN0Iob4KkoAmHyttQarRh8s0i1sNh1u95iWlp5+AYZGoiU3ZAoLoDwcV7hC4IislT1QmpshWHy1vgWlhizeAlHncvIFNDS2/haKUVmhvDyKvthZCIZVoLStqe4kR9H0QFFHIrKNaqOYvpaqtN/RAXGmIVHijrxvtPIYy5PyCn2gbz8BxWg1Gc0g/E1iXn62EZecXI4Sxe8wewn1QrUBrjrSWUmhzw+iKwPvcguvEd7f3T2KkxxdeL2pFXYWDkcBav+PwQn6sjob9mSthX+QAv3cvY2PwBl8eLPWWW32v0zHfnVzFyeImFZ2r/BBP2ErFjdhnRr5uYXfy8ZY3e4K6zlYwcHq0OIqP4+pZWN/c4sUbmanriRjj6DXrrFNLU8VYLSauPlDYycjiLA6EQtLftEMjjhyv3ykMsfQzCMjqPzIr7GJpagtf/BSevPopVK8pvwN0hByOHszhMrsbojAcHtRREpOrsml5cIocri1wneiM5dXaUmcdx7LIdokIKx2s6sEoO5L85nMU0dNWdA2NIV+ggVNyESP33TLsgJkgKW5CtbYbT8441g5c4weOJGWRpdEhX6SFVUEhTtEJaZECG6hpO64x4/Zb9r0WzLTGNLxCIbaChexBVXX1o6hkmV2sh1hW29xNsW8yXlDhppMRJIyVOGilxkojgJzuaqAR5JLwBAAAAAElFTkSuQmCC" InformativeScreenshot="33541558965c7dc884ab71b72b8c7a9b.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' cls='HwndWrapper*' title='IntelliSpace Critical Care and Anesthesia - Test Hospital' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="475, 170, 1361, 38" FullSelectorArgument="&lt;ctrl automationid='scrollViewer' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='scrollViewer' role='pane' check:fulltext='Lifetime Id   76fe9aeb-a0aa-4ecd-9a5f-e31325&amp;#xD;&amp;#xA;Age on admission (Calculated)   &amp;#xD;&amp;#xA;Attending   &amp;#xD;&amp;#xA;DNR Status' /&gt;" Guid="878e31cf-5d3a-4af0-8d51-95ed275fef43" ImageBase64="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" SearchSteps="Selector, FuzzySelector, Image" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1056" FilePath="C:\\Program Files\\Philips\\CIS\\Bin\\philips.cis.displaycontroller.exe" IconBase64="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" InformativeScreenshot="43a98850f1704ec66ff6d999c8a233e2.png" Selector="&lt;wnd app='philips.cis.displaycontroller.exe' cls='HwndWrapper*' title='IntelliSpace Critical Care and Anesthesia - Test Hospital' /&gt;" Title="IntelliSpace Critical Care and Anesthesia - Test Hospital" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="502,219" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="TestTearDown.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="TestTearDown.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ICCAPath" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+  </Sequence>
+</Activity>
