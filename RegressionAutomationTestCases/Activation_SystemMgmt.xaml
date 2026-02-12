@@ -1,0 +1,288 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Activation_SystemMgmt" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.NetIQeDirectory.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPathTeam.ServicesManager.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Activation_SystemMgmt" sap:VirtualizedContainerService.HintSize="1410,1088" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="1056,1065" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="ICCA - System Management" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1022,982" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="c1feb8a0-b55e-48e0-a259-466e581d4865" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="988,692" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NCheckState DisplayName="Check App State 'Configuration Editor'" sap:VirtualizedContainerService.HintSize="954,630" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="c1feb8a0-b55e-48e0-a259-466e581d4865" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,348" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'push button'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c1feb8a0-b55e-48e0-a259-466e581d4865" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="33b5c3b8-48db-45ac-988f-67cb65df1ded" ContentHash="hqg439YVHEGvthZ2Ko3tlg" CvElementArea="15, 51, 34, 28" CvType="Icon" DesignTimeRectangle="17, 52, 32, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='toolBar' /&gt;&lt;ctrl idx='6' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='toolBar' /&gt;&lt;ctrl automationid='' role='push button' /&gt;" Guid="754fb520-0593-48a4-8fa0-d01a92398177" ImageBase64="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" InformativeScreenshot="9fcce1f8f514f2fae29ffd33a3e80b94.png" Reference="eigqaPKRfk2c2g5YtmQDNg/AHqBj8_wcEOPZgO5ma-qCw" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ConfigDisplayController' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset Position="TopLeft" X="14" Y="15" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NCheckState DisplayName="Check App State 'Activating Data Service…'" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="c1feb8a0-b55e-48e0-a259-466e581d4865" Version="V4">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,112" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c1feb8a0-b55e-48e0-a259-466e581d4865" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable CVScreenId="421038bf-c838-4ead-b4a4-8592592e63fd" ContentHash="owekwNaFDkmgq3bN96HNSQ" CvElementArea="245, 112, 74, 22" CvTextArea="274, 118, 17, 11" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="245, 112, 74, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='OK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='OK' check:text='OK' /&gt;" Guid="970fc073-51e3-4729-9c3a-ca47598dd25d" InformativeScreenshot="70fdc083201aa25761ee4afd736d426d.png" Reference="eigqaPKRfk2c2g5YtmQDNg/MdtxFwWiOE2IEh4nfbUS_g" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' cls='#32770' title='Activating Data Services Configuration Changes' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="421038bf-c838-4ead-b4a4-8592592e63fd" CvElementArea="245, 112, 74, 22" CvTextArea="274, 118, 17, 11" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="245, 112, 75, 23" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='OK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='OK' check:text='OK' /&gt;" Guid="b54c1872-6728-4923-ab29-1e3fb3fae141" SearchSteps="Selector, FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                                <uix:TargetAnchorable.PointOffset>
+                                  <uix:PointOffset Position="TopRight" X="-37" Y="11" />
+                                </uix:TargetAnchorable.PointOffset>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable ContentHash="nllMpQEr1EiIRHSGaio23w" DesignTimeRectangle="0, 0, 426, 153" DesignTimeScaleFactor="1" Guid="1645dd18-6be4-40de-9439-2703778759b5" InformativeScreenshot="1bff4a96f6df9af09097eeab4a365d69.png" Reference="eigqaPKRfk2c2g5YtmQDNg/H5tzpNK3nkaPq6MZ7WSDng" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' cls='#32770' title='Activating Data Services Configuration Changes' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="421038bf-c838-4ead-b4a4-8592592e63fd" CvTextArea="14, 9, 255, 15" CvTextArgument="Activating Data Services Configuration Changes" CvType="Text" DesignTimeRectangle="14, 9, 255, 15" ElementType="Text" Guid="ed549469-8bd0-4c16-8ded-aef6abd426a4" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                          <uix:TargetAnchorable.FuzzySelectorArgument>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </uix:TargetAnchorable.FuzzySelectorArgument>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NCheckState>
+                    <Delay Duration="00:00:30" sap:VirtualizedContainerService.HintSize="416,122" sap2010:WorkflowViewState.IdRef="Delay_1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Delay>
+                    <uix:NCheckState DisplayName="Check App State 'Data Services changes h…'" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="c1feb8a0-b55e-48e0-a259-466e581d4865" Version="V4">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,244" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK(2)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c1feb8a0-b55e-48e0-a259-466e581d4865" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable CVScreenId="9fa03a0d-68c0-4f26-a21b-a9ad7be34867" ContentHash="FDPkMxS1WEiBhgKyqZkqbg" CvElementArea="171, 169, 94, 23" CvTextArea="209, 174, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="171, 169, 94, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='middleButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='middleButton' check:text='OK' /&gt;" Guid="9dc4ba1c-b409-4681-9a73-44b0eeb815ea" InformativeScreenshot="f73f77beb2bfdbd5f93eb7ca95f014b7.png" Reference="eigqaPKRfk2c2g5YtmQDNg/5lY3aP7eQUWTcFeRxxD3Pg" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ICCA' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                <uix:TargetAnchorable.PointOffset>
+                                  <uix:PointOffset Position="TopLeft" X="48" Y="13" />
+                                </uix:TargetAnchorable.PointOffset>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable ContentHash="LfqoCQvdIUqqeqqXavFXuw" DesignTimeRectangle="0, 0, 421, 211" DesignTimeScaleFactor="1" Guid="3d55e737-61f8-445b-8444-7f8bb5e82afa" InformativeScreenshot="7ceadc4d543cd5e575428db81fc5e0f9.png" Reference="eigqaPKRfk2c2g5YtmQDNg/RIqpXFtkMkmN62_OOMoLAw" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ICCA' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Visible" WaitForReadyArgument="Complete">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="9fa03a0d-68c0-4f26-a21b-a9ad7be34867" CvTextArea="71, 48, 243, 15" CvTextArgument="Data Services changes have been activated." CvType="Text" DesignTimeRectangle="71, 48, 243, 15" ElementType="Text" Guid="c6ded4be-bcb9-4733-b2fb-d309eb30f680" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                          <uix:TargetAnchorable.FuzzySelectorArgument>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </uix:TargetAnchorable.FuzzySelectorArgument>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NCheckState>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable ContentHash="xd_k6MEYKEG1zHq7oAmIjQ" DesignTimeRectangle="8, 81, 1920, 1061" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd cls='WindowsForms10.MDICLIENT.*' /&gt;" FuzzySelectorArgument="&lt;wnd cls='WindowsForms10.MDICLIENT.*' /&gt;" Guid="556804d0-1243-4059-a7a5-8becbab1d10b" InformativeScreenshot="a7ff6c4e10209ad6c7dc13fdb502b9a4.png" Reference="eigqaPKRfk2c2g5YtmQDNg/uqZaF7LhgU-gkC-D0zpJBg" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ConfigDisplayController' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="33b5c3b8-48db-45ac-988f-67cb65df1ded" CvTextArea="68, 88, 109, 15" CvTextArgument="Configuration Editor" CvType="Text" DesignTimeRectangle="67, 83, 112, 24" FullSelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Configuration Editor' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Configuration Editor' role='outline item' automationid='' check:text='Configuration Editor' /&gt;" Guid="f350aa9b-a883-4732-9db9-ccd542ec0fa5" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NCheckState>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1176" ContentHash="5BhPGOVAMEeobpm8d6jCgw" FilePath="C:\\Program Files\\Philips\\CIS\\Bin\\philips.cis.configdisplaycontroller.exe" IconBase64="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" InformativeScreenshot="ba0ef1da87a4ce63b9adad008006f4ec.png" Reference="eigqaPKRfk2c2g5YtmQDNg/-ZuG9I0yd0qYQuc9tq2DnA" Selector="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ConfigDisplayController' /&gt;" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

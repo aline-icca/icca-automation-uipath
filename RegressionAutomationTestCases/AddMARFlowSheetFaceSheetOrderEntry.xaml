@@ -1,0 +1,705 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="AddMARFlowSheetFaceSheetOrderEntry" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPathTeam.ServicesManager.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.NetIQeDirectory.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="AddMARFlowSheetFaceSheetOrderEntry" sap:VirtualizedContainerService.HintSize="1556,1819" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="MARTxt" />
+      <Variable x:TypeArguments="x:String" Name="FlowsheetTxt" />
+      <Variable x:TypeArguments="x:String" Name="FacesheetTxt" />
+      <Variable x:TypeArguments="x:String" Name="Password" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="1056,241" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">
+                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">MARTxt</CSharpReference>
+              </OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">Medication Administration Record</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">
+                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">FlowsheetTxt</CSharpReference>
+              </OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">Flowsheet (Adult ICU)</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">
+                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">FacesheetTxt</CSharpReference>
+              </OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">Face Sheet</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">
+                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">Password</CSharpReference>
+              </OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">jupiter</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+    </ui:MultipleAssign>
+    <Sequence DisplayName="Add MAR, FlowSheet, Facesheet and Order Entry Documents" sap:VirtualizedContainerService.HintSize="1056,1555" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1022,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace">
+        <ui:LogMessage.Message>
+          <InArgument x:TypeArguments="x:Object">
+            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">DateTime.Now.ToString() + " - Starting to MAR, FlowSheet, Facesheet and Order Entry Documents."</CSharpValue>
+          </InArgument>
+        </ui:LogMessage.Message>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: IntelliSpace Critical Care and Anesthesia - Test Hospital" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1022,1299" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" IsDisplayNameAuto="True" ScopeGuid="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="988,969" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NCheckState DisplayName="Check App State 'Rad Ribbon View'" sap:VirtualizedContainerService.HintSize="954,57" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,640" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Chart'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="687dacda-941e-426d-8551-68581cbe8666" CvElementArea="69, 39, 53, 32" CvTextArea="80, 46, 31, 12" CvTextArgument="Chart" CvType="Button" DesignTimeRectangle="70, 41, 52, 31" DesignTimeScaleFactor="1" ElementType="TabPage" FullSelectorArgument="&lt;ctrl automationid='rbnCtrl' /&gt;&lt;ctrl automationid='Norm' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='rbnCtrl' /&gt;&lt;ctrl automationid='Norm' role='page tab' check:text='Chart' /&gt;" Guid="da127607-b84c-4357-a478-d63ef255c0c0" InformativeScreenshot="27471936d2b817d1744ff427972601e9.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' cls='HwndWrapper*' title='IntelliSpace Critical Care and Anesthesia - Test Hospital' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset Y="-1" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DropDownPart'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="16, 111, 71, 34" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='rbnCtrl' /&gt;&lt;ctrl automationid='Norm' /&gt;&lt;ctrl automationid='Norm.Chart' /&gt;&lt;ctrl automationid='DropDownPart' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='rbnCtrl' /&gt;&lt;ctrl automationid='Norm' /&gt;&lt;ctrl automationid='Norm.Chart' /&gt;&lt;ctrl automationid='DropDownPart' role='push button' check:text='DropDownPart' /&gt;" Guid="3929c22f-f954-44eb-acd3-e0d3133638bc" InformativeScreenshot="f48bf5e7020aa1c8ae449c49d01ef1d5.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' cls='HwndWrapper*' title='IntelliSpace Critical Care and Anesthesia - Test Hospital' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="2a51a2bd-b95f-4890-9a16-9b0cd33f0016" CvElementArea="36, 76, 32, 36" CvTextArea="55, 97, 9, 11" CvType="Icon" DesignTimeRectangle="36, 79, 32, 32" ElementType="Icon" FullSelectorArgument="&lt;ctrl automationid='rbnCtrl' /&gt;&lt;ctrl automationid='Norm' /&gt;&lt;ctrl automationid='Norm.Chart' /&gt;&lt;ctrl automationid='Image' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='rbnCtrl' /&gt;&lt;ctrl automationid='Norm' /&gt;&lt;ctrl automationid='Norm.Chart' /&gt;&lt;ctrl automationid='Image' role='graphic' /&gt;" Guid="5e3843c8-c874-4bcc-a453-2ad33f7cc6be" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARESURBVFhH3ZjtT1NXHMf3Z+y2bnsxmXuxxS3Ed0v2xiXzxRL2xjeLc2FKEQX1BdlARjJkKkKLoKJSKm2hLS2lyKDlUR5seaobpXbipJjNFjJ5LJTyVArfnXspz73pbXuTkf2ST3LuTXvOp7/zO+fe07dwwOJgC62vr2NyahqdZgu6LN2csfT2wT02FuwlttgnNOwcQUmpFG3tHZxRqDRQarT42+Vi+ogl9gk5R16hqrqGaXPlSXcvrotvQU2+R0utkXvRBm9C5ZpqKLQ1qNLX4rXLjUAgEOw1smAVWltb48yT7h48au2EdWiEkdLWRC/FIqRnOuNKl2VDyDkxh/7nzpikWIVWV1c5Q6+0TaGdUjrDI1JTbvIZ7lK8CdU0teG5e2IL84AD0go1qkimGCmOmQotpNPD71/ljLmnj2REj6Yuyy40tb+i6F4pKXQD3oxPMPUWLliFVvx+zrx0OtHY0hqShqYW3JeVw+5wEHl/cCT2YBVaXlnhDVNzC+zPHFgh7XARUkhDhJaWl3nDRLL0PxRaWuINU1Nz7EKLi4u8wYvQwsICbxhjERqmhbTV8Pl8vGFsbMZgLEJqIjQ/74sJ1+gb1HdYkaeqx+mcIlyQyJBL2sq2XoxNeVhfUViFvN75qOmzvUDWAx2OpxfhcFIeqLMFBDHeFRUg/pIEZwuVaB/8E/4QjxPehZ7aXyIlvxxHRDcgSC4GlSoFdVEO6pICVNpDUCkloM7cxJdXbqN1YAiBPY8TVqG5OW/EjP0ziZ9lNfiQyFDn722JnCvrwDW9FUeztFtigjP5OJFVjBmvLzj6RrAI6TA7OxcxDaRmvkgvBCUq2s4KocQ4SJ7+r/HZVcPWPSpNBsHpbKjardhZTSGFVFU6eGZnIya/sh4f0DVzoXR7YDYhgiBJjK9zHuyaNhYhbcgBw5El00NIFzDJzkmJCQWGp4yMzTmO0XEv1J0vmOuflBa8n66C4NwdHLt4kwht54hVaMbjiZgMqQ5vk9qghb4RG1FcbYW0zobB4Q0hXdsQc31Vbsbh9EoIUu4iPi2PvLyFyxA5Y03PzETMDWUd4pKIUGoZ4kgGjmZW4dMrWija/kC/YxQJRJK+/jhDA+FlJYSiWzieUcQhQ0Roano6YrSNZnx+WQKKTMXOWmGrIeG32Siufbxrk+RVaOQvN5LFchxKvAYBvf8EB6ZrRtFgx7Hs6m0ZUSHiErMx7vEGR9+IkEKVRIg+40fKxOQU2nts+CqjEILvciEIrja6gI/8oMYhMk2MDNm13zmViYY+O4eN0fkKZfIKDNjsUfHb7zYYTI+R8KME753KgjDxOtmxbzMFLEySMNP0UXIOjP3PsEwOCHtjn5DL7cbDChXkleqoKSfHn1LyozLz7uJEai4++T4b8ed/QULOfdyp62CmaW9mNmOX0GbQYnuPy9FCDxwgy5pe2nQ73B8RIYX+yzhgQsC/Me11SrRuObEAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset Position="BottomLeft" X="36" Y="-17" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,202" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V4" />
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="10, 40, 1916, 127" DesignTimeScaleFactor="1" ElementType="TabPageContainer" FullSelectorArgument="&lt;ctrl automationid='rbnCtrl' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='rbnCtrl' role='page tab list' check:text='Rad Ribbon View' /&gt;" Guid="253f3194-0e85-406a-bffc-92eda78f4dca" InformativeScreenshot="bf2f86a2b97c4f3d3c17224804f8f7c7.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' cls='HwndWrapper*' title='IntelliSpace Critical Care and Anesthesia - Test Hospital' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="687dacda-941e-426d-8551-68581cbe8666" CvElementArea="69, 39, 53, 32" CvTextArea="80, 46, 31, 12" CvTextArgument="Chart" CvType="Button" DesignTimeRectangle="70, 41, 52, 31" ElementType="TabPage" FullSelectorArgument="&lt;ctrl automationid='rbnCtrl' /&gt;&lt;ctrl automationid='Norm' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='rbnCtrl' /&gt;&lt;ctrl automationid='Norm' role='page tab' check:text='Chart' /&gt;" Guid="aa746d49-cad5-49c5-b9bd-76c05720b3e9" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NCheckState>
+              <uix:NCheckState DisplayName="Check App State 'Add Documents'" sap:VirtualizedContainerService.HintSize="954,57" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="484,451" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="MAR" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Filter'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable CVScreenId="2df90f35-80c7-46b4-9872-ffc7e02571f2" CvElementArea="61, 470, 380, 23" CvType="InputBox" DesignTimeRectangle="60, 471, 379, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='filterTextBox' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='filterTextBox' /&gt;" Guid="9998c8bd-99e4-4ffc-a1cc-aa4683c95f37" InformativeScreenshot="43ea042b6cd54cebc18b207fddc480fc.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' ctrlname='DocumentCatalogView' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="2df90f35-80c7-46b4-9872-ffc7e02571f2" CvTextArea="18, 475, 31, 12" CvTextArgument="Filter:" CvType="Text" DesignTimeRectangle="19, 474, 37, 17" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='filterLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='filterLabel' check:text='Filter:' /&gt;" Guid="5d72d2e2-6b41-4f42-b0f4-935818a2d2d9" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset Position="TopRight" X="-189" Y="12" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.Text>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">MARTxt</CSharpValue>
+                          </InArgument>
+                        </uix:NTypeInto.Text>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NTypeInto>
+                      <uix:NSelectItem DisplayName="Select Item 'Medication Administrati…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Medication Administration Record" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                        <uix:NSelectItem.Items>
+                          <scg:List x:TypeArguments="x:String" Capacity="2">
+                            <x:String>Documents from other care units</x:String>
+                            <x:String>Medication Administration Record</x:String>
+                          </scg:List>
+                        </uix:NSelectItem.Items>
+                        <uix:NSelectItem.Target>
+                          <uix:TargetAnchorable CVScreenId="026c76c2-be71-4324-971c-80e1794e87c8" CvTextArea="83, 81, 182, 13" CvTextArgument="Medication Administration Record" CvType="Text" DesignTimeRectangle="82, 80, 185, 16" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='CatalogTabControl' /&gt;&lt;wnd ctrlname='AllDocumentsTabPage' /&gt;&lt;wnd ctrlname='AllDocumentsTreeView' /&gt;&lt;ctrl name='Medication Administration Record' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='CatalogTabControl' /&gt;&lt;wnd ctrlname='AllDocumentsTabPage' /&gt;&lt;wnd ctrlname='AllDocumentsTreeView' /&gt;&lt;ctrl name='Medication Administration Record' role='outline item' automationid='' check:text='Medication Administration Record' /&gt;" Guid="6f5d5de2-f915-46a3-9c55-1800448b2e46" InformativeScreenshot="8b4f5f4ad3e27585a4a6efc434e5be1b.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' ctrlname='DocumentCatalogView' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="026c76c2-be71-4324-971c-80e1794e87c8" CvTextArea="83, 81, 182, 13" CvTextArgument="Medication Administration Record" CvType="Text" DesignTimeRectangle="83, 81, 182, 13" ElementType="Text" Guid="58dcfbe0-230d-413d-880e-0364a44feec2" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NSelectItem.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NSelectItem>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Medication Administrati…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CVScreenId="b105791a-a418-47f2-b559-fd18f0cacd27" CvTextArea="83, 81, 182, 14" CvTextArgument="Medication Administration Record" CvType="Text" DesignTimeRectangle="82, 80, 185, 16" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='CatalogTabControl' /&gt;&lt;wnd ctrlname='AllDocumentsTabPage' /&gt;&lt;wnd ctrlname='AllDocumentsTreeView' /&gt;&lt;ctrl name='Medication Administration Record' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='CatalogTabControl' /&gt;&lt;wnd ctrlname='AllDocumentsTabPage' /&gt;&lt;wnd ctrlname='AllDocumentsTreeView' /&gt;&lt;ctrl name='Medication Administration Record' role='outline item' automationid='' check:text='Medication Administration Record' /&gt;" Guid="a51f794e-bbb9-4c1c-ba93-e57035946bff" InformativeScreenshot="ed2d82f21e9048eadf53e17489e19232.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' ctrlname='DocumentCatalogView' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="b105791a-a418-47f2-b559-fd18f0cacd27" CvTextArea="83, 81, 182, 14" CvTextArgument="Medication Administration Record" CvType="Text" DesignTimeRectangle="83, 81, 182, 14" ElementType="Text" Guid="5d3f9d87-6a95-4c71-a214-62b7b8f44e81" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset Position="TopRight" X="-93" Y="8" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CVScreenId="3cbd93a3-7967-4026-bc93-c704603b3885" CvElementArea="531, 471, 74, 24" CvTextArea="556, 476, 23, 12" CvTextArgument="Add" CvType="Button" DesignTimeRectangle="532, 471, 72, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='AddDocumentButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='AddDocumentButton' check:text='Add' /&gt;" Guid="9dc9dfe0-8a73-4e61-a3be-87a7d34f227c" InformativeScreenshot="9c330a8ac2d8d678e3cb2f1cfb50f640.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' ctrlname='DocumentCatalogView' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset Position="TopLeft" X="37" Y="12" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NClick>
+                    </Sequence>
+                    <Sequence DisplayName="Flow Sheet" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Filter'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable CVScreenId="8291f865-8967-401f-84f1-ee483ec08357" CvElementArea="60, 470, 379, 23" CvType="InputBox" DesignTimeRectangle="60, 471, 379, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='filterTextBox' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='filterTextBox' /&gt;" Guid="f23c87a1-6f82-4118-b2ba-0ea906c0a7dc" InformativeScreenshot="6c4aab05fca7a3ee338b46bb5cdbcc90.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' ctrlname='DocumentCatalogView' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="8291f865-8967-401f-84f1-ee483ec08357" CvTextArea="18, 475, 31, 12" CvTextArgument="Filter:" CvType="Text" DesignTimeRectangle="19, 474, 37, 17" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='filterLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='filterLabel' check:text='Filter:' /&gt;" Guid="cac73cd4-6598-4f3c-b18c-bed08d71f66d" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset Position="TopLeft" X="190" Y="11" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.Text>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">FlowsheetTxt</CSharpValue>
+                          </InArgument>
+                        </uix:NTypeInto.Text>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NTypeInto>
+                      <uix:NSelectItem DisplayName="Select Item 'Flowsheet (Adult ICU)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="Flowsheet (Adult ICU)" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                        <uix:NSelectItem.Items>
+                          <scg:List x:TypeArguments="x:String" Capacity="2">
+                            <x:String>Documents from other care units</x:String>
+                            <x:String>Flowsheet (Adult ICU)</x:String>
+                          </scg:List>
+                        </uix:NSelectItem.Items>
+                        <uix:NSelectItem.Target>
+                          <uix:TargetAnchorable CVScreenId="917e3007-2212-4e2c-8631-9072c827b59e" CvTextArea="83, 81, 122, 14" CvTextArgument="Flowsheet (Adult ICU)" CvType="Text" DesignTimeRectangle="82, 80, 126, 16" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='CatalogTabControl' /&gt;&lt;wnd ctrlname='AllDocumentsTabPage' /&gt;&lt;wnd ctrlname='AllDocumentsTreeView' /&gt;&lt;ctrl name='Flowsheet (Adult ICU)' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='CatalogTabControl' /&gt;&lt;wnd ctrlname='AllDocumentsTabPage' /&gt;&lt;wnd ctrlname='AllDocumentsTreeView' /&gt;&lt;ctrl name='Flowsheet (Adult ICU)' role='outline item' automationid='' check:text='Flowsheet (Adult ICU)' /&gt;" Guid="5d451cf5-a016-4d8f-852c-6abc597ed269" InformativeScreenshot="1c0cc36971cb9310d67d1c455093d052.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' ctrlname='DocumentCatalogView' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                        </uix:NSelectItem.Target>
+                      </uix:NSelectItem>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Flowsheet (Adult ICU)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CVScreenId="917e3007-2212-4e2c-8631-9072c827b59e" CvTextArea="83, 81, 122, 14" CvTextArgument="Flowsheet (Adult ICU)" CvType="Text" DesignTimeRectangle="82, 80, 126, 16" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='CatalogTabControl' /&gt;&lt;wnd ctrlname='AllDocumentsTabPage' /&gt;&lt;wnd ctrlname='AllDocumentsTreeView' /&gt;&lt;ctrl name='Flowsheet (Adult ICU)' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='CatalogTabControl' /&gt;&lt;wnd ctrlname='AllDocumentsTabPage' /&gt;&lt;wnd ctrlname='AllDocumentsTreeView' /&gt;&lt;ctrl name='Flowsheet (Adult ICU)' role='outline item' automationid='' check:text='Flowsheet (Adult ICU)' /&gt;" Guid="7860f156-a9b5-4c04-a46d-71041c4f81d5" InformativeScreenshot="8215088bceb9fa2a1a4ccc0899052303.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' ctrlname='DocumentCatalogView' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="917e3007-2212-4e2c-8631-9072c827b59e" CvElementArea="64, 80, 14, 16" CvType="Icon" DesignTimeRectangle="62, 78, 18, 20" ElementType="Icon" Guid="f74696c6-95e5-40c5-b9d3-ed63f552e2f6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAYAAACAl21KAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABkSURBVDhP5ZBBCoAwDATz4Zzzr3wwsrQRjU21Ug/qwNISyrAp2SReIBKRND2aohaYE+ULDIlAJktFqrqLN/JELjfaMiSKjRDn2UbMXK+FXiME/O2P6rkyVYSHZ4kcJzf5rMhsAUrLIhxl0yG9AAAAAElFTkSuQmCC" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset Position="TopLeft" X="62" Y="9" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CVScreenId="66d98e14-4c77-4a11-aeff-9565c90d93f5" CvElementArea="531, 471, 73, 24" CvTextArea="556, 476, 23, 12" CvTextArgument="Add" CvType="Button" DesignTimeRectangle="532, 471, 72, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='AddDocumentButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='AddDocumentButton' check:text='Add' /&gt;" Guid="d74e16f7-9a79-4381-b59c-ca2c5b44fa66" InformativeScreenshot="8a9b03c7798d1205dbc42f1b55c8b7dc.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' ctrlname='DocumentCatalogView' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset Position="TopLeft" X="37" Y="11" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NClick>
+                    </Sequence>
+                    <Sequence DisplayName="Facesheet" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Filter'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable CVScreenId="66d98e14-4c77-4a11-aeff-9565c90d93f5" CvElementArea="60, 470, 381, 24" CvType="InputBox" DesignTimeRectangle="60, 471, 379, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='filterTextBox' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='filterTextBox' /&gt;" Guid="3258fd70-216a-4014-a1c0-4b214239b40f" InformativeScreenshot="a3de1dd599f51787eb60a1c78e467e00.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' ctrlname='DocumentCatalogView' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="66d98e14-4c77-4a11-aeff-9565c90d93f5" CvTextArea="18, 474, 31, 13" CvTextArgument="Filter:" CvType="Text" DesignTimeRectangle="19, 474, 37, 17" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='filterLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='filterLabel' check:text='Filter:' /&gt;" Guid="5003d216-4dd2-4454-b859-b3a1630931f9" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset Position="TopLeft" X="189" Y="11" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.Text>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">FacesheetTxt</CSharpValue>
+                          </InArgument>
+                        </uix:NTypeInto.Text>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NTypeInto>
+                      <uix:NSelectItem DisplayName="Select Item 'Face Sheet'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="Face Sheet" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                        <uix:NSelectItem.Items>
+                          <scg:List x:TypeArguments="x:String" Capacity="5">
+                            <x:String>Admission Documents</x:String>
+                            <x:String>Face Sheet</x:String>
+                            <x:String>Documents from other care units</x:String>
+                            <x:String>NICU Face Sheet</x:String>
+                            <x:String>Philips Obstetrics Face Sheet</x:String>
+                          </scg:List>
+                        </uix:NSelectItem.Items>
+                        <uix:NSelectItem.Target>
+                          <uix:TargetAnchorable CVScreenId="127a4ce8-8a20-44fb-8ec6-369dee651cfb" CvTextArea="83, 81, 64, 14" CvTextArgument="Face Sheet" CvType="Text" DesignTimeRectangle="82, 80, 66, 16" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='CatalogTabControl' /&gt;&lt;wnd ctrlname='AllDocumentsTabPage' /&gt;&lt;wnd ctrlname='AllDocumentsTreeView' /&gt;&lt;ctrl name='Face Sheet' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='CatalogTabControl' /&gt;&lt;wnd ctrlname='AllDocumentsTabPage' /&gt;&lt;wnd ctrlname='AllDocumentsTreeView' /&gt;&lt;ctrl name='Face Sheet' role='outline item' automationid='' check:text='Face Sheet' /&gt;" Guid="caefdeac-83f0-4008-ad13-805bb80308cc" InformativeScreenshot="7b14ea5315e8fcedb2bc0e91ede93d22.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' ctrlname='DocumentCatalogView' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="127a4ce8-8a20-44fb-8ec6-369dee651cfb" CvTextArea="83, 81, 64, 14" CvTextArgument="Face Sheet" CvType="Text" DesignTimeRectangle="83, 81, 64, 14" ElementType="Text" Guid="7ae41406-ba21-4035-825d-ef7e3c63f965" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NSelectItem.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NSelectItem>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Face Sheet'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CVScreenId="42894b80-3f22-4591-8d4f-492c4d4041ef" CvTextArea="83, 81, 64, 14" CvTextArgument="Face Sheet" CvType="Text" DesignTimeRectangle="82, 80, 66, 16" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='CatalogTabControl' /&gt;&lt;wnd ctrlname='AllDocumentsTabPage' /&gt;&lt;wnd ctrlname='AllDocumentsTreeView' /&gt;&lt;ctrl name='Face Sheet' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='CatalogTabControl' /&gt;&lt;wnd ctrlname='AllDocumentsTabPage' /&gt;&lt;wnd ctrlname='AllDocumentsTreeView' /&gt;&lt;ctrl name='Face Sheet' role='outline item' automationid='' check:text='Face Sheet' /&gt;" Guid="b96b699a-ab1f-4559-9e14-e453d8ce6810" InformativeScreenshot="f0eab48ff48908a2c91d0dbe348143e5.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' ctrlname='DocumentCatalogView' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="42894b80-3f22-4591-8d4f-492c4d4041ef" CvTextArea="83, 81, 64, 14" CvTextArgument="Face Sheet" CvType="Text" DesignTimeRectangle="83, 81, 64, 14" ElementType="Text" Guid="3cc622f4-84d8-4439-9009-6e816a493013" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset Position="TopLeft" X="29" Y="9" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CVScreenId="ef0f8399-96d8-4503-aaf5-ef67ebbccf63" CvElementArea="531, 471, 74, 25" CvTextArea="556, 476, 23, 12" CvTextArgument="Add" CvType="Button" DesignTimeRectangle="532, 471, 72, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='AddDocumentButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CatalogTabbedFolderPanel' /&gt;&lt;wnd ctrlname='AddDocumentButton' check:text='Add' /&gt;" Guid="b08ab8b7-4841-4a5f-b43a-0b5a41c65578" InformativeScreenshot="9c330a8ac2d8d678e3cb2f1cfb50f640.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' ctrlname='DocumentCatalogView' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset Position="TopLeft" X="37" Y="12" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NClick>
+                    </Sequence>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="e1b48db4-ef3f-439b-875a-bcc9d158dc07" CvElementArea="424, 669, 85, 26" CvTextArea="457, 676, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="424, 670, 84, 25" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='oKButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='oKButton' check:text='OK' /&gt;" Guid="9c201e53-69fb-4aeb-a964-98f45cf5e253" InformativeScreenshot="193f8b2cac32e862f7798a038ad2927d.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' ctrlname='DocumentCatalogView' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset Position="TopLeft" X="42" Y="12" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 624, 710" DesignTimeScaleFactor="1" Guid="6ea5fc68-7fa3-456d-af06-c3560c4cb10e" InformativeScreenshot="46392dd74f001dcbdec7a228a526fa71.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' ctrlname='DocumentCatalogView' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="2df90f35-80c7-46b4-9872-ffc7e02571f2" CvTextArea="35, 9, 88, 12" CvTextArgument="Add Documents" CvType="Text" DesignTimeRectangle="36, 9, 88, 12" ElementType="Text" Guid="07bf259a-e9e5-459c-bb7d-46f8464c0950" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.FuzzySelectorArgument>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </uix:TargetAnchorable.FuzzySelectorArgument>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NCheckState>
+              <uix:NCheckState DisplayName="Check App State 'IntelliSpace Critical C…'" sap:VirtualizedContainerService.HintSize="954,57" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,244" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="ee0a3dad-5368-4928-a701-78048e22e687" CvTextArea="93, 112, 26, 12" CvTextArgument="Save" CvType="Text" DesignTimeRectangle="93, 112, 26, 12" DesignTimeScaleFactor="1" ElementType="Text" Guid="01c44fc3-1afc-48fc-ba69-57fbf4dc6a4b" InformativeScreenshot="69e9943a1054fd653a904d2423167157.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' cls='HwndWrapper*' title='IntelliSpace Critical Care and Anesthesia - Test Hospital' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="ee0a3dad-5368-4928-a701-78048e22e687" CvElementArea="91, 81, 27, 27" CvType="Icon" DesignTimeRectangle="90, 79, 31, 32" ElementType="Icon" FullSelectorArgument="&lt;ctrl automationid='rbnCtrl' /&gt;&lt;ctrl automationid='Norm' /&gt;&lt;ctrl automationid='Norm.Chart' /&gt;&lt;ctrl automationid='Image' idx='2' role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='rbnCtrl' /&gt;&lt;ctrl automationid='Norm' /&gt;&lt;ctrl automationid='Norm.Chart' /&gt;&lt;ctrl automationid='Image' role='graphic' /&gt;" Guid="f300356e-b552-4b6d-98a6-605066edb291" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACMAAAAkCAYAAAAD3IPhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQ4SURBVFhH7ZfpU5tVFMb9x/wf9KtOq7UKsi8te8hG9oWEpCGh7IS1CzKWliLFQqHSsgwQlhYLHQqiFDTQBCbI9njuEWIF3iDJB/shZ+YZZi7vc97fve859958hA8o4jBSEYeRijiMVEjChEI7WFtf/5fesn4/NX5S4hnx7NqJZ0OhEA4PD4/ecDrOhNnf34dvegZacyn0Fht09Ndkd+BGVS2UZW4UOG8ix1VzporKPNA6PbB7qmBxuGCw2jmH0MTkFHZ3d4/ecjokYaZnZlFa5kS5pxIOlxtNbbcx/2YJssZ2fNozhY8Hl8/U598PwdnxEM/GJtBMHpf75t85yj08wahgpgjGYi+Dk0BsjhsMs0Awqro2XL7bh086R89UQksX3O2dYRiHq5xziAnFBGMutcNOq2O1lTHM6to6Oh48ROud9oh61D9A/hdoar0FG/lFDruzPAaY6VkYrTaYSUZLKcPs7OxgafkXzL6ci6jVt2t4s7SMRoKx0IREDhvVj28qapgZGMxWGIwm6I1mhtnY3ERvXz8amlsjamRsHPMLr+FtaYPxKIeov5hgdCYztFodNDo9w2xvb3Nh9w88jaiF14tYXFyCl8D0BiPnsNCn9k1NRwcjvq/GYIJaXQJ1iZZh/Bsb+KGnF9V1DRH1bHgUr+ZpZQhGo9VzDlF/McGU6I2QyxVQqtSo9TZjZWUFcz+/wvOR0YgS9SL8VbX1UKk1nMNkLcVkLDBqmlVhoQwymZyXubOrmzYu37kaG5/A7fYOKnwrZMVyziHqLyYYpUaH3Nx8VkFRMcOZqDPOk3ixeLagSBb2602WGGCo8uW0xNnZ11nXruUgL78QChpTEWQkyZVq5OYVsOfYr6WOigFmGjJVCTIyslhZlFC8xFNVgwfdPZK6R5ui012BwmIFe479ov4mfVHCiFkUKVRISU1nZdEsXRWVND6Dzc13kvL7N/Bk8CkfIdnXc8N+tc4QG0yhXIlvk5JZGTTL5lt3aBf+k3fhjnv3MTQ8gkAgeOT6J0Q31TZ4eQLHfhXV0KQvylNbwORTJ3yTkMhKy8xC293v+P+Tou2NFj6HxJ3lZPz62yrqG5uRkZUd9is1WkzEApNHHXTl6tes5LSMC8OkpmeG/aIZooeh75tD+8OlL6+wElPSLgRT521CUmpa2C9TlkQP82JuDkXUPV98dRWfXbqMhKSUMIzYhd2V1dw9/o1NHns/BExtQyMSk1PYKySaIaqbnoh3gQA6Ou9T3SiQlJaOTOoMD107h54Po+/JALVwF7rpnBr8aYjH3ldP749w0e0uOzePvUJyOt/GaXeOCubg4AB/+P149Pgxff8mVNc3oKKmjg+/81Tf1MIHZk29l71CLdSJi9RlYtWlQhJGhLjJh+hCFQwGESCJ1fqvCpCCwS32sra2sLe3d/FfB/9XxGGkIg4jFR8QDPAXn5/H9SIkLWsAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset Position="TopLeft" X="12" Y="7" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 1936, 1176" DesignTimeScaleFactor="1" Guid="e27f9e59-0c1f-42d7-8745-ec0b936572b1" InformativeScreenshot="b95726191e9c00b40b743ad0aa80177f.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' cls='HwndWrapper*' title='IntelliSpace Critical Care and Anesthesia - Test Hospital' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="10, 40, 1916, 127" ElementType="TabPageContainer" FullSelectorArgument="&lt;ctrl automationid='rbnCtrl' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='rbnCtrl' role='page tab list' check:text='Rad Ribbon View' /&gt;" Guid="b1a575b3-5f92-4b1f-9acf-2724ae56e7c2" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.FuzzySelectorArgument>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </uix:TargetAnchorable.FuzzySelectorArgument>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NCheckState>
+              <uix:NCheckState DisplayName="Check App State 'IntelliSpace Critical C…'" sap:VirtualizedContainerService.HintSize="954,736" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,494" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'editable text PasswordB…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable CVScreenId="c8d9f79a-ffdb-467e-80c1-cefa7f43055c" DesignTimeRectangle="101, 541, 323, 27" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;ctrl automationid='PasswordBox' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='PasswordBox' role='editable text' /&gt;" Guid="9f5cbd2f-ede7-45d2-8d4a-8fea51ce6d5b" InformativeScreenshot="f3b856cdc1619ff9635897f1adf7fb37.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' cls='HwndWrapper*' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset Position="TopRight" X="-161" Y="14" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">Password</CSharpValue>
+                        </InArgument>
+                      </uix:NTypeInto.Text>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f1f45515-2979-4c34-b1bb-479a56609b16" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="d0a80025-6532-4fe0-aee4-cc14594a017e" CvElementArea="289, 619, 118, 45" CvTextArea="334, 634, 28, 17" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="291, 621, 114, 42" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='OKButton' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='OKButton' role='push button' check:text='OK' /&gt;" Guid="fcf9865a-ce24-41c5-a85f-4eead74a0af9" InformativeScreenshot="485e7e75c4f54b632628065e4d3a97a3.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' cls='HwndWrapper*' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="d0a80025-6532-4fe0-aee4-cc14594a017e" CvElementArea="289, 619, 118, 45" CvTextArea="334, 634, 28, 17" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="336, 629, 24, 25" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='OKButton' /&gt;&lt;ctrl name='OK' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='OKButton' /&gt;&lt;ctrl name='OK' role='text' automationid='' check:text='OK' /&gt;" Guid="f461c786-20f3-4e2f-b0d6-edca8e4bace3" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset Position="TopRight" X="-57" Y="20" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 525, 680" DesignTimeScaleFactor="1" Guid="f3937b36-d4ac-4930-9ea3-b6046a539b14" InformativeScreenshot="c708efc40f67a635f2f36d5eab6d1864.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.displaycontroller.exe' cls='HwndWrapper*' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="a4f8eae5-c4e9-4bd0-a621-d627da04f5e3" CvTextArea="25, 22, 474, 31" CvTextArgument="IntelliSpace Critical Care and Anesthesia" CvType="Text" DesignTimeRectangle="17, 15, 492, 40" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='txtblkIntelliSpaceTitle' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='txtblkIntelliSpaceTitle' role='text' check:text='IntelliSpace Critical Care and Anesthesia' /&gt;" Guid="dfdc7fd5-4ba3-4b2d-af7b-076e4d1dc9fd" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.FuzzySelectorArgument>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </uix:TargetAnchorable.FuzzySelectorArgument>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NCheckState>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1176" FilePath="C:\\Program Files\\Philips\\CIS\\Bin\\philips.cis.displaycontroller.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAYiSURBVFhHpZfZT1RnGMb5N4wXJl659MILE7cLo2mi0Xhh3DCgF41Wg0ZpozZp7R8gRBONXqhstQhEdlSIsto0TU2jw5LKNswCM8AwK8wMzAzL0/f5zjnDmXFAoW94MzAD5/c87/KdQ9Z64927d2hsbMTjx4+hv/VZDDz5DpXff4OWn79d8XfWFF1dXaivr0dpaSkqKyvx4cOHFQUQPmNpgL/pV/D7dYvo7OxU0JKSEpSXl8NiscBus8HpcMI5OrqiADon3Ej+rH/05ejo6EBtba2CPn/+HD09PRgZGYFN0uGww+EUuHMUY2Njqwqg86+uQHt7u4IWFxejoqICzc3NGB4agnV4WOA22Gx22E3wUXE/Pj6+6gwQ+lUzUFNTo3ra0tKCQYEOMYcFbrVqzqXkdrsdYwJ1uVxwud0KPjExsaKA43fLkPVTSWpmCl6AOTg4qHJocAjD4to6TLgVzp5eTDS3KMdjOtw97lbwyclJfOruAlumX04F4RUWK5rdEZV3Oy3Iq3ybWYQhgK5ZcsJHxLEqud0B78OHSGzejB5ZO5dLnLvF+bgG93g88LstKVUgzIDze3NShKqMOQwBw1YBW0dMJXdIrx3wSHuiGzei7swZ2Oy2pHPCI7duwuf1pgggxOw8XcBnVTAEpPfbIWs2OurEVE0tQnv3YnLDBvzz9KkGn/Qg0N6B+Z070dDQkNIGQghLF8D3VxWQCqd7ESBrNiWb4Tt0CH379uHTjh3o6+uDZ8qDYNNLhI4exb1791LasJqA5GCaIynADBfnHDpOvLeuDv7Dh1FUVISQVKHqzh1MTXkx/eoVAkeOqLMiGAz+fwF0n3TOiRf3LrcIkFNQCSgukp7fwtC2bbB//KgEBEUAj+XpUCjZhnUL4CFjwF0Cd4t77rpncADRrVvVAeWV1Rzbvx9yBcT37EF4925NwPQ0wuEZdZ11CWAZecIRHr5wAZFz52TXtYOGQxffvh2FhYVq4tmW8kePUH/gANrPZuORfD8zM4NwJKwEcAUJyySAcPVqDv4Rz3ut7KOIHj+OwKZNmNyyJblu8yKgoKAAPr8PAX8AgUBQfdba+ha8Q0bCYUSiEclosg0rCdCxy0EBvK9zC+hu5sYN/JWTC4uU999du+CXW27s2DGU5ufDH/ALPIBgKIiQlH1mWpwTHokgGp3F7GwUc7NzaxPA6eYt9/3793DLMRso/x3OgwfRVluDnhMn1OTPyTnwUgawv79fTXwoJHCWXeBRgc8KfG5uTmVMck0Cnj17hu7ubjQ1NelDN4iIlL+srExtAg+a4qtX8aSwQG7LveI8JM5FAJ2HDee6gNgc4vH42gS8ePFCVYCt4BpOerShq7p8GT6fD37JgN+Pgf4B1Xdz2dlzDR5DLBZT8ERijQJeyT4bAvjKoUvIqVd56RI+yr772XNV9pBaN5aezjl0hvO4gidUJubnFYwrlyl17HIYcOPpxuvzqrx//74IsGjwoMBV38PinmVf7nssJq6V8wTmBb6wsIDFxUX1IGI8lBqvvN2TYU4loqqqSpWfb/T29urr5hd4QOBBHW4MXRRRTruCi3MpeTp8aXEpo4D04JOXEvDmzRvZ6VZVfoogPCDwIMtOuN53Oo+y7JJaz2MKvkD4vAGXXFpSUON50Hg1RxJuRG5urjoLWH5DBM94TvzyrsvQKeeSUvY4nScM55JLGly+lOP0ZIxZ/14uvTn4JqvA8vOVSREpcDqXiY+z71J6rezzWFwgWIOvFlz538oybAKjra0NrIICS/kNQRRBOIdNWzdxbgydOF8QuCq97jw96Li6ulqBOV9qfSVzcnKQL6erjteCIm7JiUcwy08RTP4hwUYSyLInh45kfpkUEPz69eskmKIJzs7OxsWLF/FQnjV1bGpQxPnz55UI/vfDPzKEGGIMuCHASAY/5/8XBHOFWT1e4+TJk7h65Qqamyozg83B/xOuyC9fksPIEMLy8+L82SyIoPQkmEnwqVOn8OMP+Whtqf4yOD0IyMvLU0KuXbum4HTNEzFT+Qk08vTp09LOm/ijvXHt4PSok+fCBw8e4Pr160rIMbk9r5a3b/+CPztfgu3UL7FCZGX9B9OvDEjWVK1lAAAAAElFTkSuQmCC" InformativeScreenshot="ea6da083359e839036b9eca1a1e0c083.png" Selector="&lt;wnd app='philips.cis.displaycontroller.exe' cls='HwndWrapper*' title='IntelliSpace Critical Care and Anesthesia - Test Hospital' /&gt;" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

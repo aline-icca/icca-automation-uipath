@@ -1,0 +1,1206 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Create_Clinical_Summary_Screen" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usa="clr-namespace:UiPathTeam.ServicesManager.Activities;assembly=UiPathTeam.ServicesManager.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPathTeam.ServicesManager.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPathTeam.ServicesManager.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.NetIQeDirectory.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Custom clinical summary view with System level is already created" DisplayName="Create_Clinical_Summary_Screen" sap:VirtualizedContainerService.HintSize="1085,11576" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="ifViewExistText" />
+      <Variable x:TypeArguments="x:String" Name="stsServiceStatus" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ConfigEditorLogin - Invoke Workflow File (ConfigEditorLogin.xaml)" sap:VirtualizedContainerService.HintSize="554,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ConfigEditorLogin.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="Username" />
+        <InArgument x:TypeArguments="x:String" x:Key="Password" />
+        <InOutArgument x:TypeArguments="x:String" x:Key="ConfigEditorPath" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Philips IntelliSpace CCA - System Management" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="520,12618" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="486,12123" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="452,12061" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="allViewText" />
+                <Variable x:TypeArguments="scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))" Name="allText" />
+                <Variable x:TypeArguments="x:Boolean" Name="automationTextExist" />
+                <Variable x:TypeArguments="x:Boolean" Name="automationText1Exist" />
+                <Variable x:TypeArguments="x:String" Name="activationSuccessText" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'Clinical Content'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="acd9505b-ac69-42c3-a1b9-df55f0ef36c5" CvTextArea="95, 184, 85, 13" CvTextArgument="Clinical Content" CvType="Text" DesignTimeRectangle="94, 179, 87, 24" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Clinical Content' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Clinical Content' role='outline item' automationid='' check:text='Clinical Content' /&gt;" Guid="a8fd3dc2-ecaf-4f9a-ae27-1046f73663b3" InformativeScreenshot="84f1f54df99841255df02440426d9ffd.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ConfigDisplayController' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="acd9505b-ac69-42c3-a1b9-df55f0ef36c5" CvTextArea="69, 88, 114, 15" CvTextArgument="Configuration Editors" CvType="Text" DesignTimeRectangle="67, 83, 117, 24" FullSelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Configuration Editors' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Configuration Editors' role='outline item' automationid='' check:text='Configuration Editors' /&gt;" Guid="eb59afce-c4bf-4777-a2c7-02851506c4d5" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'Clinical Summary View'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="164bda3f-514f-494f-b8cb-4ac5c79dd24d" CvTextArea="122, 376, 126, 13" CvTextArgument="Clinical Summary Views" CvType="Text" DesignTimeRectangle="121, 371, 128, 24" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Clinical Summary Views' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Clinical Summary Views' role='outline item' automationid='' check:text='Clinical Summary Views' /&gt;" Guid="01ad95b0-8f93-43a1-8322-f6b2eb03c116" InformativeScreenshot="76017a6cc553a1c1cc7970907d7eceb0.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ConfigDisplayController' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="164bda3f-514f-494f-b8cb-4ac5c79dd24d" CvTextArea="95, 184, 85, 13" CvTextArgument="Clinical Content" CvType="Text" DesignTimeRectangle="94, 179, 87, 24" FullSelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Clinical Content' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Clinical Content' role='outline item' automationid='' check:text='Clinical Content' /&gt;" Guid="d07548a3-b5bb-44af-ad19-b6d65b56075a" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="418,175" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Trace">
+                <ui:LogMessage.Message>
+                  <InArgument x:TypeArguments="x:Object">
+                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">DateTime.Now.ToString() + " - Creating a Clinical Summary View!!"</CSharpValue>
+                  </InArgument>
+                </ui:LogMessage.Message>
+              </ui:LogMessage>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add...'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_62" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="3b64fb44-63d5-46f5-b312-142812d83cf2" CvElementArea="435, 65, 161, 46" CvTextArea="497, 80, 35, 13" CvTextArgument="Add..." CvType="Button" DesignTimeRectangle="434, 64, 163, 47" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='addEditDeleteGroupBox' /&gt;&lt;wnd ctrlname='addButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='addEditDeleteGroupBox' /&gt;&lt;wnd ctrlname='addButton' check:text='Add...' /&gt;" Guid="257d90cf-b544-4186-a0f1-fa74e605a855" InformativeScreenshot="49c29fcb5ddb21f26c5ccdc9439b279c.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryListCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="3b64fb44-63d5-46f5-b312-142812d83cf2" CvElementArea="435, 119, 162, 47" CvTextArea="498, 135, 34, 13" CvTextArgument="Edit..." CvType="Button" DesignTimeRectangle="434, 119, 163, 47" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='addEditDeleteGroupBox' /&gt;&lt;wnd ctrlname='editButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='addEditDeleteGroupBox' /&gt;&lt;wnd ctrlname='editButton' check:text='Edit...' /&gt;" Guid="3e678b9a-9f9f-496a-899c-173a605402b6" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Display Label'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,286" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Text="Automation Test View" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable CVScreenId="b06eabc4-627e-4ffe-88d5-0a5cf2f467e9" CvElementArea="207, 74, 240, 23" CvType="InputBox" DesignTimeRectangle="207, 75, 239, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='GeneralTabPage' /&gt;&lt;wnd ctrlname='displayLabelTextBox' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='GeneralTabPage' /&gt;&lt;wnd ctrlname='displayLabelTextBox' /&gt;" Guid="2ca9842e-5884-4828-84b5-ff96f1900055" InformativeScreenshot="f13848e0185293a7c5649a0b4f9dde04.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="b06eabc4-627e-4ffe-88d5-0a5cf2f467e9" CvTextArea="29, 73, 73, 15" CvTextArgument="Display Label:" CvType="Text" DesignTimeRectangle="30, 73, 153, 30" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='GeneralTabPage' /&gt;&lt;wnd ctrlname='displayLabelLabel' /&gt;&lt;wnd ctrlname='internalLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='GeneralTabPage' /&gt;&lt;wnd ctrlname='displayLabelLabel' /&gt;&lt;wnd ctrlname='internalLabel' check:text='Display Label:' /&gt;" Guid="19e15634-96b5-48a9-ac7f-429fd7fd5899" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Clinical Units'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_63" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="562b7692-ea64-48b5-8b47-a872eaa043f1" CvElementArea="63, 32, 77, 21" CvTextArea="68, 36, 67, 13" CvTextArgument="Clinical Units" CvType="Button" DesignTimeRectangle="63, 33, 77, 19" DesignTimeScaleFactor="1" ElementType="TabPage" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;ctrl name='Clinical Units' role='page tab' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;ctrl name='Clinical Units' role='page tab' automationid='' check:text='Clinical Units' /&gt;" Guid="0e5251aa-13c4-469c-a28f-c43e0c0ff3ec" InformativeScreenshot="c56e8e55ad1aa1ca87fa0e356a21088e.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="562b7692-ea64-48b5-8b47-a872eaa043f1" CvElementArea="9, 30, 56, 24" CvTextArea="15, 34, 43, 13" CvTextArgument="General" CvType="Button" DesignTimeRectangle="10, 33, 53, 19" ElementType="TabPage" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;ctrl name='General' role='page tab' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;ctrl name='General' role='page tab' automationid='' check:text='General' /&gt;" Guid="cf0459e2-a248-4fe5-a2e0-1a62e8afac48" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Select All'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_64" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="d9b4eae8-2868-43bd-861a-4b72827ab742" CvElementArea="297, 72, 86, 30" CvTextArea="314, 80, 52, 13" CvTextArgument="Select All" CvType="Button" DesignTimeRectangle="297, 72, 86, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalUnitsTabPage' /&gt;&lt;wnd ctrlname='btnCheck' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalUnitsTabPage' /&gt;&lt;wnd ctrlname='btnCheck' check:text='Select All' /&gt;" Guid="4e350d5d-026e-4379-b44c-a84e22992b36" InformativeScreenshot="0edf54c91fd784bfd7cfe9cf4416e6bd.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="d9b4eae8-2868-43bd-861a-4b72827ab742" CvElementArea="297, 109, 86, 30" CvTextArea="318, 117, 44, 13" CvTextArgument="Clear All" CvType="Button" DesignTimeRectangle="297, 109, 86, 30" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalUnitsTabPage' /&gt;&lt;wnd ctrlname='btnUncheck' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalUnitsTabPage' /&gt;&lt;wnd ctrlname='btnUncheck' check:text='Clear All' /&gt;" Guid="2490a83e-be9d-41d0-afcb-445be91a5a04" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Clinical Summary Cards'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_65" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="3cedb237-2c7a-45d2-a268-699261c5fa64" CvElementArea="141, 32, 131, 21" CvTextArea="145, 36, 123, 13" CvTextArgument="Clinical Summary Cards" CvType="Button" DesignTimeRectangle="140, 33, 133, 19" DesignTimeScaleFactor="1" ElementType="TabPage" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;ctrl name='Clinical Summary Cards' role='page tab' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;ctrl name='Clinical Summary Cards' role='page tab' automationid='' check:text='Clinical Summary Cards' /&gt;" Guid="9b42456b-7e76-4491-a564-c495d815381b" InformativeScreenshot="f6419628b15f150f6584a3499b1e4dd7.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="3cedb237-2c7a-45d2-a268-699261c5fa64" CvElementArea="61, 31, 81, 22" CvTextArea="68, 34, 67, 13" CvTextArgument="Clinical Units" CvType="Button" DesignTimeRectangle="63, 33, 77, 19" ElementType="TabPage" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;ctrl name='Clinical Units' role='page tab' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;ctrl name='Clinical Units' role='page tab' automationid='' check:text='Clinical Units' /&gt;" Guid="79dd012c-1b93-4dcc-a532-d13889acb8b8" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add...'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_66" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="b0609d2c-4e2b-4534-b65b-e047b5b98806" CvElementArea="603, 165, 137, 30" CvTextArea="653, 173, 35, 13" CvTextArgument="Add..." CvType="Button" DesignTimeRectangle="603, 165, 137, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardAdd' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardAdd' check:text='Add...' /&gt;" Guid="55390f42-b00c-4231-94fd-f16d85525a3b" InformativeScreenshot="8e0dc1cd1ce39c2473862203b180d5be.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="b0609d2c-4e2b-4534-b65b-e047b5b98806" CvElementArea="603, 203, 137, 30" CvTextArea="654, 211, 34, 12" CvTextArgument="Edit..." CvType="Button" DesignTimeRectangle="603, 203, 137, 30" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardsEdit' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardsEdit' check:text='Edit...' /&gt;" Guid="53d5f327-5af8-481c-8a5e-433b99325750" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Card'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_67" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="fae1a9a9-c43a-4f96-8a3f-b4598f602a01" CvElementArea="227, 465, 362, 24" CvType="InputBox" DesignTimeRectangle="228, 466, 358, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='CardSelect' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='CardSelect' /&gt;" Guid="b8432a72-b9ee-4a77-a97b-7c75f45effcb" InformativeScreenshot="6f350f3b8fa345a7fb54a324eca12c91.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                        <uix:Target CVScreenId="fae1a9a9-c43a-4f96-8a3f-b4598f602a01" CvTextArea="27, 464, 25, 13" CvTextArgument="Card" CvType="Text" DesignTimeRectangle="28, 464, 178, 30" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='mandatoryLabel3' /&gt;&lt;wnd ctrlname='internalLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='mandatoryLabel3' /&gt;&lt;wnd ctrlname='internalLabel' check:text='Card' /&gt;" Guid="ffcc93d2-2b12-4744-99b2-33b7fface215" SearchSteps="Selector, FuzzySelector, CV" />
+                        <uix:Target CVScreenId="fae1a9a9-c43a-4f96-8a3f-b4598f602a01" CvElementArea="611, 466, 137, 30" CvTextArea="663, 474, 32, 15" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="611, 466, 137, 30" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='AcceptCardButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='AcceptCardButton' check:text='Apply' /&gt;" Guid="e201fb69-8115-40a9-9110-82d60e80e0e3" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Demographics'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_68" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="15ce990a-9dd1-407b-a706-3535d6eb337a" CvTextArea="3, 30, 77, 14" CvTextArgument="Demographics" CvType="Text" DesignTimeRectangle="1, 29, 356, 14" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;ctrl name='Card' role='list' /&gt;&lt;ctrl name='Demographics' role='list item' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;ctrl name='Card' role='list' /&gt;&lt;ctrl name='Demographics' role='list item' automationid='' check:text='Demographics' /&gt;" Guid="008d8c74-dfa1-4292-9196-d5e0a1045af9" InformativeScreenshot="bbcf7b2be52c44468c6cc85b00220d2d.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' cls='ComboLBox' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="15ce990a-9dd1-407b-a706-3535d6eb337a" CvTextArea="2, 16, 77, 12" CvTextArgument="Cardiovascular" CvType="Text" DesignTimeRectangle="1, 15, 356, 14" ElementType="ListItem" FullSelectorArgument="&lt;ctrl name='Card' role='list' /&gt;&lt;ctrl name='Cardiovascular' role='list item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Card' role='list' /&gt;&lt;ctrl name='Cardiovascular' role='list item' automationid='' check:text='Cardiovascular' /&gt;" Guid="89b23d51-39b7-445d-9a4e-359b53856b31" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Apply'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_69" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="e0b08278-e733-43a5-bf50-b317aaf981fa" CvElementArea="611, 466, 137, 30" CvTextArea="663, 474, 32, 15" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="611, 466, 137, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='AcceptCardButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='AcceptCardButton' check:text='Apply' /&gt;" Guid="d1dd3c25-fc79-40d8-9ec5-2c9fa8fa8ec7" InformativeScreenshot="9707be729bbe960ed3a2c534c94a5ea1.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="e0b08278-e733-43a5-bf50-b317aaf981fa" CvElementArea="603, 240, 137, 30" CvTextArea="652, 249, 37, 13" CvTextArgument="Delete" CvType="Button" DesignTimeRectangle="603, 241, 137, 30" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardsDelete' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardsDelete' check:text='Delete' /&gt;" Guid="cd66be8f-4d06-490c-8b6f-d65354da2600" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add...'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_70" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="9487c86d-683b-4b36-98d6-007347ba48ab" CvElementArea="603, 165, 137, 30" CvTextArea="653, 173, 35, 13" CvTextArgument="Add..." CvType="Button" DesignTimeRectangle="603, 165, 137, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardAdd' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardAdd' check:text='Add...' /&gt;" Guid="0797d3b8-97d0-486d-8179-ebe282bc0712" InformativeScreenshot="8e0dc1cd1ce39c2473862203b180d5be.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="9487c86d-683b-4b36-98d6-007347ba48ab" CvElementArea="603, 203, 137, 30" CvTextArea="654, 211, 34, 12" CvTextArgument="Edit..." CvType="Button" DesignTimeRectangle="603, 203, 137, 30" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardsEdit' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardsEdit' check:text='Edit...' /&gt;" Guid="71a516a9-c662-41a6-8cac-cc0b991c371d" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Card'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_71" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="2884bd01-4459-4991-9616-757c4e494003" CvElementArea="227, 465, 362, 24" CvType="InputBox" DesignTimeRectangle="228, 466, 358, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='CardSelect' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='CardSelect' /&gt;" Guid="b3077b15-221b-4805-b861-b2e55e647b42" InformativeScreenshot="6f350f3b8fa345a7fb54a324eca12c91.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                        <uix:Target CVScreenId="2884bd01-4459-4991-9616-757c4e494003" CvTextArea="27, 464, 25, 13" CvTextArgument="Card" CvType="Text" DesignTimeRectangle="28, 464, 178, 30" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='mandatoryLabel3' /&gt;&lt;wnd ctrlname='internalLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='mandatoryLabel3' /&gt;&lt;wnd ctrlname='internalLabel' check:text='Card' /&gt;" Guid="38fd6176-6d67-44ab-8d7a-b27691a37637" SearchSteps="Selector, FuzzySelector, CV" />
+                        <uix:Target CVScreenId="2884bd01-4459-4991-9616-757c4e494003" CvElementArea="611, 466, 137, 30" CvTextArea="663, 474, 32, 15" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="611, 466, 137, 30" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='AcceptCardButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='AcceptCardButton' check:text='Apply' /&gt;" Guid="0c3f138e-1a3b-4cfc-956a-d2b6a73634dd" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cardiovascular'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_72" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="c337ab58-95b9-404b-94f7-6d4fdb0e4115" CvTextArea="2, 16, 77, 12" CvTextArgument="Cardiovascular" CvType="Text" DesignTimeRectangle="1, 15, 356, 14" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;ctrl name='Card' role='list' /&gt;&lt;ctrl name='Cardiovascular' role='list item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Card' role='list' /&gt;&lt;ctrl name='Cardiovascular' role='list item' automationid='' check:text='Cardiovascular' /&gt;" Guid="412aba06-aaba-4875-9f15-33afdb70b767" InformativeScreenshot="392f56e18b804c786c35d692ce6ae804.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' cls='ComboLBox' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="c337ab58-95b9-404b-94f7-6d4fdb0e4115" CvTextArea="2, 2, 46, 14" CvTextArgument="Allergies" CvType="Text" DesignTimeRectangle="1, 1, 356, 14" ElementType="ListItem" FullSelectorArgument="&lt;ctrl name='Card' role='list' /&gt;&lt;ctrl name='Allergies' role='list item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Card' role='list' /&gt;&lt;ctrl name='Allergies' role='list item' automationid='' check:text='Allergies' /&gt;" Guid="061a209a-d4ca-44d4-b3c4-d463eb63942f" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Y Axis Position'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,286" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Text="1" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable CVScreenId="b2d18af4-faad-4c34-9a07-f05e2a076e9a" DesignTimeRectangle="230, 508, 56, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='YText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='YText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" Guid="413d6b46-151d-49d7-bcc5-748da0030e5b" InformativeScreenshot="d7c3f02a37f427780e8d4e9e101587ea.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
+                        <uix:Target CVScreenId="b2d18af4-faad-4c34-9a07-f05e2a076e9a" CvTextArea="27, 505, 80, 12" CvTextArgument="Y Axis Position" CvType="Text" DesignTimeRectangle="28, 504, 178, 30" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='YLabel' /&gt;&lt;wnd ctrlname='internalLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='YLabel' /&gt;&lt;wnd ctrlname='internalLabel' check:text='Y Axis Position' /&gt;" Guid="85481d44-680e-4a2e-85ec-3334b94ec32a" SearchSteps="Selector, FuzzySelector, CV" />
+                        <uix:Target CVScreenId="b2d18af4-faad-4c34-9a07-f05e2a076e9a" DesignTimeRectangle="337, 504, 151, 30" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='XLabel' /&gt;&lt;wnd ctrlname='internalLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='XLabel' /&gt;&lt;wnd ctrlname='internalLabel' check:text='X Axis Position' /&gt;" Guid="6cb783ac-281c-41b8-b583-d24c469969fb" SearchSteps="Selector, FuzzySelector" />
+                        <uix:Target CVScreenId="b2d18af4-faad-4c34-9a07-f05e2a076e9a" DesignTimeRectangle="230, 546, 56, 18" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='WidthText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='WidthText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" Guid="43d78cb1-ef1b-4b06-b90e-7185900ee8cc" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'X Axis Position'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,286" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Text="1" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable CVScreenId="bc16dfe3-ddeb-4d9a-affb-35e19c53a313" DesignTimeRectangle="512, 508, 56, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='XText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='XText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" Guid="7d769979-898b-4269-9bf1-535af6063584" InformativeScreenshot="83165bdb15596367f49283d8e2c3829a.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                        <uix:Target CVScreenId="bc16dfe3-ddeb-4d9a-affb-35e19c53a313" DesignTimeRectangle="337, 504, 151, 30" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='XLabel' /&gt;&lt;wnd ctrlname='internalLabel' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='XLabel' /&gt;&lt;wnd ctrlname='internalLabel' check:text='X Axis Position' /&gt;" Guid="79207568-70a5-4a63-99bc-9735e1f558d4" SearchSteps="Selector, FuzzySelector" />
+                        <uix:Target CVScreenId="bc16dfe3-ddeb-4d9a-affb-35e19c53a313" DesignTimeRectangle="512, 546, 56, 18" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='HeightText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='HeightText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" Guid="7d5edbbd-44f3-44e6-83c1-7964dcc33457" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Apply'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_73" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="b2d18af4-faad-4c34-9a07-f05e2a076e9a" CvElementArea="611, 466, 137, 30" CvTextArea="663, 474, 32, 15" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="611, 466, 137, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='AcceptCardButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='AcceptCardButton' check:text='Apply' /&gt;" Guid="9cd89381-ba07-42eb-a554-2a25fa7e587b" InformativeScreenshot="1046637c3072a6fe6b48f5deef77012b.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="b2d18af4-faad-4c34-9a07-f05e2a076e9a" CvElementArea="603, 240, 137, 30" CvTextArea="652, 249, 37, 13" CvTextArgument="Delete" CvType="Button" DesignTimeRectangle="603, 241, 137, 30" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardsDelete' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardsDelete' check:text='Delete' /&gt;" Guid="839e652a-d92a-4515-a057-d604fd19d493" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_74" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="e0b08278-e733-43a5-bf50-b317aaf981fa" CvElementArea="675, 625, 110, 25" CvTextArea="717, 632, 24, 12" CvTextArgument="Add" CvType="Button" DesignTimeRectangle="675, 625, 110, 26" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='oKButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='oKButton' check:text='Add' /&gt;" Guid="9b38c51f-ad67-4977-a8fb-3b09eb8e3380" InformativeScreenshot="4c3989d7aad84410a6386f54bb3dfdeb.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="e0b08278-e733-43a5-bf50-b317aaf981fa" CvElementArea="797, 625, 110, 26" CvTextArea="833, 631, 37, 13" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="797, 625, 110, 26" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='formCancelButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='formCancelButton' check:text='Cancel' /&gt;" Guid="b9d9e8aa-6cd8-489e-bd59-1663c60a4cf7" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="418,175" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Trace">
+                <ui:LogMessage.Message>
+                  <InArgument x:TypeArguments="x:Object">
+                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">DateTime.Now.ToString() + " - Creating second Clinical Summary View!!"</CSharpValue>
+                  </InArgument>
+                </ui:LogMessage.Message>
+              </ui:LogMessage>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add...'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_75" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="3b64fb44-63d5-46f5-b312-142812d83cf2" CvElementArea="435, 65, 161, 46" CvTextArea="497, 80, 35, 13" CvTextArgument="Add..." CvType="Button" DesignTimeRectangle="434, 64, 163, 47" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='addEditDeleteGroupBox' /&gt;&lt;wnd ctrlname='addButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='addEditDeleteGroupBox' /&gt;&lt;wnd ctrlname='addButton' check:text='Add...' /&gt;" Guid="257d90cf-b544-4186-a0f1-fa74e605a855" InformativeScreenshot="49c29fcb5ddb21f26c5ccdc9439b279c.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryListCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="3b64fb44-63d5-46f5-b312-142812d83cf2" CvElementArea="435, 119, 162, 47" CvTextArea="498, 135, 34, 13" CvTextArgument="Edit..." CvType="Button" DesignTimeRectangle="434, 119, 163, 47" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='addEditDeleteGroupBox' /&gt;&lt;wnd ctrlname='editButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='addEditDeleteGroupBox' /&gt;&lt;wnd ctrlname='editButton' check:text='Edit...' /&gt;" Guid="3e678b9a-9f9f-496a-899c-173a605402b6" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Display Label'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,286" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Text="Automation Test View 1" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable CVScreenId="b06eabc4-627e-4ffe-88d5-0a5cf2f467e9" CvElementArea="207, 74, 240, 23" CvType="InputBox" DesignTimeRectangle="207, 75, 239, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='GeneralTabPage' /&gt;&lt;wnd ctrlname='displayLabelTextBox' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='GeneralTabPage' /&gt;&lt;wnd ctrlname='displayLabelTextBox' /&gt;" Guid="2ca9842e-5884-4828-84b5-ff96f1900055" InformativeScreenshot="f13848e0185293a7c5649a0b4f9dde04.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="b06eabc4-627e-4ffe-88d5-0a5cf2f467e9" CvTextArea="29, 73, 73, 15" CvTextArgument="Display Label:" CvType="Text" DesignTimeRectangle="30, 73, 153, 30" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='GeneralTabPage' /&gt;&lt;wnd ctrlname='displayLabelLabel' /&gt;&lt;wnd ctrlname='internalLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='GeneralTabPage' /&gt;&lt;wnd ctrlname='displayLabelLabel' /&gt;&lt;wnd ctrlname='internalLabel' check:text='Display Label:' /&gt;" Guid="19e15634-96b5-48a9-ac7f-429fd7fd5899" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Clinical Units'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_76" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="562b7692-ea64-48b5-8b47-a872eaa043f1" CvElementArea="63, 32, 77, 21" CvTextArea="68, 36, 67, 13" CvTextArgument="Clinical Units" CvType="Button" DesignTimeRectangle="63, 33, 77, 19" DesignTimeScaleFactor="1" ElementType="TabPage" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;ctrl name='Clinical Units' role='page tab' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;ctrl name='Clinical Units' role='page tab' automationid='' check:text='Clinical Units' /&gt;" Guid="0e5251aa-13c4-469c-a28f-c43e0c0ff3ec" InformativeScreenshot="c56e8e55ad1aa1ca87fa0e356a21088e.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="562b7692-ea64-48b5-8b47-a872eaa043f1" CvElementArea="9, 30, 56, 24" CvTextArea="15, 34, 43, 13" CvTextArgument="General" CvType="Button" DesignTimeRectangle="10, 33, 53, 19" ElementType="TabPage" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;ctrl name='General' role='page tab' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;ctrl name='General' role='page tab' automationid='' check:text='General' /&gt;" Guid="cf0459e2-a248-4fe5-a2e0-1a62e8afac48" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Select All'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_77" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="d9b4eae8-2868-43bd-861a-4b72827ab742" CvElementArea="297, 72, 86, 30" CvTextArea="314, 80, 52, 13" CvTextArgument="Select All" CvType="Button" DesignTimeRectangle="297, 72, 86, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalUnitsTabPage' /&gt;&lt;wnd ctrlname='btnCheck' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalUnitsTabPage' /&gt;&lt;wnd ctrlname='btnCheck' check:text='Select All' /&gt;" Guid="4e350d5d-026e-4379-b44c-a84e22992b36" InformativeScreenshot="0edf54c91fd784bfd7cfe9cf4416e6bd.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="d9b4eae8-2868-43bd-861a-4b72827ab742" CvElementArea="297, 109, 86, 30" CvTextArea="318, 117, 44, 13" CvTextArgument="Clear All" CvType="Button" DesignTimeRectangle="297, 109, 86, 30" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalUnitsTabPage' /&gt;&lt;wnd ctrlname='btnUncheck' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalUnitsTabPage' /&gt;&lt;wnd ctrlname='btnUncheck' check:text='Clear All' /&gt;" Guid="2490a83e-be9d-41d0-afcb-445be91a5a04" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Clinical Summary Cards'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_78" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="3cedb237-2c7a-45d2-a268-699261c5fa64" CvElementArea="141, 32, 131, 21" CvTextArea="145, 36, 123, 13" CvTextArgument="Clinical Summary Cards" CvType="Button" DesignTimeRectangle="140, 33, 133, 19" DesignTimeScaleFactor="1" ElementType="TabPage" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;ctrl name='Clinical Summary Cards' role='page tab' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;ctrl name='Clinical Summary Cards' role='page tab' automationid='' check:text='Clinical Summary Cards' /&gt;" Guid="9b42456b-7e76-4491-a564-c495d815381b" InformativeScreenshot="f6419628b15f150f6584a3499b1e4dd7.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="3cedb237-2c7a-45d2-a268-699261c5fa64" CvElementArea="61, 31, 81, 22" CvTextArea="68, 34, 67, 13" CvTextArgument="Clinical Units" CvType="Button" DesignTimeRectangle="63, 33, 77, 19" ElementType="TabPage" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;ctrl name='Clinical Units' role='page tab' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;ctrl name='Clinical Units' role='page tab' automationid='' check:text='Clinical Units' /&gt;" Guid="79dd012c-1b93-4dcc-a532-d13889acb8b8" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add...'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_79" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="b0609d2c-4e2b-4534-b65b-e047b5b98806" CvElementArea="603, 165, 137, 30" CvTextArea="653, 173, 35, 13" CvTextArgument="Add..." CvType="Button" DesignTimeRectangle="603, 165, 137, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardAdd' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardAdd' check:text='Add...' /&gt;" Guid="55390f42-b00c-4231-94fd-f16d85525a3b" InformativeScreenshot="8e0dc1cd1ce39c2473862203b180d5be.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="b0609d2c-4e2b-4534-b65b-e047b5b98806" CvElementArea="603, 203, 137, 30" CvTextArea="654, 211, 34, 12" CvTextArgument="Edit..." CvType="Button" DesignTimeRectangle="603, 203, 137, 30" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardsEdit' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardsEdit' check:text='Edit...' /&gt;" Guid="53d5f327-5af8-481c-8a5e-433b99325750" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Card'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_80" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="fae1a9a9-c43a-4f96-8a3f-b4598f602a01" CvElementArea="227, 465, 362, 24" CvType="InputBox" DesignTimeRectangle="228, 466, 358, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='CardSelect' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='CardSelect' /&gt;" Guid="b8432a72-b9ee-4a77-a97b-7c75f45effcb" InformativeScreenshot="6f350f3b8fa345a7fb54a324eca12c91.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                        <uix:Target CVScreenId="fae1a9a9-c43a-4f96-8a3f-b4598f602a01" CvTextArea="27, 464, 25, 13" CvTextArgument="Card" CvType="Text" DesignTimeRectangle="28, 464, 178, 30" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='mandatoryLabel3' /&gt;&lt;wnd ctrlname='internalLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='mandatoryLabel3' /&gt;&lt;wnd ctrlname='internalLabel' check:text='Card' /&gt;" Guid="ffcc93d2-2b12-4744-99b2-33b7fface215" SearchSteps="Selector, FuzzySelector, CV" />
+                        <uix:Target CVScreenId="fae1a9a9-c43a-4f96-8a3f-b4598f602a01" CvElementArea="611, 466, 137, 30" CvTextArea="663, 474, 32, 15" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="611, 466, 137, 30" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='AcceptCardButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='AcceptCardButton' check:text='Apply' /&gt;" Guid="e201fb69-8115-40a9-9110-82d60e80e0e3" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Demographics'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_81" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="15ce990a-9dd1-407b-a706-3535d6eb337a" CvTextArea="3, 30, 77, 14" CvTextArgument="Demographics" CvType="Text" DesignTimeRectangle="1, 29, 356, 14" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;ctrl name='Card' role='list' /&gt;&lt;ctrl name='Demographics' role='list item' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;ctrl name='Card' role='list' /&gt;&lt;ctrl name='Demographics' role='list item' automationid='' check:text='Demographics' /&gt;" Guid="008d8c74-dfa1-4292-9196-d5e0a1045af9" InformativeScreenshot="bbcf7b2be52c44468c6cc85b00220d2d.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' cls='ComboLBox' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="15ce990a-9dd1-407b-a706-3535d6eb337a" CvTextArea="2, 16, 77, 12" CvTextArgument="Cardiovascular" CvType="Text" DesignTimeRectangle="1, 15, 356, 14" ElementType="ListItem" FullSelectorArgument="&lt;ctrl name='Card' role='list' /&gt;&lt;ctrl name='Cardiovascular' role='list item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Card' role='list' /&gt;&lt;ctrl name='Cardiovascular' role='list item' automationid='' check:text='Cardiovascular' /&gt;" Guid="89b23d51-39b7-445d-9a4e-359b53856b31" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Apply'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_82" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="e0b08278-e733-43a5-bf50-b317aaf981fa" CvElementArea="611, 466, 137, 30" CvTextArea="663, 474, 32, 15" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="611, 466, 137, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='AcceptCardButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='AcceptCardButton' check:text='Apply' /&gt;" Guid="d1dd3c25-fc79-40d8-9ec5-2c9fa8fa8ec7" InformativeScreenshot="9707be729bbe960ed3a2c534c94a5ea1.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="e0b08278-e733-43a5-bf50-b317aaf981fa" CvElementArea="603, 240, 137, 30" CvTextArea="652, 249, 37, 13" CvTextArgument="Delete" CvType="Button" DesignTimeRectangle="603, 241, 137, 30" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardsDelete' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardsDelete' check:text='Delete' /&gt;" Guid="cd66be8f-4d06-490c-8b6f-d65354da2600" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add...'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_83" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="b0609d2c-4e2b-4534-b65b-e047b5b98806" CvElementArea="603, 165, 137, 30" CvTextArea="653, 173, 35, 13" CvTextArgument="Add..." CvType="Button" DesignTimeRectangle="603, 165, 137, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardAdd' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardAdd' check:text='Add...' /&gt;" Guid="55390f42-b00c-4231-94fd-f16d85525a3b" InformativeScreenshot="8e0dc1cd1ce39c2473862203b180d5be.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="b0609d2c-4e2b-4534-b65b-e047b5b98806" CvElementArea="603, 203, 137, 30" CvTextArea="654, 211, 34, 12" CvTextArgument="Edit..." CvType="Button" DesignTimeRectangle="603, 203, 137, 30" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardsEdit' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardsEdit' check:text='Edit...' /&gt;" Guid="53d5f327-5af8-481c-8a5e-433b99325750" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Card'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_84" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="91c91e39-da8c-418c-ba48-154eea8b71b6" CvElementArea="227, 465, 361, 24" CvType="InputBox" DesignTimeRectangle="228, 466, 358, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='CardSelect' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='CardSelect' /&gt;" Guid="9ce18755-cd0e-4217-9b88-880184e31b68" InformativeScreenshot="137fa522251cd85969c160e991879660.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                        <uix:Target CVScreenId="91c91e39-da8c-418c-ba48-154eea8b71b6" CvTextArea="27, 464, 25, 13" CvTextArgument="Card" CvType="Text" DesignTimeRectangle="28, 464, 178, 30" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='mandatoryLabel3' /&gt;&lt;wnd ctrlname='internalLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='mandatoryLabel3' /&gt;&lt;wnd ctrlname='internalLabel' check:text='Card' /&gt;" Guid="87f73a8b-3db0-40cf-ae4c-c23881c31433" SearchSteps="Selector, FuzzySelector, CV" />
+                        <uix:Target CVScreenId="91c91e39-da8c-418c-ba48-154eea8b71b6" CvElementArea="611, 466, 137, 30" CvTextArea="663, 474, 32, 15" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="611, 466, 137, 30" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='AcceptCardButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='AcceptCardButton' check:text='Apply' /&gt;" Guid="d7941279-6f37-4768-91df-8263daeb298d" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cardiovascular'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_85" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="c337ab58-95b9-404b-94f7-6d4fdb0e4115" CvTextArea="2, 16, 77, 12" CvTextArgument="Cardiovascular" CvType="Text" DesignTimeRectangle="1, 15, 356, 14" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;ctrl name='Card' role='list' /&gt;&lt;ctrl name='Cardiovascular' role='list item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Card' role='list' /&gt;&lt;ctrl name='Cardiovascular' role='list item' automationid='' check:text='Cardiovascular' /&gt;" Guid="412aba06-aaba-4875-9f15-33afdb70b767" InformativeScreenshot="392f56e18b804c786c35d692ce6ae804.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' cls='ComboLBox' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="c337ab58-95b9-404b-94f7-6d4fdb0e4115" CvTextArea="2, 2, 46, 14" CvTextArgument="Allergies" CvType="Text" DesignTimeRectangle="1, 1, 356, 14" ElementType="ListItem" FullSelectorArgument="&lt;ctrl name='Card' role='list' /&gt;&lt;ctrl name='Allergies' role='list item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Card' role='list' /&gt;&lt;ctrl name='Allergies' role='list item' automationid='' check:text='Allergies' /&gt;" Guid="061a209a-d4ca-44d4-b3c4-d463eb63942f" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'X Axis Position'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,286" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Text="1" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable CVScreenId="bc16dfe3-ddeb-4d9a-affb-35e19c53a313" DesignTimeRectangle="512, 508, 56, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='XText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='XText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" Guid="7d769979-898b-4269-9bf1-535af6063584" InformativeScreenshot="83165bdb15596367f49283d8e2c3829a.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                        <uix:Target CVScreenId="bc16dfe3-ddeb-4d9a-affb-35e19c53a313" DesignTimeRectangle="337, 504, 151, 30" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='XLabel' /&gt;&lt;wnd ctrlname='internalLabel' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='XLabel' /&gt;&lt;wnd ctrlname='internalLabel' check:text='X Axis Position' /&gt;" Guid="79207568-70a5-4a63-99bc-9735e1f558d4" SearchSteps="Selector, FuzzySelector" />
+                        <uix:Target CVScreenId="bc16dfe3-ddeb-4d9a-affb-35e19c53a313" DesignTimeRectangle="512, 546, 56, 18" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='HeightText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='HeightText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" Guid="7d5edbbd-44f3-44e6-83c1-7964dcc33457" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Y Axis Position'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,286" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Text="1" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable CVScreenId="b2d18af4-faad-4c34-9a07-f05e2a076e9a" DesignTimeRectangle="230, 508, 56, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='YText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='YText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" Guid="413d6b46-151d-49d7-bcc5-748da0030e5b" InformativeScreenshot="d7c3f02a37f427780e8d4e9e101587ea.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
+                        <uix:Target CVScreenId="b2d18af4-faad-4c34-9a07-f05e2a076e9a" CvTextArea="27, 505, 80, 12" CvTextArgument="Y Axis Position" CvType="Text" DesignTimeRectangle="28, 504, 178, 30" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='YLabel' /&gt;&lt;wnd ctrlname='internalLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='YLabel' /&gt;&lt;wnd ctrlname='internalLabel' check:text='Y Axis Position' /&gt;" Guid="85481d44-680e-4a2e-85ec-3334b94ec32a" SearchSteps="Selector, FuzzySelector, CV" />
+                        <uix:Target CVScreenId="b2d18af4-faad-4c34-9a07-f05e2a076e9a" DesignTimeRectangle="337, 504, 151, 30" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='XLabel' /&gt;&lt;wnd ctrlname='internalLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='XLabel' /&gt;&lt;wnd ctrlname='internalLabel' check:text='X Axis Position' /&gt;" Guid="6cb783ac-281c-41b8-b583-d24c469969fb" SearchSteps="Selector, FuzzySelector" />
+                        <uix:Target CVScreenId="b2d18af4-faad-4c34-9a07-f05e2a076e9a" DesignTimeRectangle="230, 546, 56, 18" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='WidthText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='WidthText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" Guid="43d78cb1-ef1b-4b06-b90e-7185900ee8cc" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Apply'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_86" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="b2d18af4-faad-4c34-9a07-f05e2a076e9a" CvElementArea="611, 466, 137, 30" CvTextArea="663, 474, 32, 15" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="611, 466, 137, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='AcceptCardButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='AcceptCardButton' check:text='Apply' /&gt;" Guid="9cd89381-ba07-42eb-a554-2a25fa7e587b" InformativeScreenshot="1046637c3072a6fe6b48f5deef77012b.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="b2d18af4-faad-4c34-9a07-f05e2a076e9a" CvElementArea="603, 240, 137, 30" CvTextArea="652, 249, 37, 13" CvTextArgument="Delete" CvType="Button" DesignTimeRectangle="603, 241, 137, 30" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardsDelete' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardsDelete' check:text='Delete' /&gt;" Guid="839e652a-d92a-4515-a057-d604fd19d493" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add...'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_87" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="b0609d2c-4e2b-4534-b65b-e047b5b98806" CvElementArea="603, 165, 137, 30" CvTextArea="653, 173, 35, 13" CvTextArgument="Add..." CvType="Button" DesignTimeRectangle="603, 165, 137, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardAdd' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardAdd' check:text='Add...' /&gt;" Guid="55390f42-b00c-4231-94fd-f16d85525a3b" InformativeScreenshot="8e0dc1cd1ce39c2473862203b180d5be.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="b0609d2c-4e2b-4534-b65b-e047b5b98806" CvElementArea="603, 203, 137, 30" CvTextArea="654, 211, 34, 12" CvTextArgument="Edit..." CvType="Button" DesignTimeRectangle="603, 203, 137, 30" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardsEdit' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardsEdit' check:text='Edit...' /&gt;" Guid="53d5f327-5af8-481c-8a5e-433b99325750" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Card'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_88" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="91c91e39-da8c-418c-ba48-154eea8b71b6" CvElementArea="227, 465, 361, 24" CvType="InputBox" DesignTimeRectangle="228, 466, 358, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='CardSelect' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='CardSelect' /&gt;" Guid="9ce18755-cd0e-4217-9b88-880184e31b68" InformativeScreenshot="137fa522251cd85969c160e991879660.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                        <uix:Target CVScreenId="91c91e39-da8c-418c-ba48-154eea8b71b6" CvTextArea="27, 464, 25, 13" CvTextArgument="Card" CvType="Text" DesignTimeRectangle="28, 464, 178, 30" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='mandatoryLabel3' /&gt;&lt;wnd ctrlname='internalLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='mandatoryLabel3' /&gt;&lt;wnd ctrlname='internalLabel' check:text='Card' /&gt;" Guid="87f73a8b-3db0-40cf-ae4c-c23881c31433" SearchSteps="Selector, FuzzySelector, CV" />
+                        <uix:Target CVScreenId="91c91e39-da8c-418c-ba48-154eea8b71b6" CvElementArea="611, 466, 137, 30" CvTextArea="663, 474, 32, 15" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="611, 466, 137, 30" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='AcceptCardButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='AcceptCardButton' check:text='Apply' /&gt;" Guid="d7941279-6f37-4768-91df-8263daeb298d" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Allergies'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_89" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="df0268b0-200b-47f0-8f23-5cf967b70269" CvTextArea="2, 2, 46, 14" CvTextArgument="Allergies" CvType="Text" DesignTimeRectangle="1, 1, 356, 14" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;ctrl name='Card' role='list' /&gt;&lt;ctrl name='Allergies' role='list item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Card' role='list' /&gt;&lt;ctrl name='Allergies' role='list item' automationid='' check:text='Allergies' /&gt;" Guid="e693d62e-d969-4644-a556-e4c557d6e798" InformativeScreenshot="8e4a0e8566c1eee239b2fe3e960f91e3.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' cls='ComboLBox' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="df0268b0-200b-47f0-8f23-5cf967b70269" CvTextArea="3, 16, 77, 14" CvTextArgument="Demographics" CvType="Text" DesignTimeRectangle="1, 15, 356, 14" ElementType="ListItem" FullSelectorArgument="&lt;ctrl name='Card' role='list' /&gt;&lt;ctrl name='Demographics' role='list item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Card' role='list' /&gt;&lt;ctrl name='Demographics' role='list item' automationid='' check:text='Demographics' /&gt;" Guid="fa961946-3335-4b4e-aeee-9a2cc2110fde" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'X Axis Position'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,286" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Text="2" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable CVScreenId="bc16dfe3-ddeb-4d9a-affb-35e19c53a313" DesignTimeRectangle="512, 508, 56, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='XText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='XText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" Guid="7d769979-898b-4269-9bf1-535af6063584" InformativeScreenshot="83165bdb15596367f49283d8e2c3829a.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                        <uix:Target CVScreenId="bc16dfe3-ddeb-4d9a-affb-35e19c53a313" DesignTimeRectangle="337, 504, 151, 30" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='XLabel' /&gt;&lt;wnd ctrlname='internalLabel' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='XLabel' /&gt;&lt;wnd ctrlname='internalLabel' check:text='X Axis Position' /&gt;" Guid="79207568-70a5-4a63-99bc-9735e1f558d4" SearchSteps="Selector, FuzzySelector" />
+                        <uix:Target CVScreenId="bc16dfe3-ddeb-4d9a-affb-35e19c53a313" DesignTimeRectangle="512, 546, 56, 18" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='HeightText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='HeightText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" Guid="7d5edbbd-44f3-44e6-83c1-7964dcc33457" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Y Axis Position'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,286" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Text="2" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable CVScreenId="b2d18af4-faad-4c34-9a07-f05e2a076e9a" DesignTimeRectangle="230, 508, 56, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='YText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='YText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" Guid="413d6b46-151d-49d7-bcc5-748da0030e5b" InformativeScreenshot="d7c3f02a37f427780e8d4e9e101587ea.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
+                        <uix:Target CVScreenId="b2d18af4-faad-4c34-9a07-f05e2a076e9a" CvTextArea="27, 505, 80, 12" CvTextArgument="Y Axis Position" CvType="Text" DesignTimeRectangle="28, 504, 178, 30" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='YLabel' /&gt;&lt;wnd ctrlname='internalLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='YLabel' /&gt;&lt;wnd ctrlname='internalLabel' check:text='Y Axis Position' /&gt;" Guid="85481d44-680e-4a2e-85ec-3334b94ec32a" SearchSteps="Selector, FuzzySelector, CV" />
+                        <uix:Target CVScreenId="b2d18af4-faad-4c34-9a07-f05e2a076e9a" DesignTimeRectangle="337, 504, 151, 30" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='XLabel' /&gt;&lt;wnd ctrlname='internalLabel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='XLabel' /&gt;&lt;wnd ctrlname='internalLabel' check:text='X Axis Position' /&gt;" Guid="6cb783ac-281c-41b8-b583-d24c469969fb" SearchSteps="Selector, FuzzySelector" />
+                        <uix:Target CVScreenId="b2d18af4-faad-4c34-9a07-f05e2a076e9a" DesignTimeRectangle="230, 546, 56, 18" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='WidthText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='WidthText' /&gt;&lt;wnd aaname='Spinner' cls='WindowsForms10.EDIT.*' /&gt;" Guid="43d78cb1-ef1b-4b06-b90e-7185900ee8cc" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Apply'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_90" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="b2d18af4-faad-4c34-9a07-f05e2a076e9a" CvElementArea="611, 466, 137, 30" CvTextArea="663, 474, 32, 15" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="611, 466, 137, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='AcceptCardButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='GroupBoxCardProperties' /&gt;&lt;wnd ctrlname='AcceptCardButton' check:text='Apply' /&gt;" Guid="9cd89381-ba07-42eb-a554-2a25fa7e587b" InformativeScreenshot="1046637c3072a6fe6b48f5deef77012b.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="b2d18af4-faad-4c34-9a07-f05e2a076e9a" CvElementArea="603, 240, 137, 30" CvTextArea="652, 249, 37, 13" CvTextArgument="Delete" CvType="Button" DesignTimeRectangle="603, 241, 137, 30" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardsDelete' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='CSVTabControl' /&gt;&lt;wnd ctrlname='ClinicalSummaryCardsTabPage' /&gt;&lt;wnd ctrlname='buttonCardsDelete' check:text='Delete' /&gt;" Guid="839e652a-d92a-4515-a057-d604fd19d493" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_91" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="b2d18af4-faad-4c34-9a07-f05e2a076e9a" ContentHash="tfkgFqBSvkuWd9nO4evT1A" CvElementArea="675, 625, 110, 25" CvTextArea="721, 632, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="675, 625, 110, 26" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='oKButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='oKButton' check:text='OK' /&gt;" Guid="b817d86a-7845-497a-a9ee-98074ca24015" InformativeScreenshot="ef28eaa35a4c892e8572a3ced0c81d00.png" Reference="eigqaPKRfk2c2g5YtmQDNg/5rOCSVajvUWOGpIsWoe4eQ" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="b2d18af4-faad-4c34-9a07-f05e2a076e9a" CvElementArea="797, 625, 110, 26" CvTextArea="833, 631, 37, 13" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="797, 625, 110, 26" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='formCancelButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='formCancelButton' check:text='Cancel' /&gt;" Guid="b86c52d8-a33e-4784-a092-cb1bbf5f8c77" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_92" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="40470075-5a15-42a0-8fd3-fe102040f26d" CvElementArea="299, 605, 128, 46" CvTextArea="354, 621, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="299, 604, 129, 47" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='oKButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='oKButton' check:text='OK' /&gt;" Guid="2210bdc6-9032-4438-ac43-0d685354a7d9" InformativeScreenshot="2ba73804ed8cf4401033216a638cf8a2.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ClinicalSummaryListCfgForm' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="40470075-5a15-42a0-8fd3-fe102040f26d" CvElementArea="440, 605, 162, 46" CvTextArea="503, 620, 37, 13" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="440, 604, 163, 47" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='formCancelButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='formCancelButton' check:text='Cancel' /&gt;" Guid="63452cb8-bee5-4c7d-9879-2b413990cad3" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Activate Configuration'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_93" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="b766c28a-93cc-47aa-9fdf-67495f65b88f" CvElementArea="144, 51, 33, 28" CvType="Icon" DesignTimeRectangle="145, 52, 32, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='toolBar' /&gt;&lt;ctrl idx='10' role='push button' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;wnd ctrlname='toolBar' /&gt;&lt;ctrl automationid='' role='push button' /&gt;" Guid="3925c27b-1c18-454e-84d8-8f6dd708f426" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAfCAYAAACPvW/2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAWvSURBVFhHzZV7TFNXHMf7zzQxM9uM0cxsidlctmVR5zLdzNT5GCH4HD5gTuLcBm7TiBI2bYRZdOgUYTIfDBUNUgSFQl18U6GFaikt0FIKFAEp5bULbaEPCn3gd/deCvbSTmpIFn7JJ7c96T3fT3/33HNYvb29mEiwXC4XJhITT8jpdGIi4VOoo1aEZu4B1B3fhOrf1kEdv55kHRSxq2iEEXNxix0MSU4yuprkXvePBy+hJ+n7UX/qG7TnHoVNeQ9PtZVwNZbB1VAGPJHT6B8roOanoOxoKFTkb1tVBYw5xgPL4XDAk+oja2GrfwSXVgFnvQSOOjEcmocMXBoxBkkxZ6sKTUIuMg4EMOYYD15CioPLUZcQirZsDsylPAyoi+hO2RQU92n6a0TovPknVCdCwN+3GMdigxlzjAcvIRW5RjrT9kJ3LgL1pFjVoUDIoj9FaeRHkEQuGKEkfA4EIdPAXT0Vv4ctpe/tamtCZ4sGpp5uxpwvAstut8OT6kMB6LkeB/3VGLSd34Unf4RBE78B1TGrUBH9CY1091yIw99G0bbXkbV+OuI3LURLvQK80/uQeWwHSu+ko7uzhTGvv/gUMmYfgj7rV3SQndKe+Q4NCSGoPbwaCvYyVP7yGeRxa1DKWYsS9irc2PM5kiICkcb5CrrGahgNBIT5KTTU52G02mYYjUbYbDZG3mh8ChmuuYUuDQk9PrEFNXFBUJJCMvJxyXjJKBbkQSq+i4a6Cr/IuZaBwgcCtLe3M/JGwxoYGIAnKkqI7lAs3aGqswfB45zCua0cKA48ExLcyoVcIoLV0gN/qrPtMe7eyoNSUQ6LxcLI9MS30DUOyrlXkM7OQmSYDGuDCUQsyR4S2ksK5SVDU6tEVaUUFVKhO3Ls0jYqUSYRQqPRMDI98SkkSs/BD3sIvPnOU7w/S4sjX6bSj8yzQ5RQZbkcD0UC9Bg63JHPL2N3Gx6V3IdUUgKTycTIHcan0OYQHWYuIjBniQlxO++ggVpDh4fWkCJqAcrdHdLpdKipVqLoHt8dOXZ1tNZD+kgAuVzOyB3GS4ibyMXM6WbMWtqMn2OKID6TwBBSR3+IyvxktDRr0N3djbraGhQXFYBob4LL6XDH/ndZzAaoFKUQiwrot250vpfQxysHMXkKsDK0D0lRibjx4zLkfrsQ3C3v4srGt5Cx4Q0IMxNAdGrpjayn6x9oyQA+7yq5wM3u2OeXoasVMkkBBAIBI5vCS4jFAk3IHidyrstQcTMT5X9noDQ3bQRZEZ8WomqgoQmtsUcgDg6HtkKCAZuVHn9eDfRb0dyoRnHhbUY2ne814CFUrLSPjLe02BEaOkhfNWoZLWQn15Ah5RLaAraBOH0GN9PO4/LFVFw4/9eYpJxNxoXUZEY2Bau/vx+eDAstCupF3n3zyLhaPSS7fPkgRELq2dtg4d1B++ad6L58GQ7y/FInnQYvmg3+xTQIb/NRfPwYBF+E4oGggGbNmtWIi+OgrExKU1WlZGRTsKit3JOtUU5MffUpprziwAfznNi41YqfYgh8vUs/Ijt/PpCfD1gLxdAnnoOz10g/il6FGA3f74PuSi6ILD46dkSCyL5Kv40UK1asQFJSEiNvNF5CDbp+BIToMXUauY2T4S9NduHl1+y04LAQxezZwMnDVjj1elqGKpfDBkNmNjp2H0T79ijok1LgtJpHjoXAwMCxhfr6+jAaTaMZ8al2BIT1Yt5Kgua9xc86RMFmk3uKj/3QRb5pxpOp6NzPgUkpdY8OVVBQEBITE73yPPEpREHo+6Bts6Kx2UJTKCJ/7JYhlwy507pTfNSgyQKXsQeDDrt7ZKj8ErJarfAHlYpsJykjFNqgrqrEzvDtmDFjxgsxadIkWsjX/MOwqJPXH0zkvyYIK32lziGDQU9+J14Yanf2Nf8wfgv9X7DMZjMmEiyq/ROJCdYhM/4FvM1kD04Tz9EAAAAASUVORK5CYII=" InformativeScreenshot="d065364027d387c8c725d4ae6ff4bcc2.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ConfigDisplayController' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                        <uix:Target CVScreenId="b766c28a-93cc-47aa-9fdf-67495f65b88f" DesignTimeRectangle="113, 52, 32, 27" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='toolBar' /&gt;&lt;ctrl idx='9' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='toolBar' /&gt;&lt;ctrl automationid='' role='push button' /&gt;" Guid="5113179b-b4d3-4bde-8eab-109daca959b1" SearchSteps="Selector, FuzzySelector" />
+                        <uix:Target CVScreenId="b766c28a-93cc-47aa-9fdf-67495f65b88f" CvTextArea="68, 88, 115, 15" CvTextArgument="Configuration Editors" CvType="Text" DesignTimeRectangle="67, 83, 117, 24" FullSelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Configuration Editors' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='configItemTV' /&gt;&lt;ctrl name='Configuration Editors' role='outline item' automationid='' check:text='Configuration Editors' /&gt;" Guid="273389d9-7f34-4dd4-bd45-b6996909f0b7" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_94" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="8b03b44f-11aa-43d3-959f-451703d2666f" CvElementArea="277, 161, 91, 28" CvTextArea="314, 169, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="277, 161, 92, 29" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='oKButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='oKButton' check:text='OK' /&gt;" Guid="6e98ff07-2e7f-43b5-a4a1-7769c052f143" InformativeScreenshot="461b42ddc6f58bb5b5c432d914270d76.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ActivationView' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="8b03b44f-11aa-43d3-959f-451703d2666f" CvElementArea="381, 161, 92, 29" CvTextArea="408, 168, 37, 13" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="381, 161, 92, 29" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='formCancelButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='formCancelButton' check:text='Cancel' /&gt;" Guid="ab2be9cd-d8c6-4d9a-83ff-b903472e3def" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="418,122" sap2010:WorkflowViewState.IdRef="Delay_3" />
+              <uix:NGetText DisplayName="Get Text 'Activation Completed Su…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,189" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable CVScreenId="c7907c9c-0b68-4bdd-bf19-eca3bfbcf4d5" DesignTimeRectangle="71, 48, 321, 112" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='panel1' /&gt;&lt;wnd ctrlname='message' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;wnd ctrlname='panel1' /&gt;&lt;wnd ctrlname='message' check:text='Activation Completed Successfully' /&gt;" Guid="58af2da8-de36-4f05-a20f-943866b01bcd" ImageBase64="" InformativeScreenshot="e477910de94575a5c808ec3242585624.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ICCA' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="c7907c9c-0b68-4bdd-bf19-eca3bfbcf4d5" CvElementArea="171, 169, 93, 22" CvTextArea="209, 174, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="171, 169, 94, 23" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='middleButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='middleButton' check:text='OK' /&gt;" Guid="93ddc4b7-db4e-4682-9291-6f2a259802a8" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+                <uix:NGetText.TextString>
+                  <OutArgument x:TypeArguments="x:String">
+                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_21">activationSuccessText</CSharpReference>
+                  </OutArgument>
+                </uix:NGetText.TextString>
+              </uix:NGetText>
+              <If sap:VirtualizedContainerService.HintSize="418,1150" sap2010:WorkflowViewState.IdRef="If_4">
+                <If.Condition>
+                  <InArgument x:TypeArguments="x:Boolean">
+                    <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">activationSuccessText == "Activation Completed Successfully"</CSharpValue>
+                  </InArgument>
+                </If.Condition>
+                <If.Then>
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,793" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_95" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="250a018a-aa2b-4918-af21-484da0bba7d5" CvElementArea="171, 169, 93, 22" CvTextArea="209, 174, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="171, 169, 94, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='middleButton' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='middleButton' check:text='OK' /&gt;" Guid="95055356-7f95-4d6f-96c4-819258b04734" InformativeScreenshot="e62cc677a9d82fdea370a61da2c68a49.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ICCA' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="250a018a-aa2b-4918-af21-484da0bba7d5" CvTextArea="71, 48, 187, 15" CvTextArgument="Activation Completed Successfully" CvType="Text" DesignTimeRectangle="71, 48, 187, 15" ElementType="Text" Guid="6def8add-a831-4158-8b3b-269f0f0580e7" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <usa:GetServiceStatus ContinueOnError="{x:Null}" DisplayName="Get Service Status" sap:VirtualizedContainerService.HintSize="382,117" sap2010:WorkflowViewState.IdRef="GetServiceStatus_3" ServiceName="Philips.ICCAEM.Security.STSService" TimeoutMS="60000">
+                      <usa:GetServiceStatus.ServiceStatus>
+                        <OutArgument x:TypeArguments="x:String">
+                          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_22">stsServiceStatus</CSharpReference>
+                        </OutArgument>
+                      </usa:GetServiceStatus.ServiceStatus>
+                    </usa:GetServiceStatus>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,175" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info">
+                      <ui:LogMessage.Message>
+                        <InArgument x:TypeArguments="x:Object">
+                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">"STS Services Status: " + stsServiceStatus</CSharpValue>
+                        </InArgument>
+                      </ui:LogMessage.Message>
+                    </ui:LogMessage>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,216" sap2010:WorkflowViewState.IdRef="NClick_96" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911e1644-0a03-4ebd-b15f-8d672e44cfae" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="11134140-71a4-4be0-9f3b-52f8574b9c7d" CvElementArea="1791, 8, 19, 19" CvType="CloseButton" DesignTimeRectangle="1778, 8, 48, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="1407edcd-a344-478d-98aa-77e5e795a5ea" InformativeScreenshot="6e2981d7e65808f601afc988abf08c0d.png" ScopeSelectorArgument="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ConfigDisplayController' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="11134140-71a4-4be0-9f3b-52f8574b9c7d" CvElementArea="1745, 8, 19, 19" CvType="MaximizeButton" DesignTimeRectangle="1732, 8, 46, 22" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Restore' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Restore' role='push button' automationid='' check:text='Restore' /&gt;" Guid="99a81844-d18e-4c6c-8d7b-0cdb700ba268" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,226" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,166" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Error">
+                      <ui:LogMessage.Message>
+                        <InArgument x:TypeArguments="x:Object">
+                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_32">"Activation Failed"</CSharpValue>
+                        </InArgument>
+                      </ui:LogMessage.Message>
+                    </ui:LogMessage>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1834, 1096" ContentHash="f3beGtpEGk-HsmkBg6WhDw" FilePath="C:\\Program Files\\Philips\\CIS\\Bin\\philips.cis.configdisplaycontroller.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAWKSURBVFhHtZfLT5NpFMb5I2ZjXJi48rIYFybeFkY3Go0LoygT0JWJGglhRmUz/gNCYmLUhdwJGNQBlDsEBJxMzBAj14wOtPRKoaV3aaH19sx53vYtX0u5TfSEk6b93u/9Pee855zvI+f/Wk9PDxoaGvD48WMkf/rx1t3djfr6epSXl6OxsRHv3r378QI6OzsVlKCKigqMjo7CarHAbrPD7nD8GAEdHR2oq6tTm1dWVmJ8fBwzMzOwiNtsVtjsArc74HQ6v5+A9vb2NOizZ89gmp6G2WQSuAUWixVWA9wh0c/NzX0fAbW1taiqqsLz588xJdBpukngZnMickm51WqFU6Czs7OYdbkUfH5+fkMB+Qd+Aj35dbVxA/rU1JTy6alpmCRqs4lwM+zjE5jv6lYRO5Nw15xLwd1uN96PDWFgYGAtAHLavHINyPk5N/saLYBRM+WEz0jEKuVWG7wPH+LTzp0Yf/1aopfIXRL5XALu8Xjgd42ulYUV+GYEmMwCNs8YUm6Ts7bB09SE6PbtaLl4ERarJRU54ZGS2/B5vdkEbA5O0wIyz9smbeZw2LHQ1IzQ4cNwb9uGt9KGCu72IPBqAJ/378fLly8zj2HzcJoWkA5n9CJA2myhuRm+EycweeQI3u/bh8nJSXgWPAi2tSN0+jTu3btnPIY14ZqjPfmzQYARLpGz6Fjx3pYW+E+eVK0Zkiw8vXsXCwtehGVWBE6dQnV1NYLB4IZwGjtHe0qEFsDoU5Gz4iX6WZcIePEiIaCqUs68BNN79sA6MqIEBEVATU1Nos22AE8ToQVwyGj4rMBdEj0Xeab+RXT3bjUnvNKazqNHFSV+6BAWDx5cEZAFTuPeGihfVzsXMI2ccIQvXrmCyKVL0uuJQcOii+/di7KyMlXxPJaGR4/w4tgxvPolD3W11aqDFDgDTssiIN244MmTJ8m0OxA9exaBHTvg3rUr1W6fRUBpaSl8fh8C/gACgaC6loLLxpFoRDyaNpS4N21wcDAlgL9p53e1qLW1VXUBo/t46xbe5BdgVNL7z4ED8MsjN3bmDGqKi+EP+AUeQDAUVBuk4JEIotElLC1Fsby0jKGhIXVdw7UAoys4jQu5YHh4GC4Zs4GGetiPH0d/cxPGz51Tlb8sc6BdCvDDhw+q4o3wqMCXBL68vKw8Jp4NngQaPWF8xo+NjaGtrU0t9MjzICLp5wOKncBBU1VYiPKyUgTnx9IjX9SRJwXE1oVnN1YxF/JGtqHbkyi6p9euwefzwS8e8PvV9TS4RM4zT8BjiMViW4fT+GqlBfCTRfdJpl7j1asYkX73y5nfvHlTgTWca1l0OvL4OvBv376pa3QFzLSuri6Vfv124/V5ld+/f18EjKbBk5tI2lfOPRaLrws3Gotdi3n7pndFkJoDkn5emJiYSLabXwouEb2+SZZK0UURZbUr+NqRI529ypzmv3Hnzu8JEb29vejr61Pp54aEBwQeDIUQDoVTIhh5lGkXXw+eGXk2S8G1FRQUqFnA9GsRYRHwMRzG4uJistel6FTka1c74evxGegqOI0b8iLTz086RaTBGblUvIb3S+Y2G/maYG39/f1gFhRY0q8FUQThLLZEuyWKjnC5bcPINZj/R3CIqfYVz8/PR7FMVwXXRhElMvF4E9NPEJ2FSbB2WarAaZHzz6AgExyPxxU4Ly8PV+SB91DeNRU00yji8uXLagPezJu0EC3my5cvCkz/+vVryrOBmT3ucf78eRTeuIGutsbsYKM1yYtooYzfqzKMtBCmn3B+NwriE1G7EazTnZubi99+LUZf9x8bgzONgOvXryshRUVFCs7ow9IZ/GTUxvQTqP3ChQtynLfx56vWrYMzrUXeCx88eKBE0M/I43k9Zyb+GmzfBDgn5z+CBxV/zAUGKQAAAABJRU5ErkJggg==" InformativeScreenshot="8a0dd49366775b2fda21a4b831de2e28.png" Reference="eigqaPKRfk2c2g5YtmQDNg/6LGpx97lQUadxnz_1dt8bQ" Selector="&lt;wnd app='philips.cis.configdisplaycontroller.exe' ctrlname='ConfigDisplayController' /&gt;" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
