@@ -1,0 +1,14 @@
+[
+	{
+		"Name": "ICCA Folder path",
+		"Asset": "ICCAPath",
+		"OrchestratorAssetFolder": "Shared",
+		"Description": "ICCA application path"
+	},
+	{
+		"Name": "Config Editor Path",
+		"Asset": "ConfigEditorPath",
+		"OrchestratorAssetFolder": "Shared",
+		"Description": "ICCA Config Editor application path"
+	}
+]
